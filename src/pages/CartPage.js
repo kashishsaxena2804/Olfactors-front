@@ -21,8 +21,8 @@ const CartPage = () => {
   const totalPrice = () => {
     try {
       let total = 0;
-      cart?.map((item) => {
-        total = total + item.price;
+      cart?.forEach((item) => {
+        total += item.price ?? 0;
       });
       return total.toLocaleString("en-IN", {
         style: "currency",
@@ -30,8 +30,10 @@ const CartPage = () => {
       });
     } catch (error) {
       console.log(error);
+      return "Error calculating total price";
     }
   };
+  
   //detele item
   const removeCartItem = (pid) => {
     try {

@@ -3,7 +3,7 @@ import { FaFacebookF, FaTwitter, FaPinterestP, FaInstagram, FaYoutube, FaWhatsap
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="foot">
       <div className="row">
         <div className="col">
           <img className="logo" src="./images/Olfactors.png" alt="Olfactors Logo" />
