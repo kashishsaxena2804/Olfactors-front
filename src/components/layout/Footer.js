@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="foot">
       <div className="row">
         <div className="col">
-          <img className="logo" src="./images/Olfactors.png" alt="Olfactors Logo" />
+          <img className="logo" src="./images/Olfactors.png" alt="" />
           <p className="par">
             Crafted with exquisite ingredients and an alchemist's touch, Olfactors invites you to paint your own olfactory masterpiece. Explore endless possibilities, one captivating scent at a time.
           </p>
