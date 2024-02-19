@@ -9,6 +9,9 @@ import "antd/dist/reset.css";
 import { SearchProvider } from './context/search';
 import { CartProvider } from './context/cart';
 
+import axios from 'axios';
+axios.defaults.baseURL = "https://olfactors.onrender.com";
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <AuthProvider>
