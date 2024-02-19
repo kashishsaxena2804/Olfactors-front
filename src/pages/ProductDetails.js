@@ -42,7 +42,7 @@ const ProductDetails = () => {
       <div className="row container product-details mt-3">
         <div className="col-md-6">
           <img
-            src={`/api/vl/product/product-photo/${product._id}`}
+            src={`${process.env.BASE_URL}/api/vl/product/product-photo/${product._id}`}
             className="card-img-top"
             alt={product.name}
             height="500"
@@ -75,7 +75,7 @@ const ProductDetails = () => {
           {relatedProducts?.map((p) => (
             <div className="card m-2" key={p._id}>
               <img
-                src={`/api/vl/product/product-photo/${p._id}`}
+                src={`${process.env.BASE_URL}/api/vl/product/product-photo/${p._id}`}
                 className="card-img-top"
                 alt={p.name}
               />
