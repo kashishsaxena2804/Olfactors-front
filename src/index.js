@@ -10,7 +10,7 @@ import { SearchProvider } from './context/search';
 import { CartProvider } from './context/cart';
 
 import axios from 'axios';
-axios.defaults.baseURL = `${process.env.BASE_URL}`;
+axios.defaults.baseURL = `${process.env.REACT_APP_BASE_URL}`;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
