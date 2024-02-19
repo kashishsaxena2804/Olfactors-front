@@ -12,7 +12,7 @@ function ForgotPassword(){
         const sendOtp = async () =>{
             
         try {
-            const url = 'http://olfactors.onrender.com/api/vl/auth/otp-send';
+            const url = 'https://olfactors.onrender.com/api/vl/auth/otp-send';
             const options = {
             method: 'POST',
             url: url,
