@@ -158,7 +158,7 @@ const UpdateProduct = () => {
                 ) : (
                   <div className="text-center">
                     <img
-                      src={`${process.env.BASE_URL}/api/vl/product/product-photo/${id}`}
+                      src={`${process.env.REACT_APP_BASE_URL}/api/vl/product/product-photo/${id}`}
                       alt="product_photo"
                       height={"200px"}
                       className="img img-responsive"

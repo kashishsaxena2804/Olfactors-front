@@ -59,7 +59,7 @@ const Orders = () => {
                       <div className="row mb-2 p-3 card flex-row" key={p._id}>
                         <div className="col-md-4">
                           <img
-                            src={`${process.env.BASE_URL}/api/vl/product/product-photo/${p._id}`}
+                            src={`${process.env.REACT_APP_BASE_URL}/api/vl/product/product-photo/${p._id}`}
                             className="card-img-top"
                             alt={p.name}
                             width="100px"
