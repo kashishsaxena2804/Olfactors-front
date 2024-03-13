@@ -1,61 +1,91 @@
 import React from 'react';
-import { FaFacebookF, FaTwitter, FaPinterestP, FaInstagram, FaYoutube, FaWhatsapp } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import { useAuth } from '../../context/auth';
 
 const Footer = () => {
   return (
-    <footer className="foot">
-      <div className="row">
-        <div className="col">
-          <img className="logo" src="./images/Olfactors.png" alt="" />
-          <p className="par">
-            Crafted with exquisite ingredients and an alchemist's touch, Olfactors invites you to paint your own olfactory masterpiece. Explore endless possibilities, one captivating scent at a time.
+    <footer className="footer">
+      <div className="footer-container">
+        <div className="footer-section">
+        <img className="foot-logo" src="./images/Olfactors.png" alt="Olfactors Logo" />
+          <p className="footer-content">
+          Crafted with exquisite ingredients and an alchemist's touch, Olfactors invites you to paint your own olfactory masterpiece. Explore endless possibilities, one captivating scent at a time.
           </p>
+          
         </div>
-
-        <div className="col">
-          <h3>BEST SELLERS</h3>
-          <div className="underline"><span></span></div>
-
-          <ul>
-            <li>Ultimate Perfume Box</li>
-            <li>Perfume Gifts Set For Men</li>
-            <li>Perfume Gifts Set For Women</li>
-            <li>Unisex Perfume</li>
+        <div className="footer-section">
+          <h3 className="footer-heading">Account</h3>
+          <ul className="footer-list">
+            <li className="footer-item">
+            <Link to="/login" className="footer-link">Sign In</Link>
+            </li>
+            <li className="footer-item">
+              <Link to={`/dashboard/${
+                            useAuth?.user?.role === 1 ? "admin" : "user"
+                          }`} className="footer-link">
+                Account
+              </Link>
+            </li>  
+            <li className="footer-item">
+              <Link to = "/cart" className="footer-link">
+                Cart
+              </Link>
+            </li>
           </ul>
         </div>
-
-        <div className="col">
-          <h3>CONTACT US</h3>
-          <div className="underline"><span></span></div>
-
-          <div className="social-icons">
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-              <FaFacebookF className="fab" />
+        <div className="footer-section">
+          <h3 className="footer-heading">Category</h3>
+          <ul className="footer-list">
+            <li className="footer-item">
+              <a href="#" className="footer-link">
+                Premium Perfumes
+              </a>
+            </li>
+            <li className="footer-item">
+              <a href="#" className="footer-link">
+                Love Edition
+              </a>
+            </li>
+            <li className="footer-item">
+              <a href="#" className="footer-link">
+                Combo
+              </a>
+            </li>
+            <li className="footer-item">
+              <a href="#" className="footer-link">
+                Gift Hampers
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div className="footer-section">
+          <h3 className="footer-heading">Contact Us</h3>
+          <p className="footer-content">
+            <a href="https://api.whatsapp.com/send?phone=918960061347&text=" className="footer-link">
+              +91 8960 061 347
             </a>
-            <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
-              <FaTwitter className="fab" />
+          </p>
+          <p className="footer-content">
+            <a href="mailto:connect@aranyamperfumes.com" className="footer-link">
+              theolfactors@gmail.com
             </a>
-            <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">
-              <FaPinterestP className="fab" />
-            </a>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-              <FaInstagram className="fab" />
-            </a>
-            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
-              <FaYoutube className="fab" />
-            </a>
-            <a href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer">
-              <FaWhatsapp className="fab" />
-            </a>
-          </div>
+          </p>
+          <p className="footer-content">
+            2/111, Sector 2 jankipuram extension, jankipuram, Lucknow, Uttar Pradesh. 226021
+          </p>
         </div>
       </div>
+      <div className="footer-copyright">
+        <p className="footer-text">
+          Copyright 2024 Olfactors Premium Perfumes. All Rights Reserved.
+        </p>
+        <p className="copyright">
+  Designed & Managed  by
+  <a className="kas" href="https://www.linkedin.com/in/kashish-saxena" target="_blank" rel="noopener noreferrer">
+     Kashish Saxena
+  </a>
+</p>
 
-      <hr />
-
-      <div className="copyright-container">
-        <p className="copyright">© 2024 Olfactors. All Rights Reserved.</p>
-        <p className="copyright">Designed & Managed by Kashish Saxena</p>
       </div>
     </footer>
   );
