@@ -180,7 +180,7 @@ const HomePage = () => {
 </section>
 
       <div className='row mt-3'>
-        <div className='col-md-2'>
+        {/*<div className='col-md-2'>
           <h4 className='text-center'>Category</h4>
           <div className='d-flex flex-column'>
             {categories?.map(c=>(
@@ -189,7 +189,7 @@ const HomePage = () => {
               </Checkbox>
             ))}
           </div>
-          {/*price-filter*/}
+          price-filter
           <h4 className='text-center mt-4'>Price</h4>
           <div className='d-flex flex-column'>
             <Radio.Group onChange={e => setRadio(e.target.value)}>
@@ -206,10 +206,10 @@ const HomePage = () => {
               Reset Filter
             </button>
           </div>
-        </div>
-        <div className='col-md-9'>
+        </div>*/}
+        <div>
           
-          <h1 className='text-center'>Bestsellers</h1>
+        <h1 className='text-center'>Olfactors - Where fragrance becomes a Signature</h1>
           <div className='d-flex flex-wrap'>
           {products?.map((p) => (
               
