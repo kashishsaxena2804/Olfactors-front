@@ -20,6 +20,7 @@ const HomePage = () => {
   const [loading, setLoading]=useState(false)
   
 
+  
   //get all cat
   const getAllCategory = async () => {
     try {
@@ -151,6 +152,32 @@ const HomePage = () => {
     </Carousel.Item>
   </Carousel>
   </div>
+  <section className="image-container">
+  <div className="image-item">
+    <img src="./images/qual1.png" alt="Long Lasting" />
+    
+  </div>
+  <div className="image-item">
+    <img src="./images/qual2.png" alt="Paraben Free" />
+   
+  </div>
+  <div className="image-item">
+    <img src="./images/qual3.png" alt="Cruelty Free" />
+   
+  </div>
+  <div className="image-item">
+    <img src="./images/qual4.png" alt="Natural Ingredients" />
+   
+  </div>
+  <div className="image-item">
+    <img src="./images/qual5.png" alt="Steam Distillation" />
+    
+  </div>
+  <div className="image-item">
+    <img src="./images/qual6.png" alt="Best Quality Guarantee" />
+    
+  </div>
+</section>
 
       <div className='row mt-3'>
         <div className='col-md-2'>
