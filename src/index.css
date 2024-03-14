@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap');
 @font-face {
   font-family: myFont;
-  src: url(Azonix.ttf);
+  src: url(CaviarDreams.ttf);
 }
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: myFont;
+  font-weight: 1000;
+  font-style: bold;
 }
 
 /* font-family: "Poppins", sans-serif;*/
@@ -15,9 +18,7 @@
 
 /* navbar css */
 .navbar {
-  font-family: myFont;
-  font-size: 15px;
-  font-style: bold;
+  font-weight: 1500;
   line-height: 26px;
   text-transform: uppercase;
   box-shadow: 0 8px 6px -6px gray;
@@ -41,7 +42,7 @@
 
 .navbar-brand {
   font-weight: 700;
-  font-family: "roboto", sans-serif;
+  font-family: myFont;
   letter-spacing: 3px;
 }
 
@@ -61,7 +62,7 @@
 
 img{
   height: 50px;
-  width: 250px;
+  width: 200px;
   object-fit: cover;
 }
 
@@ -225,4 +226,10 @@ img{
 .text{
   font-family: myFont;
 
+}
+
+.carousel-indicators [data-bs-target] {
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
 }

@@ -6,6 +6,7 @@ import { Prices } from '../components/Prices.js';
 import { useNavigate } from 'react-router-dom';
 import { useCart } from '../context/cart.js';
 import toast from 'react-hot-toast';
+import Carousel from 'react-bootstrap/Carousel';
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -107,7 +108,50 @@ const HomePage = () => {
   }, [checked, radio]);
 
   return (
+    
     <Layout title={"All Products-Best offers"}>
+      <div>
+    <Carousel>
+    <Carousel.Item>
+      <img style={{height:'90vh'}}
+        className="d-block w-100"
+        src={"./images/banner.jpeg"}
+        alt="First slide"
+      />
+      <Carousel.Caption>
+        <h3>First slide label</h3>
+        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      </Carousel.Caption>
+    </Carousel.Item>
+    <Carousel.Item>
+      <img style={{height:'90vh'}}
+        className="d-block w-100"
+        src={"./images/banner.jpeg"}
+        alt="Second slide"
+      />
+
+      <Carousel.Caption>
+        <h3>Second slide label</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </Carousel.Caption>
+    </Carousel.Item>
+    <Carousel.Item>
+      <img style={{height:'90vh'}}
+        className="d-block w-100"
+        src={"./images/banner.jpeg"}
+        alt="Third slide"
+      />
+
+      <Carousel.Caption>
+        <h3>Third slide label</h3>
+        <p>
+          Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+        </p>
+      </Carousel.Caption>
+    </Carousel.Item>
+  </Carousel>
+  </div>
+
       <div className='row mt-3'>
         <div className='col-md-2'>
           <h4 className='text-center'>Category</h4>
