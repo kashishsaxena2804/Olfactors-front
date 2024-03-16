@@ -210,7 +210,31 @@ const HomePage = () => {
         <div>
           
         <h1 className='text-center'>Olfactors - Where fragrance becomes a Signature</h1>
-          <div className='d-flex flex-wrap'>
+        <div className='Product-container'>
+          <div className='prod-heading'>
+            <div><h2>Best Sellers</h2></div>
+            <div><button className='button btn btn-primary ms-1'
+                    onClick={() => navigate(`/product/`)}
+                    >View More</button>
+            </div>
+          </div>
+          <div>
+          <div className="product-card">
+            <img src={"./images/banner.jpeg"} className="product-image" alt=""/>
+            <div className="product-details">
+              <h3 className="product-name">Perfume</h3>
+              {/*<p className="product-offer">{p.offer}</p>*/}
+              <div className="product-prices">
+                {/*<span className="original-price">500</span>*/}
+                <span className="discounted-price">500</span>
+              </div>
+              <button className="button add-to-cart-button">Add To Cart</button>
+              
+            </div>
+    </div>
+          </div>
+        </div>
+        {/*<div className='d-flex flex-wrap'>
           {products?.map((p) => (
               
                 <div className="card m-2" style={{ width: "18rem" }}>
@@ -253,7 +277,7 @@ const HomePage = () => {
                 {loading ?"loading...":"Load more"}
               </button>
             )}
-          </div>
+          </div>*/}
         </div>
       </div>
     </Layout>
