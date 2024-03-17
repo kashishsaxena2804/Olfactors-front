@@ -7,6 +7,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useCart } from '../context/cart.js';
 import toast from 'react-hot-toast';
 import Carousel from 'react-bootstrap/Carousel';
+import ReactPlayer from 'react-player';
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -278,20 +279,30 @@ const HomePage = () => {
         
         <div className='main-card1'>
           <h2 className='heading-text'>Categories</h2>
-          <div className="container" style={{ marginTop: "100px" }}>
-        <div className="row container">
-          {categories.map((c) => (
-            <div className="col-md-4 mt-5 mb-3 gx-3 gy-3" key={c._id}>
-              <div className="card">
-                <Link to={`/category/${c.slug}`} className="btn cat-btn">
-                  {c.name}
-                </Link>
+          <div className="row container">
+            {categories.map((c) => (
+              <div className="col-md-4 mt-5 mb-3 gx-3 gy-3" key={c._id}>
+                <div className="card">
+                  <Link to={`/category/${c.slug}`} className="btn cat-btn">
+                    {c.name}
+                  </Link>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
         </div>
-      </div>
         </div>
+        <div class="main-container">
+          <div class='main-card2'>
+            <div class='vdo-heading'><h2>Our Products</h2></div>
+            <div class='vdo-container'><ReactPlayer url="https://youtu.be/WhKJl9W_1Fw?si=3KwlBLx581JzwlZ4"/></div>
+          </div>
+          <div class='main-card3'>
+            <div class='vdo-heading'><h2>Reviews</h2></div>
+            
+          </div>
+        </div>
+
+        
         {/*<div className='d-flex flex-wrap'>
           {products?.map((p) => (
               
