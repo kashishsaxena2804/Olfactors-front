@@ -3,7 +3,7 @@ import Layout from '../components/layout/Layout.js';
 import axios from 'axios';
 import {Checkbox, Radio} from 'antd';
 import { Prices } from '../components/Prices.js';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useCart } from '../context/cart.js';
 import toast from 'react-hot-toast';
 import Carousel from 'react-bootstrap/Carousel';
@@ -212,27 +212,85 @@ const HomePage = () => {
         <h1 className='text-center'>Olfactors - Where fragrance becomes a Signature</h1>
         <div className='Product-container'>
           <div className='prod-heading'>
-            <div><h2>Best Sellers</h2></div>
+            <div><h2>Products</h2></div>
             <div><button className='button btn btn-primary ms-1'
                     onClick={() => navigate(`/product/`)}
                     >View More</button>
             </div>
           </div>
-          <div>
-          <div className="product-card">
-            <img src={"./images/banner.jpeg"} className="product-image" alt=""/>
-            <div className="product-details">
-              <h3 className="product-name">Perfume</h3>
-              {/*<p className="product-offer">{p.offer}</p>*/}
-              <div className="product-prices">
-                {/*<span className="original-price">500</span>*/}
-                <span className="discounted-price">500</span>
+          <div className='main-card'>
+            
+            <div className="product-card">
+              <img src={"./images/banner.jpeg"} className="product-image" alt=""/>
+              <div className="product-details">
+                <h3 className="product-name">Perfume</h3>
+                {/*<p className="product-offer">{p.offer}</p>*/}
+                <div className="product-prices">
+                  {/*<span className="original-price">500</span>*/}
+                  <span className="discounted-price">500</span>
+                </div>
+                <button className="button add-to-cart-button">Add To Cart</button>
+                
               </div>
-              <button className="button add-to-cart-button">Add To Cart</button>
-              
             </div>
-    </div>
+            <div className="product-card">
+              <img src={"./images/banner.jpeg"} className="product-image" alt=""/>
+              <div className="product-details">
+                <h3 className="product-name">Perfume</h3>
+                {/*<p className="product-offer">{p.offer}</p>*/}
+                <div className="product-prices">
+                  {/*<span className="original-price">500</span>*/}
+                  <span className="discounted-price">500</span>
+                </div>
+                <button className="button add-to-cart-button">Add To Cart</button>
+                
+              </div>
+            </div>
+            <div className="product-card">
+              <img src={"./images/banner.jpeg"} className="product-image" alt=""/>
+              <div className="product-details">
+                <h3 className="product-name">Perfume</h3>
+                {/*<p className="product-offer">{p.offer}</p>*/}
+                <div className="product-prices">
+                  {/*<span className="original-price">500</span>*/}
+                  <span className="discounted-price">500</span>
+                </div>
+                <button className="button add-to-cart-button">Add To Cart</button>
+                
+              </div>
+            </div>
+            <div className="product-card">
+              <img src={"./images/banner.jpeg"} className="product-image" alt=""/>
+              <div className="product-details">
+                <h3 className="product-name">Perfume</h3>
+                {/*<p className="product-offer">{p.offer}</p>*/}
+                <div className="product-prices">
+                  {/*<span className="original-price">500</span>*/}
+                  <span className="discounted-price">500</span>
+                </div>
+                <button className="button add-to-cart-button">Add To Cart</button>
+                
+              </div>
+            </div>
+          
           </div>
+        </div>
+        
+        <div className='main-card1'>
+          <h2 className='heading-text'>Categories</h2>
+          <div className="container" style={{ marginTop: "100px" }}>
+        <div className="row container">
+          {categories.map((c) => (
+            <div className="col-md-4 mt-5 mb-3 gx-3 gy-3" key={c._id}>
+              <div className="card">
+                <Link to={`/category/${c.slug}`} className="btn cat-btn">
+                  {c.name}
+                </Link>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
         </div>
         {/*<div className='d-flex flex-wrap'>
           {products?.map((p) => (
