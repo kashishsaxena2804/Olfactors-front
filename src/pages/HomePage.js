@@ -290,7 +290,26 @@ const HomePage = () => {
               </div>
             ))}
         </div>
+        
         </div>
+        <div className="content">
+            <div className="stat">
+              <h4 className='section__stat-number'>60+</h4>
+              <h3>Premium Fragrances</h3>
+            </div>
+            <div className="stat">
+              <h4 className='section__stat-number'>5000+</h4>
+              <h3>Happy Customers</h3>
+            </div>
+            <div className="stat">
+              <h4 className='section__stat-number'>4.9*</h4>
+              <h3>Google Rating</h3>
+            </div>
+            <div className="stat">
+              <h4 className='section__stat-number'>6+</h4>
+              <h3>Retail Stores</h3>
+            </div>
+          </div>
         <div class="main-container">
           <div class='main-card2'>
             <div class='vdo-heading'><h2>Our Products</h2></div>
@@ -301,6 +320,8 @@ const HomePage = () => {
             
           </div>
         </div>
+       
+        
 
         
         {/*<div className='d-flex flex-wrap'>
