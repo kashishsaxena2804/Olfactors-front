@@ -386,10 +386,17 @@ img{
   margin-top: 25px;
   margin-bottom: 50px;
   background-image:url( "/public/images/cat-image.png");
-  background-size: 500px; /* Optional: Adjusts the size of the background image */
+  background-size: 500px; 
   background-position: center;
 }
-
+.heading-text{
+  font-size: 35px;
+  font-weight: 1000;
+  font-style: bold;
+  text-align: center;
+  margin: auto;
+ 
+}
 .vdo-container{
   width: 50%;
   height: auto;
@@ -494,4 +501,20 @@ img{
 }
 .section__stat-number {
   display: block;
+}
+.card {
+  text-align: center; /* Center category name */
+}
+
+.card img {
+  width: 100px; /* Adjust the image size as needed */
+  height: 100px;
+  border-radius: 50%; /* Make the image circular */
+  display: block; /* Ensure the circular shape */
+  margin: 0 auto; /* Center the image */
+}
+
+.cat-btn {
+  display: block;
+  margin-top: 10px; /* Adjust spacing between image and text */
 }
