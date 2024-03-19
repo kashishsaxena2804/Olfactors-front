@@ -385,6 +385,7 @@ img{
   justify-content: space-between;
   margin-top: 25px;
   margin-bottom: 50px;
+  background-image:url( "/public/images/cat-image.png");
 }
 
 .vdo-container{
