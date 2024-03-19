@@ -510,7 +510,7 @@ img{
 .card img {
   width: 200px; /* Adjust the image size as needed */
   height: 200px;
-  border-radius: 50%; /* Make the image circular */
+  /*border-radius: 50%; /* Make the image circular */
   display: block; /* Ensure the circular shape */
   margin: 0 auto; /* Center the image */
 }
