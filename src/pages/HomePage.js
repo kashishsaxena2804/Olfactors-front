@@ -117,7 +117,7 @@ const HomePage = () => {
     <Carousel.Item>
       <img style={{height:'90vh'}}
         className="d-block w-100"
-        src={"./images/banner.jpeg"}
+        src={"./images/slider.jpg"}
         alt="First slide"
       />
       <Carousel.Caption>
@@ -128,7 +128,7 @@ const HomePage = () => {
     <Carousel.Item>
       <img style={{height:'90vh'}}
         className="d-block w-100"
-        src={"./images/banner.jpeg"}
+        src={"./images/slider.jpg"}
         alt="Second slide"
       />
 
@@ -140,7 +140,7 @@ const HomePage = () => {
     <Carousel.Item>
       <img style={{height:'90vh'}}
         className="d-block w-100"
-        src={"./images/banner.jpeg"}
+        src={"./images/slider.jpg"}
         alt="Third slide"
       />
 
@@ -213,7 +213,72 @@ const HomePage = () => {
         <h1 className='text-center'>Olfactors - Where fragrance becomes a Signature</h1>
         <div className='Product-container'>
           <div className='prod-heading'>
-            <div><h2>Products</h2></div>
+            <div><h2>New Arrivals</h2></div>
+            <div><button className='button btn btn-primary ms-1'
+                    onClick={() => navigate(`/product/`)}
+                    >View More</button>
+            </div>
+          </div>
+          <div className='main-card'>
+            
+            <div className="product-card">
+              <img src={"./images/banner.jpeg"} className="product-image" alt=""/>
+              <div className="product-details">
+                <h3 className="product-name">Perfume</h3>
+                {/*<p className="product-offer">{p.offer}</p>*/}
+                <div className="product-prices">
+                  {/*<span className="original-price">500</span>*/}
+                  <span className="discounted-price">500</span>
+                </div>
+                <button className="button add-to-cart-button">Add To Cart</button>
+                
+              </div>
+            </div>
+            <div className="product-card">
+              <img src={"./images/banner.jpeg"} className="product-image" alt=""/>
+              <div className="product-details">
+                <h3 className="product-name">Perfume</h3>
+                {/*<p className="product-offer">{p.offer}</p>*/}
+                <div className="product-prices">
+                  {/*<span className="original-price">500</span>*/}
+                  <span className="discounted-price">500</span>
+                </div>
+                <button className="button add-to-cart-button">Add To Cart</button>
+                
+              </div>
+            </div>
+            <div className="product-card">
+              <img src={"./images/banner.jpeg"} className="product-image" alt=""/>
+              <div className="product-details">
+                <h3 className="product-name">Perfume</h3>
+                {/*<p className="product-offer">{p.offer}</p>*/}
+                <div className="product-prices">
+                  {/*<span className="original-price">500</span>*/}
+                  <span className="discounted-price">500</span>
+                </div>
+                <button className="button add-to-cart-button">Add To Cart</button>
+                
+              </div>
+            </div>
+            <div className="product-card">
+              <img src={"./images/banner.jpeg"} className="product-image" alt=""/>
+              <div className="product-details">
+                <h3 className="product-name">Perfume</h3>
+                {/*<p className="product-offer">{p.offer}</p>*/}
+                <div className="product-prices">
+                  {/*<span className="original-price">500</span>*/}
+                  <span className="discounted-price">500</span>
+                </div>
+                <button className="button add-to-cart-button">Add To Cart</button>
+                
+              </div>
+            </div>
+          
+          </div>
+        </div>
+        <div className='Product-container'>
+          <div className='prod-heading'>
+            <div><h2>Best Sellers</h2></div>
             <div><button className='button btn btn-primary ms-1'
                     onClick={() => navigate(`/product/`)}
                     >View More</button>
@@ -289,9 +354,141 @@ const HomePage = () => {
                 </div>
               </div>
             ))}
+          </div>
         </div>
-        
+
+        <div className='Product-container'>
+          <div className='prod-heading'>
+            <div><h2>Feature Products</h2></div>
+            <div><button className='button btn btn-primary ms-1'
+                    onClick={() => navigate(`/product/`)}
+                    >View More</button>
+            </div>
+          </div>
+          <div className='main-card'>
+            
+            <div className="product-card">
+              <img src={"./images/banner.jpeg"} className="product-image" alt=""/>
+              <div className="product-details">
+                <h3 className="product-name">Perfume</h3>
+                {/*<p className="product-offer">{p.offer}</p>*/}
+                <div className="product-prices">
+                  {/*<span className="original-price">500</span>*/}
+                  <span className="discounted-price">500</span>
+                </div>
+                <button className="button add-to-cart-button">Add To Cart</button>
+                
+              </div>
+            </div>
+            <div className="product-card">
+              <img src={"./images/banner.jpeg"} className="product-image" alt=""/>
+              <div className="product-details">
+                <h3 className="product-name">Perfume</h3>
+                {/*<p className="product-offer">{p.offer}</p>*/}
+                <div className="product-prices">
+                  {/*<span className="original-price">500</span>*/}
+                  <span className="discounted-price">500</span>
+                </div>
+                <button className="button add-to-cart-button">Add To Cart</button>
+                
+              </div>
+            </div>
+            <div className="product-card">
+              <img src={"./images/banner.jpeg"} className="product-image" alt=""/>
+              <div className="product-details">
+                <h3 className="product-name">Perfume</h3>
+                {/*<p className="product-offer">{p.offer}</p>*/}
+                <div className="product-prices">
+                  {/*<span className="original-price">500</span>*/}
+                  <span className="discounted-price">500</span>
+                </div>
+                <button className="button add-to-cart-button">Add To Cart</button>
+                
+              </div>
+            </div>
+            <div className="product-card">
+              <img src={"./images/banner.jpeg"} className="product-image" alt=""/>
+              <div className="product-details">
+                <h3 className="product-name">Perfume</h3>
+                {/*<p className="product-offer">{p.offer}</p>*/}
+                <div className="product-prices">
+                  {/*<span className="original-price">500</span>*/}
+                  <span className="discounted-price">500</span>
+                </div>
+                <button className="button add-to-cart-button">Add To Cart</button>
+                
+              </div>
+            </div>
+          
+          </div>
         </div>
+
+        <div className='Product-container'>
+          <div className='prod-heading'>
+            <div><h2>Gift Hampers</h2></div>
+            <div><button className='button btn btn-primary ms-1'
+                    onClick={() => navigate(`/product/`)}
+                    >View More</button>
+            </div>
+          </div>
+          <div className='main-card'>
+            
+            <div className="product-card">
+              <img src={"./images/banner.jpeg"} className="product-image" alt=""/>
+              <div className="product-details">
+                <h3 className="product-name">Perfume</h3>
+                {/*<p className="product-offer">{p.offer}</p>*/}
+                <div className="product-prices">
+                  {/*<span className="original-price">500</span>*/}
+                  <span className="discounted-price">500</span>
+                </div>
+                <button className="button add-to-cart-button">Add To Cart</button>
+                
+              </div>
+            </div>
+            <div className="product-card">
+              <img src={"./images/banner.jpeg"} className="product-image" alt=""/>
+              <div className="product-details">
+                <h3 className="product-name">Perfume</h3>
+                {/*<p className="product-offer">{p.offer}</p>*/}
+                <div className="product-prices">
+                  {/*<span className="original-price">500</span>*/}
+                  <span className="discounted-price">500</span>
+                </div>
+                <button className="button add-to-cart-button">Add To Cart</button>
+                
+              </div>
+            </div>
+            <div className="product-card">
+              <img src={"./images/banner.jpeg"} className="product-image" alt=""/>
+              <div className="product-details">
+                <h3 className="product-name">Perfume</h3>
+                {/*<p className="product-offer">{p.offer}</p>*/}
+                <div className="product-prices">
+                  {/*<span className="original-price">500</span>*/}
+                  <span className="discounted-price">500</span>
+                </div>
+                <button className="button add-to-cart-button">Add To Cart</button>
+                
+              </div>
+            </div>
+            <div className="product-card">
+              <img src={"./images/banner.jpeg"} className="product-image" alt=""/>
+              <div className="product-details">
+                <h3 className="product-name">Perfume</h3>
+                {/*<p className="product-offer">{p.offer}</p>*/}
+                <div className="product-prices">
+                  {/*<span className="original-price">500</span>*/}
+                  <span className="discounted-price">500</span>
+                </div>
+                <button className="button add-to-cart-button">Add To Cart</button>
+                
+              </div>
+            </div>
+          
+          </div>
+        </div>
+
         <div className="content">
             <div className="stat">
               <h4 className='section__stat-number'>60+</h4>
