@@ -504,11 +504,12 @@ img{
 }
 .card {
   text-align: center; /* Center category name */
+  border-radius: 50%;
 }
 
 .card img {
-  width: 100px; /* Adjust the image size as needed */
-  height: 100px;
+  width: 200px; /* Adjust the image size as needed */
+  height: 200px;
   border-radius: 50%; /* Make the image circular */
   display: block; /* Ensure the circular shape */
   margin: 0 auto; /* Center the image */

@@ -9,6 +9,7 @@ import "../../styles/form.css";
 const CreateCategory = () => {
   const [categories, setCategories] = useState([]);
   const [name, setName] = useState(""); 
+  const [image, setImage] = useState(null);
   const [visible, setVisible] = useState(false); 
   const [selected, setSelected] = useState(null);
   const [updatedName, setUpdatedName] = useState("");
@@ -18,6 +19,7 @@ const CreateCategory = () => {
     try {
       const { data } = await axios.post("/api/vl/category/create-category", {
         name,
+        image,
       });
       if (data?.success) {
         toast.success(`${name} is created`);
@@ -103,6 +105,9 @@ const CreateCategory = () => {
                 handleSubmit={handleSubmit}
                 value={name}
                 setValue={setName}
+                image={image}
+                setImage={setImage}
+
               />
             </div>
             <div className='w-75'>
