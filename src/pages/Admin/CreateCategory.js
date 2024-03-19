@@ -109,30 +109,7 @@ const CreateCategory = () => {
                 setImage={setImage}
 
               />
-              <div className="mb-3">
-                <label className="button btn btn-outline-secondary col-md-12">
-                  {image ? image.name : 'Upload Photo'}
-                  <input
-                    type="file"
-                    name="photo"
-                    accept="image/*"
-                    onChange={(e) => setImage(e.target.files[0])}
-                    hidden
-                  />
-                </label>
-              </div>
-              <div className="mb-3">
-                {image && (
-                  <div className="text-center">
-                    <img
-                      src={URL.createObjectURL(image)}
-                      alt="category_photo"
-                      height={'200px'}
-                      className="img img-responsive"
-                    />
-                  </div>
-                )}
-              </div>
+              
             </div>
             <div className='w-75'>
               <table className="table">
