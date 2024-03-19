@@ -386,7 +386,7 @@ img{
   margin-top: 25px;
   margin-bottom: 50px;
   background-image:url( "/public/images/cat-image.png");
-  background-size: cover; /* Optional: Adjusts the size of the background image */
+  background-size: 500px; /* Optional: Adjusts the size of the background image */
   background-position: center;
 }
 
