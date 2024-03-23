@@ -522,3 +522,21 @@ img{
   font-weight: 1000;
   margin-top: 10px; /* Adjust spacing between image and text */
 }
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the cards horizontally */
+}
+
+.col-md-4 {
+  flex: 0 0 calc(33.33% - 20px); /* Adjust the width for medium devices */
+  max-width: calc(33.33% - 20px); /* Adjust the maximum width for medium devices */
+  margin: 0 10px 20px; /* Add spacing between the cards */
+}
+
+@media (max-width: 767px) {
+  .col-md-4 {
+    flex: 0 0 calc(50% - 20px); /* Adjust the width for smaller devices */
+    max-width: calc(50% - 20px); /* Adjust the maximum width for smaller devices */
+  }
+}
