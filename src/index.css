@@ -506,7 +506,7 @@ img{
   text-align: center; /* Center category name */
   width: 200px; /* Adjust the image size as needed */
   height: 200px;
-  margin-left: 100px;
+  margin-left: 150px;
 }
 
 .card img {
@@ -519,5 +519,6 @@ img{
 
 .cat-btn {
   display: block;
+  font-weight: 500;
   margin-top: 10px; /* Adjust spacing between image and text */
 }
