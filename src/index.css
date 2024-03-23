@@ -504,7 +504,8 @@ img{
 }
 .card {
   text-align: center; /* Center category name */
- 
+  width: 200px; /* Adjust the image size as needed */
+  height: 200px;
 }
 
 .card img {
