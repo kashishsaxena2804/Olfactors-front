@@ -215,7 +215,7 @@ const HomePage = () => {
           <div className='prod-heading'>
             <div><h2>New Arrivals</h2></div>
             <div><button className='button btn btn-primary ms-1'
-                    onClick={() => navigate(`/product/`)}
+                    onClick={() => navigate(`/Allproducts`)}
                     >View More</button>
             </div>
           </div>
@@ -280,7 +280,7 @@ const HomePage = () => {
           <div className='prod-heading'>
             <div><h2>Best Sellers</h2></div>
             <div><button className='button btn btn-primary ms-1'
-                    onClick={() => navigate(`/product/`)}
+                    onClick={() => navigate(`/Allproducts`)}
                     >View More</button>
             </div>
           </div>

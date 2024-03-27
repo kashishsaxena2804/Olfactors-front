@@ -539,4 +539,4 @@ img{
     flex: 0 0 calc(50% - 20px); /* Adjust the width for smaller devices */
     max-width: calc(50% - 20px); /* Adjust the maximum width for smaller devices */
   }
-}
+} 
