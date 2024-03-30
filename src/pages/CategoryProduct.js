@@ -6,6 +6,7 @@ import axios from "axios";
 import toast from "react-hot-toast";
 import { useCart } from "../context/cart";
 import { AiOutlineReload } from "react-icons/ai";
+import "../styles/CategoryProductStyles.css";
 
 const CategoryProduct = () => {
   const params = useParams();
@@ -33,7 +34,7 @@ const CategoryProduct = () => {
   };
   const getTotal = async () => {
     try {
-      const { data } = await axios.get("/api/v1/product/product-count");
+      const { data } = await axios.get("/api/vl/product/product-count");
       setTotal(data?.total);
     } catch (error) {
       console.log(error);
