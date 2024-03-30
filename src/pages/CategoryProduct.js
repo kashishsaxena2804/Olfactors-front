@@ -67,7 +67,7 @@ const CategoryProduct = () => {
           <div className="col-md-9 offset-1">
             <div className="d-flex flex-wrap">
             {products?.map((p) => (
-              <div className="product-card" onClick={() => navigate(`/product/${p.slug}`)}>
+              <div className="product-card" key={p._id} onClick={() => navigate(`/product/${p.slug}`)}>
                 <img src={`/api/vl/product/product-photo/${p._id}`}
                   className="card-img-top"
                   alt={p.name}/>
@@ -76,9 +76,9 @@ const CategoryProduct = () => {
                 {/*<p className="product-offer">{p.offer}</p>*/}
                 <div className="product-prices">
                   {/*<span className="original-price">500</span>*/}
-                  <span className="discounted-price">{p.price.toLocaleString("en-US", {
+                  <span className="discounted-price">{p.price.toLocaleString("en-INR", {
                         style: "currency",
-                        currency: "USD",
+                        currency: "INR",
                       })}</span>
                 </div>
                 <button className="button add-to-cart-button" onClick={() => {
