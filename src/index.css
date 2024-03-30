@@ -40,11 +40,11 @@
 }
 
 .active {
-  border-bottom: 2px solid #808000;
+  border-bottom: 2px solid #cc9900;
 }
 
 .navbar-brand {
-  font-weight: 700;
+  font-weight: 1000;
   font-family: myFont;
   letter-spacing: 3px;
 }
@@ -52,6 +52,7 @@
 .search-form {
   margin-right: 10px;
   margin-top: 4px;
+  color: #cc9900;
 }
 .search-form input {
   border: none;
@@ -64,7 +65,7 @@
 }
 
 img{
-  height: 50px;
+  height: 85px;
   width: 200px;
   object-fit: cover;
 }
@@ -94,6 +95,7 @@ img{
 .foot-logo {
   max-width: 200px;  
   margin-left: -40px;  
+  height: 85px;
   
 }
 .footer-content{
@@ -108,7 +110,7 @@ img{
 }
 
 .footer-heading {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -141,11 +143,11 @@ img{
   font-weight: 600;
 }
 .kas:hover{
-  color: #808000;
+  color: #cc9900;
   font-weight: 5000;
 }
 .footer-link:hover {
-  color: #808000;
+  color: #cc9900;
 }
 
 .footer-copyright {
@@ -549,10 +551,12 @@ img{
   background-color: #000;
   color: #fff;
   border-radius: 2px;
-  font-weight: 500;
+  font-weight: 550;
+  font-style: bold;
 }
 
 .button:hover {
-  border: 1px solid #fff;
-  background: #808000; 
+  border: 1px solid #FFD400;
+  color: #fff;
+  background: #cc9900; 
   }

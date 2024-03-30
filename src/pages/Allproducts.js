@@ -135,7 +135,7 @@ const HomePage = () => {
           </div>
           <div className="d-flex flex-column">
             <button
-              className=" button btn btn-danger"
+              className=" button btn "
               onClick={() => window.location.reload()}
             >
               RESET FILTERS

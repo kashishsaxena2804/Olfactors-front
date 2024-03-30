@@ -188,7 +188,7 @@ const HomePage = () => {
         <div className='Product-container'>
           <div className='prod-heading'>
             <div><h2>New Arrivals</h2></div>
-            <div><button className='button btn btn-primary ms-1'
+            <div><button className='button btn '
                     onClick={() => navigate(`/Allproducts`)}
                     >View More</button>
             </div>
@@ -407,10 +407,10 @@ const HomePage = () => {
             <div class='vdo-heading'><h2>Our Products</h2></div>
             <div class='vdo-container'><ReactPlayer url="https://youtu.be/WhKJl9W_1Fw?si=3KwlBLx581JzwlZ4"/></div>
           </div>
-          <div class='main-card3'>
+          {/*<div class='main-card3'>
             <div class='vdo-heading'><h2>Reviews</h2></div>
             
-          </div>
+                    </div>*/}
         </div>
         </div>
       </div>
