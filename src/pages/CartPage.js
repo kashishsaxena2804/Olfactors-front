@@ -157,14 +157,14 @@ const CartPage = () => {
                     </button>
                   ) : (
                     <button
-                      className="btn btn-outline-warning"
+                      className="button btn btn-primary "
                       onClick={() =>
                         navigate("/login", {
                           state: "/cart",
                         })
                       }
                     >
-                      Plase Login to checkout
+                      Please Login to checkout
                     </button>
                   )}
                 </div>

@@ -34,15 +34,15 @@
     border: 1px solid black;
     border-radius: 0;
     background-color: #000;
-    color: #808000;
+    color: #fff;
     font-weight: 500;
     width: 250px;
-    border-radius: 5px;
+    border-radius: 2px;
   }
   
   .register form button:hover {
-    border: 1px solid black;
-    background: rgba(8, 8, 8, 0.79); 
+    border: 1px solid #fff;
+    background: #808000; 
     }
   
   .forgot-btn {
@@ -56,6 +56,7 @@
   }
   
   .forgot-btn:hover {
-    color: white !important;
+    border: 1px solid #fff;
+    background: #808000; 
   }
   

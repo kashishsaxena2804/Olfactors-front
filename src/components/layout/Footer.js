@@ -38,22 +38,27 @@ const Footer = () => {
           <ul className="footer-list">
             <li className="footer-item">
               <a href="#" className="footer-link">
-                Premium Perfumes
+                Perfumes
               </a>
             </li>
             <li className="footer-item">
               <a href="#" className="footer-link">
-                Love Edition
+                Attars
               </a>
             </li>
             <li className="footer-item">
               <a href="#" className="footer-link">
-                Combo
+                Diffuser Oils
               </a>
             </li>
             <li className="footer-item">
               <a href="#" className="footer-link">
                 Gift Hampers
+              </a>
+            </li>
+            <li className="footer-item">
+              <a href="#" className="footer-link">
+                Air Freshners
               </a>
             </li>
           </ul>

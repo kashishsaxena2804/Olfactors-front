@@ -5,7 +5,6 @@ import axios from 'axios';
 import toast from 'react-hot-toast';
 import { Select } from "antd";
 import { useNavigate } from "react-router-dom";
-import "../../styles/form.css";
 
 const { Option } = Select;
 
