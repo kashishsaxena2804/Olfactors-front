@@ -252,10 +252,7 @@ const HomePage = () => {
               
                 {newarrival?.map((p) => (
                   <div className="product-card">
-                  <div
-                    className="product-card"
-                    
-                  >
+                  
                     <img
                       src={`${process.env.REACT_APP_BASE_URL}/api/vl/product/product-photo/${p._id}`}
                       className="card-img-top"
@@ -288,7 +285,7 @@ const HomePage = () => {
                         Add To Cart
                       </button>
                     </div>
-                  </div>
+                  
                   </div>
                 ))}
               
