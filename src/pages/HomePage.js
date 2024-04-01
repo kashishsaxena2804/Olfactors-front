@@ -197,6 +197,7 @@ const HomePage = () => {
             
             <div className="product-card">
             {products?.map((p) => (
+              <div className="product-card">
               <div className="product-card" onClick={() => navigate(`/product/${p.slug}`)}>
                 <img src={`/api/vl/product/product-photo/${p._id}`}
                   className="card-img-top"
@@ -222,7 +223,7 @@ const HomePage = () => {
                 
               </div>
             </div>
-
+            </div>
 
               
                ))}
