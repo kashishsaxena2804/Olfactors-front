@@ -263,9 +263,9 @@ const HomePage = () => {
                 {/*<p className="product-offer">{p.offer}</p>*/}
                 <div className="product-prices">
                   {/*<span className="original-price">500</span>*/}
-                  <span className="discounted-price">{p.price.toLocaleString("en-US", {
+                  <span className="discounted-price">{p.price.toLocaleString("ind-INR", {
                         style: "currency",
-                        currency: "USD",
+                        currency: "INR",
                       })}</span>
                 </div>
                 <button className="button add-to-cart-button" onClick={() => {
