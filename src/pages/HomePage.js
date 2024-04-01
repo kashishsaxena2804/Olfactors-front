@@ -249,8 +249,9 @@ const HomePage = () => {
               </div>
             </div>
             <div className="main-card">
-              <div className="product-card">
+              
                 {newarrival?.map((p) => (
+                  <div className="product-card">
                   <div
                     className="product-card"
                     onClick={() => navigate(`/product/${p.slug}`)}
@@ -287,8 +288,9 @@ const HomePage = () => {
                       </button>
                     </div>
                   </div>
+                  </div>
                 ))}
-              </div>
+              
             </div>
           </div>
           <div className="Product-container">
