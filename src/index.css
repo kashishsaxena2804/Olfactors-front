@@ -321,6 +321,7 @@ img{
 .product-details {
   padding: 16px;
   display: flex;
+  margin-top: -16px;
   flex-direction: column;
 }
 
