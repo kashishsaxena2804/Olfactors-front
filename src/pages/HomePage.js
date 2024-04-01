@@ -254,11 +254,12 @@ const HomePage = () => {
                   <div className="product-card">
                   <div
                     className="product-card"
-                    onClick={() => navigate(`/product/${p.slug}`)}
+                    
                   >
                     <img
                       src={`/api/vl/product/product-photo/${p._id}`}
                       className="card-img-top"
+                      onClick={() => navigate(`/product/${p.slug}`)}
                       alt={p.name}
                     />
                     <div className="product-details">
@@ -267,9 +268,9 @@ const HomePage = () => {
                       <div className="product-prices">
                         {/*<span className="original-price">500</span>*/}
                         <span className="discounted-price">
-                          {p.price.toLocaleString("en-US", {
+                          {p.price.toLocaleString("en-IN", {
                             style: "currency",
-                            currency: "USD",
+                            currency: "INR",
                           })}
                         </span>
                       </div>
@@ -308,15 +309,17 @@ const HomePage = () => {
               </div>
             </div>
             <div className="main-card">
-              <div className="product-card">
+              
                 {bestseller?.map((p) => (
+                  <div className="product-card">
                   <div
                     className="product-card"
-                    onClick={() => navigate(`/product/${p.slug}`)}
+                    
                   >
                     <img
                       src={`/api/vl/product/product-photo/${p._id}`}
                       className="card-img-top"
+                      onClick={() => navigate(`/product/${p.slug}`)}
                       alt={p.name}
                     />
                     <div className="product-details">
@@ -325,9 +328,9 @@ const HomePage = () => {
                       <div className="product-prices">
                         {/*<span className="original-price">500</span>*/}
                         <span className="discounted-price">
-                          {p.price.toLocaleString("en-US", {
+                          {p.price.toLocaleString("en-IN", {
                             style: "currency",
-                            currency: "USD",
+                            currency: "INR",
                           })}
                         </span>
                       </div>
@@ -346,8 +349,9 @@ const HomePage = () => {
                       </button>
                     </div>
                   </div>
+                  </div>
                 ))}
-              </div>
+              
             </div>
           </div>
 
@@ -377,22 +381,24 @@ const HomePage = () => {
               <div>
                 <button
                   className="button btn btn-primary ms-1"
-                  onClick={() => navigate(`/product/`)}
+                  onClick={() => navigate(`/Allproducts`)}
                 >
                   View More
                 </button>
               </div>
             </div>
             <div className="main-card">
-              <div className="product-card">
+              
                 {featured?.map((p) => (
+                  <div className="product-card">
                   <div
                     className="product-card"
-                    onClick={() => navigate(`/product/${p.slug}`)}
+                    
                   >
                     <img
                       src={`/api/vl/product/product-photo/${p._id}`}
                       className="card-img-top"
+                      onClick={() => navigate(`/product/${p.slug}`)}
                       alt={p.name}
                     />
                     <div className="product-details">
@@ -401,9 +407,9 @@ const HomePage = () => {
                       <div className="product-prices">
                         {/*<span className="original-price">500</span>*/}
                         <span className="discounted-price">
-                          {p.price.toLocaleString("en-US", {
+                          {p.price.toLocaleString("en-IN", {
                             style: "currency",
-                            currency: "USD",
+                            currency: "INR",
                           })}
                         </span>
                       </div>
@@ -422,8 +428,9 @@ const HomePage = () => {
                       </button>
                     </div>
                   </div>
+                  </div>
                 ))}
-              </div>
+              
             </div>
           </div>
 
@@ -435,15 +442,16 @@ const HomePage = () => {
               <div>
                 <button
                   className="button btn btn-primary ms-1"
-                  onClick={() => navigate(`/product/`)}
+                  onClick={() => navigate(`/category/gift-hampers`)}
                 >
                   View More
                 </button>
               </div>
             </div>
             <div className="main-card">
-              <div className="product-card">
+              
                 {gifthamper?.map((p) => (
+                  <div className="product-card">
                   <div
                     className="product-card"
                     onClick={() => navigate(`/product/${p.slug}`)}
@@ -451,6 +459,7 @@ const HomePage = () => {
                     <img
                       src={`/api/vl/product/product-photo/${p._id}`}
                       className="card-img-top"
+                      onClick={() => navigate(`/product/${p.slug}`)}
                       alt={p.name}
                     />
                     <div className="product-details">
@@ -459,9 +468,9 @@ const HomePage = () => {
                       <div className="product-prices">
                         {/*<span className="original-price">500</span>*/}
                         <span className="discounted-price">
-                          {p.price.toLocaleString("en-US", {
+                          {p.price.toLocaleString("en-IN", {
                             style: "currency",
-                            currency: "USD",
+                            currency: "INR",
                           })}
                         </span>
                       </div>
@@ -480,8 +489,9 @@ const HomePage = () => {
                       </button>
                     </div>
                   </div>
+                  </div>
                 ))}
-              </div>
+              
             </div>
           </div>
 
