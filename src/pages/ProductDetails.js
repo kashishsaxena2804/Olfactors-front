@@ -3,10 +3,13 @@ import Layout from "./../components/layout/Layout.js";
 import axios from "axios";
 import { useParams, useNavigate } from "react-router-dom";
 import "../styles/ProductDetailsStyles.css";
+import { useCart } from "../context/cart.js";
+import toast from "react-hot-toast";
 
 const ProductDetails = () => {
   const params = useParams();
   const navigate = useNavigate();
+  const [cart, setCart] = useCart();
   const [product, setProduct] = useState({});
   const [relatedProducts, setRelatedProducts] = useState([]);
 
@@ -73,35 +76,44 @@ const ProductDetails = () => {
         )}
         <div className="d-flex flex-wrap">
           {relatedProducts?.map((p) => (
-            <div className="card m-2" key={p._id}>
+            <div className="product-card">
+            <div
+              className="product-card"
+              
+            >
               <img
-                src={`${process.env.REACT_APP_BASE_URL}/api/vl/product/product-photo/${p._id}`}
+                src={`${process.env.REACT_APP_BASE_URL}/api/vl/product/product-photo/${product._id}`}
                 className="card-img-top"
+                onClick={() => navigate(`/product/${p.slug}`)}
                 alt={p.name}
               />
-              <div className="card-body">
-                <div className="card-name-price">
-                  <h5 className="card-title">{p.name}</h5>
-                  <h5 className="card-title card-price">
+              <div className="product-details">
+                <h3 className="product-name">{p.name}</h3>
+                {/*<p className="product-offer">{p.offer}</p>*/}
+                <div className="product-prices">
+                  {/*<span className="original-price">500</span>*/}
+                  <span className="discounted-price">
                     {p.price.toLocaleString("en-IN", {
                       style: "currency",
                       currency: "INR",
                     })}
-                  </h5>
+                  </span>
                 </div>
-                <p className="card-text ">
-                  {p.description.substring(0, 60)}...
-                </p>
-                <div className="card-name-price">
-                  <button
-                    className="btn btn-info ms-1"
-                    onClick={() => navigate(`/product/${p.slug}`)}
-                  >
-                    More Details
-                  </button>
-                  <button className='btn btn-primary ms-1'>Add to Cart</button>
-                </div>
+                <button
+                  className="button add-to-cart-button"
+                  onClick={() => {
+                    setCart([...cart, p]);
+                    localStorage.setItem(
+                      "cart",
+                      JSON.stringify([...cart, p])
+                    );
+                    toast.success("Item Added to cart");
+                  }}
+                >
+                  Add To Cart
+                </button>
               </div>
+            </div>
             </div>
           ))}
         </div>

@@ -257,7 +257,7 @@ const HomePage = () => {
                     
                   >
                     <img
-                      src={`/api/vl/product/product-photo/${p._id}`}
+                      src={`${process.env.REACT_APP_BASE_URL}/api/vl/product/product-photo/${products._id}`}
                       className="card-img-top"
                       onClick={() => navigate(`/product/${p.slug}`)}
                       alt={p.name}
@@ -317,7 +317,7 @@ const HomePage = () => {
                     
                   >
                     <img
-                      src={`/api/vl/product/product-photo/${p._id}`}
+                      src={`${process.env.REACT_APP_BASE_URL}/api/vl/product/product-photo/${products._id}`}
                       className="card-img-top"
                       onClick={() => navigate(`/product/${p.slug}`)}
                       alt={p.name}
@@ -396,7 +396,7 @@ const HomePage = () => {
                     
                   >
                     <img
-                      src={`/api/vl/product/product-photo/${p._id}`}
+                      src={`${process.env.REACT_APP_BASE_URL}/api/vl/product/product-photo/${products._id}`}
                       className="card-img-top"
                       onClick={() => navigate(`/product/${p.slug}`)}
                       alt={p.name}
@@ -457,7 +457,7 @@ const HomePage = () => {
                     onClick={() => navigate(`/product/${p.slug}`)}
                   >
                     <img
-                      src={`/api/vl/product/product-photo/${p._id}`}
+                      src={`${process.env.REACT_APP_BASE_URL}/api/vl/product/product-photo/${products._id}`}
                       className="card-img-top"
                       onClick={() => navigate(`/product/${p.slug}`)}
                       alt={p.name}
