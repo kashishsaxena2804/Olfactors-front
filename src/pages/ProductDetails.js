@@ -77,10 +77,7 @@ const ProductDetails = () => {
         <div className="d-flex flex-wrap">
           {relatedProducts?.map((p) => (
             <div className="product-card">
-            <div
-              className="product-card"
-              
-            >
+            
               <img
                 src={`${process.env.REACT_APP_BASE_URL}/api/vl/product/product-photo/${product._id}`}
                 className="card-img-top"
@@ -113,7 +110,7 @@ const ProductDetails = () => {
                   Add To Cart
                 </button>
               </div>
-            </div>
+            
             </div>
           ))}
         </div>
