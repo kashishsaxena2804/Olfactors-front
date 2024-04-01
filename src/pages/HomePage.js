@@ -248,44 +248,48 @@ const HomePage = () => {
                 </button>
               </div>
             </div>
-          </div>
-          <div className='main-card'>
-            
-            
-            {products?.map((p) => (
+            <div className="main-card">
               <div className="product-card">
-              <div className="product-card" onClick={() => navigate(`/product/${p.slug}`)}>
-                <img src={`/api/vl/product/product-photo/${p._id}`}
-                  className="card-img-top"
-                  alt={p.name}/>
-              <div className="product-details">
-                <h3 className="product-name">{p.name}</h3>
-                {/*<p className="product-offer">{p.offer}</p>*/}
-                <div className="product-prices">
-                  {/*<span className="original-price">500</span>*/}
-                  <span className="discounted-price">{p.price.toLocaleString("ind-INR", {
-                        style: "currency",
-                        currency: "INR",
-                      })}</span>
-                </div>
-                <button className="button add-to-cart-button" onClick={() => {
-                        setCart([...cart, p]);
-                        localStorage.setItem(
-                          "cart",
-                          JSON.stringify([...cart, p])
-                        );
-                        toast.success("Item Added to cart");
-                      }}>Add To Cart</button>
-                
+                {newarrival?.map((p) => (
+                  <div
+                    className="product-card"
+                    onClick={() => navigate(`/product/${p.slug}`)}
+                  >
+                    <img
+                      src={`/api/vl/product/product-photo/${p._id}`}
+                      className="card-img-top"
+                      alt={p.name}
+                    />
+                    <div className="product-details">
+                      <h3 className="product-name">{p.name}</h3>
+                      {/*<p className="product-offer">{p.offer}</p>*/}
+                      <div className="product-prices">
+                        {/*<span className="original-price">500</span>*/}
+                        <span className="discounted-price">
+                          {p.price.toLocaleString("en-US", {
+                            style: "currency",
+                            currency: "USD",
+                          })}
+                        </span>
+                      </div>
+                      <button
+                        className="button add-to-cart-button"
+                        onClick={() => {
+                          setCart([...cart, p]);
+                          localStorage.setItem(
+                            "cart",
+                            JSON.stringify([...cart, p])
+                          );
+                          toast.success("Item Added to cart");
+                        }}
+                      >
+                        Add To Cart
+                      </button>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
-            </div>
-
-              
-               ))}
-            
-            
-          
           </div>
           <div className="Product-container">
             <div className="prod-heading">
