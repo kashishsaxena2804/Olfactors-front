@@ -65,18 +65,14 @@ const Footer = () => {
         </div>
         <div className="footer-section">
           <h3 className="footer-heading">Contact Us</h3>
-          <p className="footer-content">
-            <a href="https://api.whatsapp.com/send?phone=918960061347&text=" className="footer-link">
-              +91 8960 061 347
-            </a>
-          </p>
+          
           <p className="footer-content">
             <a href="mailto:connect@aranyamperfumes.com" className="footer-link">
               theolfactors@gmail.com
             </a>
           </p>
           <p className="footer-content">
-            2/111, Sector 2 jankipuram extension, jankipuram, Lucknow, Uttar Pradesh. 226021
+            Lucknow, Uttar Pradesh, India.
           </p>
         </div>
       </div>
