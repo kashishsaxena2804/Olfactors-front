@@ -401,29 +401,47 @@ img{
   margin: auto;
  
 }
-.vdo-container{
-  width: 50%;
-  height: auto;
-  align-items: center;
-  margin-left: 30px;
-}
-.vdo-heading{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0 auto;
-  width: 95%;
-  position: relative;
-}
-
+/* Styles for .main-container */
 .main-container {
   display: flex;
-  margin-left: 35px  ;
   flex-direction: column;
-  justify-content: space-between; /* Adjust as needed */
-  align-items: center; /* Adjust as needed */
-  flex-wrap: wrap; /* Allows items to wrap to next line if there's not enough space */
+  align-items: center;
 }
+
+/* Styles for .main-card2 */
+.main-card2 {
+  width: 100%;
+  max-width: 800px; /* Adjust the maximum width as needed */
+  padding: 0 15px; /* Add padding for better spacing */
+}
+
+/* Styles for .prod-heading */
+.prod-heading {
+  text-align: left; /* Align heading to the left */
+}
+
+/* Styles for .vdo-container */
+.vdo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center video horizontally */
+  margin-top: 20px; /* Add space between heading and video */
+}
+
+/* Media query for smaller devices */
+@media (max-width: 767px) {
+  /* Styles for .main-card2 */
+  .main-card2 {
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+
+  /* Styles for .vdo-container */
+  .vdo-container {
+    margin-top: 10px; /* Reduce margin for smaller screens */
+  }
+}
+
+
 
 .main-card2, .main-card3 {
   flex: 0 0 calc(50% - 20px); /* Adjust width as needed */

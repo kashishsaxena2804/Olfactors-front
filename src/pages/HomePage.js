@@ -503,7 +503,7 @@ const HomePage = () => {
           </div>
           <div class="main-container">
             <div class="main-card2">
-              <div class="vdo-heading">
+              <div class="prod-heading">
                 <h2>Our Products</h2>
               </div>
               <div class="vdo-container">
