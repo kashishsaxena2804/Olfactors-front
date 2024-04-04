@@ -27,6 +27,10 @@
     padding: 0; /* Remove padding for small devices */
   }
 }
-.row{
-  text-align: center;
+.text-center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }

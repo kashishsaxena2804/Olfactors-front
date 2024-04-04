@@ -19,15 +19,12 @@
 /* navbar css */
 .navbar {
   font-weight: 1500;
-  background-color: #222222;
+  background-color: #1e140a;
   line-height: 26px;
   text-transform: uppercase;
   box-shadow: 0 8px 6px -6px gray;
   --webkit-box-shadow: 0 8px 6px -6px gray;
   border-bottom: solid gray !important;
-}
-.container-fluid{
-  background-color: #1e140a;
 }
 
 .nav-link {
