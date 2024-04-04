@@ -1,32 +1,29 @@
 /* Styles for .cart-page */
 .cart-page {
-  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-/* Styles for product details */
-.product-details {
-  width: 100%;
-  max-width: 100%;
+/* Styles for the left half (product details) */
+.col-md-7 {
+  width: 50%;
+  padding-right: 20px; /* Add spacing between product details and cart summary */
+  box-sizing: border-box; /* Include padding in the width calculation */
 }
 
-/* Styles for cart summary */
-.cart-summary {
-  width: 100%;
-  max-width: 100%;
+/* Styles for the right half (cart summary) */
+.col-md-5 {
+  width: 50%;
+  padding-left: 20px; /* Add spacing between product details and cart summary */
+  box-sizing: border-box; /* Include padding in the width calculation */
 }
 
 /* Media query for small devices */
 @media (max-width: 767px) {
-  /* Flex-direction: column for small devices */
-  .row {
-    flex-direction: column;
-  }
-
-  /* Set width to 100% for both product details and cart summary */
-  .product-details,
-  .cart-summary {
+  /* Full width for both product details and cart summary on small devices */
+  .col-md-7,
+  .col-md-5 {
     width: 100%;
-    max-width: 100%;
-    margin-top: 20px; /* Add spacing between product details and cart summary */
+    padding: 0; /* Remove padding for small devices */
   }
 }
