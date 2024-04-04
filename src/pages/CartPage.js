@@ -102,30 +102,32 @@ const CartPage = () => {
           <div className="row ">
             <div className="col-md-7  p-0 m-0">
               {cart?.map((p) => (
-                <div className="row card flex-row" key={p._id}>
-                  <div className="col-md-4">
-                    <img
-                      src={`${process.env.REACT_APP_BASE_URL}/api/vl/product/product-photo/${p._id}`}
-                      className="card-img-top"
-                      alt={p.name}
-                      width="100%"
-                      height={"130px"}
-                    />
-                  </div>
-                  <div className="col-md-4">
-                    <p>{p.name}</p>
-                    <p>{p.description.substring(0, 30)}</p>
-                    <p>Price : {p.price}</p>
-                  </div>
-                  <div className="col-md-4 cart-remove-btn">
+                <div className="product-card" onClick={() => navigate(`/product/${p.slug}`)}>
+                <img src={`${process.env.REACT_APP_BASE_URL}/api/vl/product/product-photo/${p._id}`}
+                  className="card-img-top"
+                  alt={p.name}/>
+              <div className="product-details">
+                <h3 className="product-name">{p.name}</h3>
+                {/*<p className="product-offer">{p.offer}</p>*/}
+                <div className="product-prices">
+                  {/*<span className="original-price">500</span>*/}
+                  <span className="discounted-price">{p.price.toLocaleString("en-IN", {
+                        style: "currency",
+                        currency: "INR",
+                      })}</span>
+                </div>
+                <div className="col-md-4 cart-remove-btn">
                     <button
-                      className="btn btn-danger"
+                      className=" button btn btn-danger"
                       onClick={() => removeCartItem(p._id)}
                     >
                       Remove
                     </button>
-                  </div>
                 </div>
+                
+              </div>
+            </div>
+                
               ))}
             </div> 
             <div className="col-md-5 cart-summary ">
