@@ -82,6 +82,7 @@ const CartPage = () => {
   return (
     <Layout>
       <div className=" cart-page">
+        <div className="container">
         <div className="row">
           <div className="col-md-12">
             <h1 className="text-center bg-light p-2 mb-1">
@@ -98,6 +99,8 @@ const CartPage = () => {
             </h1>
           </div>
         </div>
+        </div>
+        
         <div className="container ">
           <div className="row ">
             <div className="col-md-7  p-0 m-0">

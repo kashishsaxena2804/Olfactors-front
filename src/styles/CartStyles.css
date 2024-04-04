@@ -34,3 +34,6 @@
   justify-content: center;
   height: 100%;
 }
+.container {
+  height: 100vh; /* Set container height to viewport height */
+}
