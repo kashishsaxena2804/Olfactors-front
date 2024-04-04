@@ -9,15 +9,18 @@ import { Modal } from "antd";
 const CreateCategory = () => {
   const [categories, setCategories] = useState([]);
   const [name, setName] = useState(""); 
+  const [photo,setPhoto] = useState("");
   const [visible, setVisible] = useState(false); 
   const [selected, setSelected] = useState(null);
   const [updatedName, setUpdatedName] = useState("");
+  const [updatedPhoto, setUpdatedPhoto] = useState("");
   //handle Form
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       const { data } = await axios.post("/api/vl/category/create-category", {
         name,
+        photo
       });
       if (data?.success) {
         toast.success(`${name} is created`);
@@ -53,7 +56,8 @@ const CreateCategory = () => {
     try {
       const { data } = await axios.put(
         `/api/vl/category/update-category/${selected._id}`,
-        { name: updatedName }
+        { name: updatedName },
+        {photo: updatedPhoto}
       );
       if (data?.success) {
         toast.success(`${updatedName} is updated`);
@@ -101,8 +105,10 @@ const CreateCategory = () => {
             <div className="p-3 w-50">
               <CategoryForm
                 handleSubmit={handleSubmit}
-                value={name}
-                setValue={setName}
+                namevalue={name}
+                setnameValue={setName}
+                photovalue ={photo}
+                setphotoValue={setPhoto}
               />
             </div>
             <div className='w-75'>
