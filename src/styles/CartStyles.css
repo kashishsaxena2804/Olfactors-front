@@ -1,7 +1,29 @@
 /* Styles for .cart-page */
 .cart-page {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styles for .cart-heading */
+.cart-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Styles for the container */
+.container {
+  width: 100%;
+  max-width: 1200px; /* Adjust max-width as needed */
+  display: flex;
+  justify-content: center;
+}
+
+/* Styles for the row */
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 /* Styles for the left half (product details) */
@@ -20,20 +42,15 @@
 
 /* Media query for small devices */
 @media (max-width: 767px) {
+  /* Set flex-direction to column for small devices */
+  .row {
+    flex-direction: column;
+  }
+
   /* Full width for both product details and cart summary on small devices */
   .col-md-7,
   .col-md-5 {
     width: 100%;
     padding: 0; /* Remove padding for small devices */
   }
-}
-.text-center-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-.container {
-  height: 100%; /* Set container height to viewport height */
 }

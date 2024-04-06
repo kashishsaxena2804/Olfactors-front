@@ -82,30 +82,32 @@ const CartPage = () => {
   return (
     <Layout>
       <div className=" cart-page">
-        <div></div>
-        <div className="row">
-          <div className="col-md-12">
-            <h1 className="text-center bg-light p-2 mb-1">
-              {!auth?.user
-                ? "Hello Guest"
-                : `Hello  ${auth?.token && auth?.user?.name}!`}
-              <p className="text-center">
-                {cart?.length 
-                  ? `You Have ${cart.length} items in your cart ${
-                      auth?.token ? "" : "please login to checkout !"
-                    }`
-                  : " Your Cart Is Empty"}
-              </p>
-            </h1>
+        <div className="cart-heading">
+          <div className="row">
+            <div className="col-md-12">
+              <h1 className="text-center bg-light p-2 mb-1">
+                {!auth?.user
+                  ? "Hello Guest"
+                  : `Hello  ${auth?.token && auth?.user?.name}!`}
+                <p className="text-center">
+                  {cart?.length 
+                    ? `You Have ${cart.length} items in your cart ${
+                        auth?.token ? "" : "please login to checkout !"
+                      }`
+                    : " Your Cart Is Empty"}
+                </p>
+              </h1>
+            </div>
           </div>
         </div>
         <div className="container ">
           <div className="row ">
             <div className="col-md-7  p-0 m-0">
               {cart?.map((p) => (
-                <div className="product-card" onClick={() => navigate(`/product/${p.slug}`)}>
+                <div className="product-card" >
                 <img src={`${process.env.REACT_APP_BASE_URL}/api/vl/product/product-photo/${p._id}`}
                   className="card-img-top"
+                  onClick={() => navigate(`/product/${p.slug}`)}
                   alt={p.name}/>
               <div className="product-details">
                 <h3 className="product-name">{p.name}</h3>
