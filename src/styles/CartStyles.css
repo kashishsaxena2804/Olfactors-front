@@ -35,5 +35,5 @@
   height: 100%;
 }
 .container {
-  height: 100vh; /* Set container height to viewport height */
+  height: 100%; /* Set container height to viewport height */
 }
