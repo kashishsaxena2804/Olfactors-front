@@ -1,60 +1,65 @@
-/* Styles for product details container */
-.product-details-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* Container for product details and similar products */
+.container {
+  max-width: 1200px; /* Adjust maximum width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Add padding */
 }
 
-/* Styles for product image */
-.product-image {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Styles for product details */
+/* Product details container */
 .product-details {
-  text-align: left;
-  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
-/* Styles for similar products container */
-.similar-products {
-  margin-top: 50px;
-}
-
-/* Styles for product card */
-.product-card {
+/* Product image */
+.product-details img {
   width: 100%;
-  margin-bottom: 20px;
+  height: auto;
+  max-width: 100%; /* Ensure image doesn't exceed container width */
 }
 
-/* Styles for product card in mobile mode */
-@media (max-width: 767px) {
-  .product-details-container {
-    flex-direction: column;
-  }
+/* Product details info */
+.product-details-info {
+  width: calc(50% - 20px); /* Set width for product details info */
+  margin-left: 20px; /* Add margin between image and details */
+}
 
-  .row.container.product-details {
-    flex-direction: column;
-    align-items: center;
-  }
+.product-details-info h1 {
+  margin-top: 0; /* Remove default margin for heading */
+}
 
-  .col-md-6.product-details-info {
-    width: 100%;
-    padding: 0 20px;
-  }
+/* Similar products container */
+.similar-products {
+  margin-top: 30px; /* Add margin between product details and similar products */
+}
 
-  .similar-products {
-    margin-top: 30px;
-  }
+.similar-products h4 {
+  margin-bottom: 20px; /* Add margin below heading */
+}
 
-  .d-flex.flex-wrap {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+/* Product card */
+.product-card {
+  width: calc(25% - 20px); /* Set width for product card */
+  margin-right: 20px; /* Add margin between cards */
+  margin-bottom: 20px; /* Add margin below cards */
+}
 
-  .product-card {
-    width: 45%; /* Show 2 products in one row */
-    margin: 10px;
-  }
+.product-card img {
+  width: 100%;
+  height: auto;
+  max-width: 100%; /* Ensure image doesn't exceed card width */
+}
+
+.product-details .product-name {
+  margin-top: 10px; /* Add margin above product name */
+}
+
+.product-details .product-prices {
+  margin-top: 10px; /* Add margin above prices */
+}
+
+.product-details .discounted-price {
+  font-weight: bold; /* Make price bold */
 }
