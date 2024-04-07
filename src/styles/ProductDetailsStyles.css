@@ -1,65 +1,60 @@
-/* Container for product details and similar products */
-.container {
-  max-width: 1200px; /* Adjust maximum width as needed */
-  margin: 0 auto; /* Center the container horizontally */
-  padding: 20px; /* Add padding */
-}
-
-/* Product details container */
-.product-details {
+/* Styles for product details container */
+.product-details-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
 }
 
-/* Product image */
-.product-details img {
-  width: 100%;
+/* Styles for product image */
+.product-image {
+  max-width: 100%;
   height: auto;
-  max-width: 100%; /* Ensure image doesn't exceed container width */
 }
 
-/* Product details info */
-.product-details-info {
-  width: calc(50% - 20px); /* Set width for product details info */
-  margin-left: 20px; /* Add margin between image and details */
+/* Styles for product details */
+.product-details {
+  text-align: left;
+  margin-top: 20px;
 }
 
-.product-details-info h1 {
-  margin-top: 0; /* Remove default margin for heading */
-}
-
-/* Similar products container */
+/* Styles for similar products container */
 .similar-products {
-  margin-top: 30px; /* Add margin between product details and similar products */
+  margin-top: 50px;
 }
 
-.similar-products h4 {
-  margin-bottom: 20px; /* Add margin below heading */
-}
-
-/* Product card */
+/* Styles for product card */
 .product-card {
-  width: calc(25% - 20px); /* Set width for product card */
-  margin-right: 20px; /* Add margin between cards */
-  margin-bottom: 20px; /* Add margin below cards */
-}
-
-.product-card img {
   width: 100%;
-  height: auto;
-  max-width: 100%; /* Ensure image doesn't exceed card width */
+  margin-bottom: 20px;
 }
 
-.product-details .product-name {
-  margin-top: 10px; /* Add margin above product name */
-}
+/* Styles for product card in mobile mode */
+@media (max-width: 767px) {
+  .product-details-container {
+    flex-direction: column;
+  }
 
-.product-details .product-prices {
-  margin-top: 10px; /* Add margin above prices */
-}
+  .row.container.product-details {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.product-details .discounted-price {
-  font-weight: bold; /* Make price bold */
+  .col-md-6.product-details-info {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .similar-products {
+    margin-top: 30px;
+  }
+
+  .d-flex.flex-wrap {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .product-card {
+    width: 45%; /* Show 2 products in one row */
+    margin: 10px;
+  }
 }
