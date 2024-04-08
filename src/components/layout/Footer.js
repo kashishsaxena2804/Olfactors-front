@@ -33,13 +33,14 @@ const Footer = () => {
             </li>
           </ul>
         </div>
+        
         <div className="footer-section">
           <h3 className="footer-heading">Category</h3>
           <ul className="footer-list">
             <li className="footer-item">
-              <a href="#" className="footer-link">
+              <Link to="/terms&conditions" className="footer-link">
                 Perfumes
-              </a>
+              </Link>
             </li>
             <li className="footer-item">
               <a href="#" className="footer-link">
@@ -60,6 +61,31 @@ const Footer = () => {
               <a href="#" className="footer-link">
                 Air Freshners
               </a>
+            </li>
+          </ul>
+        </div>
+        <div className="footer-section">
+          <h3 className="footer-heading">Quick Links</h3>
+          <ul className="footer-list">
+            <li className="footer-item">
+              <Link to="/terms&conditions" className="footer-link">
+                Terms & Conditions
+              </Link>
+            </li>
+            <li className="footer-item">
+              <Link to="/privacypolicy" className="footer-link">
+                Privacy Policy
+              </Link>
+            </li>
+            <li className="footer-item">
+              <Link href="/shippingpolicy" className="footer-link">
+                Shipping Policy
+              </Link>
+            </li>
+            <li className="footer-item">
+              <Link to="/refundreturnpolicy" className="footer-link">
+              Refund and Returns Policy
+              </Link>
             </li>
           </ul>
         </div>
