@@ -354,7 +354,7 @@ const HomePage = () => {
             <div className="row container1">
               {categories.map((c) => (
                 <div className="col-md-4 mt-5 mb-3 gx-3 gy-3" key={c._id}>
-                  <div className="card1">
+                  <div className="card">
                     <a href={`/category/${c.slug}`}>
                       <img src={c.image} alt="" />
                     </a>
