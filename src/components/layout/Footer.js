@@ -84,7 +84,7 @@ const Footer = () => {
             </li>
             <li className="footer-item">
               <Link to="/refundreturnpolicy" className="footer-link">
-              Refund and Returns Policy
+                Refund & Returns Policy
               </Link>
             </li>
           </ul>
