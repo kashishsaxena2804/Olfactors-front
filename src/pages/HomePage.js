@@ -351,7 +351,7 @@ const HomePage = () => {
 
           <div className="main-card1">
             <h2 className="heading-text">Scent-Sational Discoveries</h2>
-            <div className="row container">
+            <div className="row container1">
               {categories.map((c) => (
                 <div className="col-md-4 mt-5 mb-3 gx-3 gy-3" key={c._id}>
                   <div className="card">
