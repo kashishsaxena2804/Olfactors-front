@@ -38,7 +38,7 @@ const Header = () => {
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <SearchInput />
               
-              <li className="nav-item dropdown">
+              <li className="nav-item1 dropdown">
                 <Link
                   className="nav-link dropdown-toggle"
                   to={"/categories"}
@@ -67,12 +67,12 @@ const Header = () => {
               
               {!auth.user ? (
                 <>
-                  <li className ="nav-item" >
+                  <li className ="nav-item1" >
                     <NavLink to = "/register" className="nav-link">
                         Register
                     </NavLink>
                   </li>
-                  <li className="nav-item">
+                  <li className="nav-item1">
                       <NavLink to = "/login" className="nav-link">
                           Login
                       </NavLink>
