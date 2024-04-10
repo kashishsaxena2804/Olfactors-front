@@ -78,13 +78,23 @@ const Footer = () => {
               </Link>
             </li>
             <li className="footer-item">
-              <Link href="/shippingpolicy" className="footer-link">
+              <Link to="/shippingpolicy" className="footer-link">
                 Shipping Policy
               </Link>
             </li>
             <li className="footer-item">
               <Link to="/refundreturnpolicy" className="footer-link">
                 Refund & Returns Policy
+              </Link>
+            </li>
+            <li className="footer-item">
+              <Link to="/satisfactionguarantee" className="footer-link">
+                Satisfaction Guarantee
+              </Link>
+            </li>
+            <li className="footer-item">
+              <Link to="/disclaimer" className="footer-link">
+                Disclaimer
               </Link>
             </li>
           </ul>

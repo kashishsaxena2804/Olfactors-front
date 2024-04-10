@@ -1,7 +1,9 @@
+import Layout from "antd/es/layout/layout";
 import React from "react";
 import { NavLink } from "react-router-dom";
 const AdminMenu = () => {
   return (
+    <Layout>
     <>
       <div className="text-center">
         <div className="list-group dashboard-menu">
@@ -39,6 +41,7 @@ const AdminMenu = () => {
         </div>
       </div>
     </>
+    </Layout>
   );
 };
 

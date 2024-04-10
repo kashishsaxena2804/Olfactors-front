@@ -1,6 +1,5 @@
 import {Routes,Route} from 'react-router-dom';
 import HomePage from './pages/HomePage';
-import About from './pages/About';
 import Contact from './pages/Contact';
 import Pagenotfound from './pages/Pagenotfound';
 import Register from './pages/Auth/Register';
@@ -29,6 +28,8 @@ import Termsconditions from './pages/Terms&conditions';
 import Privacypolicy from './pages/Privacypolicy';
 import Shippingpolicy from './pages/Shippingpolicy';
 import Refundreturnpolicy from './pages/Refund&returnpolicy';
+import Satisfactionguarantee from './pages/Satisfactionguarantee';
+import Disclaimer from './pages/Disclaimer';
 
 
 function App() {
@@ -46,6 +47,8 @@ function App() {
       <Route path="/privacypolicy" element={<Privacypolicy/>}/>
       <Route path="/shippingpolicy" element={<Shippingpolicy/>}/>
       <Route path="/refundreturnpolicy" element={<Refundreturnpolicy/>}/>
+      <Route path="/satisfactionguarantee" element={<Satisfactionguarantee/>}/>
+      <Route path="/disclaimer" element={<Disclaimer/>}/>
       <Route path="/dashboard" element={<PrivateRoute />}>
           <Route path="user" element={<Dashboard />} />
           <Route path="user/orders" element={<Orders/>} />
@@ -64,7 +67,6 @@ function App() {
       <Route path="/forgot-password" element={<ForgotPassword />} />
       <Route path="/reset-password" element={<ResetPassword />} />
       <Route path='/login' element={<Login/>}/>
-      <Route path='/about' element={<About/>}/>
       <Route path='/contact' element={<Contact/>}/>
       <Route path='/*' element={<Pagenotfound/>}/>
     </Routes>
