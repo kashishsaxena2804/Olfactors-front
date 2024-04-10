@@ -76,10 +76,12 @@ const CategoryProduct = () => {
                 {/*<p className="product-offer">{p.offer}</p>*/}
                 <div className="product-prices">
                   {/*<span className="original-price">500</span>*/}
-                  <span className="discounted-price">{p.price.toLocaleString("en-INR", {
-                        style: "currency",
-                        currency: "INR",
-                      })}</span>
+                  <span className="discounted-price">
+                          {p.price.toLocaleString("en-IN", {
+                            style: "currency",
+                            currency: "INR",
+                          })}
+                        </span>
                 </div>
                 <button className="button add-to-cart-button" onClick={() => {
                         setCart([...cart, p]);
