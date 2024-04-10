@@ -68,9 +68,12 @@ const CategoryProduct = () => {
             <div className="d-flex flex-wrap">
             {products?.map((p) => (
               <div className="product-card" key={p._id} onClick={() => navigate(`/product/${p.slug}`)}>
-                <img src={`/api/vl/product/product-photo/${p._id}`}
-                  className="card-img-top"
-                  alt={p.name}/>
+                <img
+                      src={`${process.env.REACT_APP_BASE_URL}/api/vl/product/product-photo/${p._id}`}
+                      className="card-img-top"
+                      onClick={() => navigate(`/product/${p.slug}`)}
+                      alt={p.name}
+                    />
               <div className="product-details">
                 <h3 className="product-name">{p.name}</h3>
                 {/*<p className="product-offer">{p.offer}</p>*/}
