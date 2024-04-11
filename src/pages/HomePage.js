@@ -241,7 +241,7 @@ const HomePage = () => {
               </div>
               <div>
                 <button
-                  className="button btn "
+                  className="button btn view-more-button "
                   onClick={() => navigate(`/Allproducts`)}
                 >
                   View More
@@ -291,7 +291,7 @@ const HomePage = () => {
               
             </div>
           </div>
-          
+
           <div className="Product-container">
             <div className="prod-heading">
               <div>

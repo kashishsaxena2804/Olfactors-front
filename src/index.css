@@ -290,6 +290,21 @@ img{
   font-style: bold;
 
 }
+
+.Product-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prod-heading h2 {
+  margin: 0;
+}
+
+.view-more-button {
+  margin-left: auto; /* Push the button to the right */
+}
+
 .product-card {
   display: flex;
   flex-direction: column;
