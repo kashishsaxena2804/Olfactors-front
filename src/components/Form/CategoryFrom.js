@@ -7,8 +7,13 @@ const CategoryForm = ({
   photovalue,
   setphotoValue,
 }) => {
+  const handleFormSubmit = (e) => {
+    e.preventDefault(); // Prevent default form submission behavior
+    handleSubmit(); // Call the handleSubmit function passed from the parent component
+  };
+
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleFormSubmit}>
       <div className="mb-3">
         <label htmlFor="categoryName" className="form-label">
           Category Name
