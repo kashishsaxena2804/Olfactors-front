@@ -235,62 +235,54 @@ const HomePage = () => {
             Olfactors - Where fragrance becomes a Signature
           </h1>
           <div className="Product-container">
-            <div className="prod-heading">
-              <div>
-                <h2>New Arrivals</h2>
-              </div>
-              <div>
-                <button
-                  className="button btn view-more-button "
-                  onClick={() => navigate(`/Allproducts`)}
-                >
-                  View More
-                </button>
-              </div>
-            </div>
-            <div className="main-card">
-              
-                {newarrival?.map((p) => (
-                  <div className="product-card">
-                  
-                    <img
-                      src={`${process.env.REACT_APP_BASE_URL}/api/vl/product/product-photo/${p._id}`}
-                      className="card-img-top"
-                      onClick={() => navigate(`/product/${p.slug}`)}
-                      alt={p.name}
-                    />
-                    <div className="product-details">
-                      <h3 className="product-name">{p.name}</h3>
-                      {/*<p className="product-offer">{p.offer}</p>*/}
-                      <div className="product-prices">
-                        {/*<span className="original-price">500</span>*/}
-                        <span className="discounted-price">
-                          {p.price.toLocaleString("en-IN", {
-                            style: "currency",
-                            currency: "INR",
-                          })}
-                        </span>
-                      </div>
-                      <button
-                        className="button add-to-cart-button"
-                        onClick={() => {
-                          setCart([...cart, p]);
-                          localStorage.setItem(
-                            "cart",
-                            JSON.stringify([...cart, p])
-                          );
-                          toast.success("Item Added to cart");
-                        }}
-                      >
-                        Add To Cart
-                      </button>
-                    </div>
-                  
+                <div className="prod-heading">
+                  <div>
+                    <h2>New Arrivals</h2>
                   </div>
-                ))}
-              
-            </div>
-          </div>
+                  <div>
+                    <button
+                      className="button btn view-more-button"
+                      onClick={() => navigate(`/Allproducts`)}
+                    >
+                      View More
+                    </button>
+                  </div>
+                </div>
+                <div className="main-card">
+                  {newarrival?.map((p) => (
+                    <div className="product-card">
+                      <img
+                        src={`${process.env.REACT_APP_BASE_URL}/api/vl/product/product-photo/${p._id}`}
+                        className="card-img-top"
+                        onClick={() => navigate(`/product/${p.slug}`)}
+                        alt={p.name}
+                      />
+                      <div className="product-details">
+                        <h3 className="product-name">{p.name}</h3>
+                        <div className="product-prices">
+                          <span className="discounted-price">
+                            {p.price.toLocaleString("en-IN", {
+                              style: "currency",
+                              currency: "INR",
+                            })}
+                          </span>
+                        </div>
+                        <button
+                          className="button add-to-cart-button"
+                          onClick={() => {
+                            setCart([...cart, p]);
+                            localStorage.setItem("cart", JSON.stringify([...cart, p]));
+                            toast.success("Item Added to cart");
+                          }}
+                        >
+                          Add To Cart
+                        </button>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
 
           <div className="Product-container">
             <div className="prod-heading">
