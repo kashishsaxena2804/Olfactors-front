@@ -640,6 +640,7 @@ img{
   border-radius: 2px;
   font-weight: 550;
   font-style: bold;
+  font-weight: bold;
 }
 
 .button:hover {
