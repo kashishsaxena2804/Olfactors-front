@@ -354,11 +354,9 @@ const HomePage = () => {
             <div className="cat-container">
               {categories.map((c) => (
                 <div className="col-md-4 mt-5 mb-3 gx-3 gy-3" key={c._id}>
-                  <div className="card">
                     <a href={`/category/${c.slug}`}>
                       <img src={`${process.env.REACT_APP_BASE_URL}/api/vl/category/category-photo/${c._id}`} alt="" />
                     </a>
-                  </div>
                   <Link to={`/category/${c.slug}`} className="btn cat-btn">
                     {c.name}
                   </Link>
