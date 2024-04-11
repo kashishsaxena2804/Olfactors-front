@@ -406,7 +406,25 @@ img{
     margin-bottom: 10px; /* Adjust margin for smaller devices */
   }
 }
-
+/* Media query for mobile devices with a width of 375px */
+@media (max-width: 375px) {
+  .product-card {
+    width: calc(50% - 10px); /* Adjust width for two products in one line */
+  }
+}
+@media (max-width: 320px) {
+  .product-card {
+    width: calc(50% - 10px); /* Adjust width for two products in one line */
+  }
+}
+/* Media query for mobile devices with a width smaller than 320px */
+@media (max-width: 319px) {
+  .product-card {
+    width: 100%; /* Set width to 100% for one product per line */
+    margin-right: 0; /* Reset margin for smaller devices */
+    margin-bottom: 10px; /* Adjust margin for smaller devices */
+  }
+}
 
 
 
