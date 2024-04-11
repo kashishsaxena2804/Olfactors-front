@@ -306,19 +306,32 @@ img{
 
 
 
-/* Common styles for product cards */
-.product-card {
-  display: flex;
-  flex-direction: column;
+
+
+.main-card {
   width: 95%;
-  max-width: 300px;
   height: auto;
   border: 1px solid #ccc;
   border-radius: 4px;
   overflow: hidden;
   margin: 0 auto;
-  padding: 10px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 10px); /* Adjust width for two products in one line */
+  max-width: 300px;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
   margin-bottom: 20px;
+  padding: 10px;
 }
 
 .card-img-top {
@@ -339,10 +352,23 @@ img{
   margin-bottom: 8px;
 }
 
+.product-offer {
+  font-size: 12px;
+  color: #4caf50;
+  margin-bottom: 12px;
+}
+
 .product-prices {
   display: flex;
   align-items: center;
   margin-bottom: 12px;
+}
+
+.original-price {
+  font-size: 12px;
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 4px;
 }
 
 .discounted-price {
@@ -362,12 +388,6 @@ img{
 
 /* Media query for laptops */
 @media (min-width: 1024px) {
-  .main-card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
   .product-card {
     width: calc(25% - 10px); /* Adjust width for four products in one line */
   }
@@ -375,12 +395,6 @@ img{
 
 /* Media query for small tablets and smartphones */
 @media (max-width: 1023px) {
-  .main-card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
   .product-card {
     width: calc(50% - 10px); /* Adjust width for two products in one line */
   }
@@ -390,23 +404,9 @@ img{
 @media (max-width: 425px) and (max-height: 615px) {
   .product-card {
     width: calc(100% - 20px); /* Adjust width for one product in one line */
-    margin-right: 0;
-    margin-bottom: 20px;
   }
 }
-.main-card
-{
-  width: 95%;
-  height: auto;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  overflow: hidden;
-  margin: 0 auto;
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
+
 
 
 
