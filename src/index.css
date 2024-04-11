@@ -399,10 +399,11 @@ img{
 
 /* Set background image and style for the category card */
 .cat-card {
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-ioRlk_NBse8OOaO59G-02NebBrs8b2Tb4yfsCsQtTqW2-D3LwijMEgN_LNUadtrvZEI&usqp=CAU');
+  background-image: url('https://w.forfun.com/fetch/1b/1b1d77db61bdb2dc187c136b59750493.jpeg?w=1470&r=0.5625');
   background-size: cover;
   background-position: center;
   margin-top: 15px;
+  padding: 20px;
 }
 
 /* Style for the category heading */
