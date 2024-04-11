@@ -372,26 +372,29 @@ img{
   cursor: pointer;
 }
 
-/* Media query for laptops and large tablets */
+/* Media query for laptops */
 @media (min-width: 1024px) {
+  .main-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
   .product-card {
-    width: calc(50% - 10px); /* Adjust width for two products in one line */
+    width: calc(25% - 10px); /* Adjust width for four products in one line */
   }
 }
 
-/* Media query for medium-sized tablets and large smartphones */
+/* Media query for small tablets and smartphones */
 @media (max-width: 1023px) {
+  .main-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
   .product-card {
     width: calc(50% - 10px); /* Adjust width for two products in one line */
-  }
-}
-
-/* Media query for small tablets and small smartphones */
-@media (max-width: 767px) {
-  .product-card {
-    width: 100%; /* Set width to 100% for one product per line */
-    margin-right: 0; /* Reset margin for smaller devices */
-    margin-bottom: 10px; /* Adjust margin for smaller devices */
   }
 }
 
