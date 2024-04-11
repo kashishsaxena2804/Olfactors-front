@@ -306,6 +306,7 @@ img{
 
 
 
+/* Common styles for product cards */
 .product-card {
   display: flex;
   flex-direction: column;
@@ -338,23 +339,10 @@ img{
   margin-bottom: 8px;
 }
 
-.product-offer {
-  font-size: 12px;
-  color: #4caf50;
-  margin-bottom: 12px;
-}
-
 .product-prices {
   display: flex;
   align-items: center;
   margin-bottom: 12px;
-}
-
-.original-price {
-  font-size: 12px;
-  text-decoration: line-through;
-  color: #999;
-  margin-right: 4px;
 }
 
 .discounted-price {
@@ -400,24 +388,13 @@ img{
 
 /* Media query for small smartphones */
 @media (max-width: 425px) and (max-height: 615px) {
-  .main-card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
   .product-card {
-    width: calc(50% - 10px); /* Adjust width for two products in one line */
+    width: calc(100% - 20px); /* Adjust width for one product in one line */
     margin-right: 0;
     margin-bottom: 20px;
   }
-
-  .card-img-top {
-    width: 100%;
-    height: auto; /* Adjust height to maintain aspect ratio */
-    object-fit: cover;
-  }
 }
+
 
 
 
