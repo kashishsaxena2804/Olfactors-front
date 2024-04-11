@@ -431,7 +431,7 @@ img{
   text-align: center;
 }
 
-.card img {
+.card image {
   border-radius: 50%; /* make the image round */
   width: 100%; /* Set image width to 100% of its container */
   max-width: 150px; /* Limit maximum width of the image */
@@ -456,6 +456,9 @@ img{
   .col-md-4 {
     flex: 1 0 100%; /* One card per row on smaller devices */
     max-width: 100%; /* One card per row on smaller devices */
+  }
+  .card img{
+
   }
 }
 
