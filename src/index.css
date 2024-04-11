@@ -391,33 +391,45 @@ img{
 }
 /* categories.css */
 
-.main-card1 {
+/* Set background image and style for the category card */
+.cat-card {
+  background-image: url('https://img.freepik.com/free-photo/brown-concrete-wall-with-scratches-vector_53876-143109.jpg');
+  background-size: cover;
+  background-position: center;
   padding: 20px;
+  border-radius: 10px; /* Rounded corners for the category card */
 }
 
-.heading-text {
+/* Style for the category heading */
+.cat-heading {
   text-align: center;
   margin-bottom: 20px;
+  color: #fff; /* White text color */
 }
 
-.container1 {
+/* Container for category cards */
+.cat-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
+/* Individual category card */
+.col-md-4 {
+  flex: 1 0 50%; /* Two cards per row on smaller devices */
+  max-width: 50%; /* Two cards per row on smaller devices */
+  padding: 5px; /* Add padding between cards */
+}
+
 .card {
   text-align: center;
-  margin-bottom: 20px;
-  width: 100%;
-  max-width: 300px; /* Set maximum width for each card */
 }
 
 .card img {
   border-radius: 50%; /* make the image round */
   width: 150px; /* adjust width as needed */
   height: 150px; /* adjust height as needed */
-  margin: 0 auto 10px; /* center the image and add bottom margin */
+  margin-bottom: 10px;
 }
 
 .cat-btn {
@@ -432,10 +444,11 @@ img{
   color: #000;
 }
 
-@media screen and (min-width: 768px) {
-  .card {
-    margin-right: 15px;
-    width: calc(33.333% - 30px); /* Adjust the width for larger screens */
+/* Media query for smaller devices */
+@media screen and (max-width: 768px) {
+  .col-md-4 {
+    flex: 1 0 100%; /* One card per row on smaller devices */
+    max-width: 100%; /* One card per row on smaller devices */
   }
 }
 
