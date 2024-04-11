@@ -391,6 +391,13 @@ img{
 }
 /* categories.css */
 
+/* Set background image and style for the category card */
+/* categories.css */
+
+/* Set background image and style for the category card */
+/* categories.css */
+
+/* Set background image and style for the category card */
 .cat-card {
   background-image: url('https://w.forfun.com/fetch/1b/1b1d77db61bdb2dc187c136b59750493.jpeg?w=1470&r=0.5625');
   background-size: cover; /* Cover the entire element with the background image */
@@ -422,11 +429,12 @@ img{
 }
 
 
-.card img {
-  border-radius: 20px; /* Rounded corners for the box shape */
-  width: 100%; /* Set image width to fill its container */
+.card-image {
+  border-radius: 20px; /* make the image round */
+  max-width: 100%; /* Set image width to 100% of its container */
   height: auto; /* Maintain aspect ratio */
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .cat-btn {
