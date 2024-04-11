@@ -400,8 +400,9 @@ img{
 /* Set background image and style for the category card */
 .cat-card {
   background-image: url('https://w.forfun.com/fetch/1b/1b1d77db61bdb2dc187c136b59750493.jpeg?w=1470&r=0.5625');
-  background-size: cover;
+  background-size: cover; /* Cover the entire element with the background image */
   background-position: center;
+  background-attachment: fixed; /* Fix the background image position */
   margin-top: 15px;
   padding: 20px;
 }
@@ -427,16 +428,14 @@ img{
   padding: 5px; /* Add padding between cards */
 }
 
-.card {
-  text-align: center;
-}
 
-.card image {
+.card-image {
   border-radius: 50%; /* make the image round */
-  width: 100%; /* Set image width to 100% of its container */
+  max-width: 100%; /* Set image width to 100% of its container */
   max-width: 150px; /* Limit maximum width of the image */
   height: auto; /* Maintain aspect ratio */
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .cat-btn {
@@ -456,9 +455,6 @@ img{
   .col-md-4 {
     flex: 1 0 100%; /* One card per row on smaller devices */
     max-width: 100%; /* One card per row on smaller devices */
-  }
-  .card img{
-
   }
 }
 
