@@ -399,10 +399,9 @@ img{
 
 /* Set background image and style for the category card */
 .cat-card {
-  background-image: url('https://img.freepik.com/premium-vector/oriental-vintage-background-with-indopersian-ornament-royal-luxurious-wallpaper-bronze-caramel_619989-216.jpg');
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-ioRlk_NBse8OOaO59G-02NebBrs8b2Tb4yfsCsQtTqW2-D3LwijMEgN_LNUadtrvZEI&usqp=CAU');
   background-size: cover;
   background-position: center;
-  padding: 20px;
   margin-top: 15px;
 }
 
