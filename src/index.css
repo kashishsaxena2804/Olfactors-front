@@ -397,7 +397,7 @@ img{
   background-size: cover;
   background-position: center;
   padding: 20px;
-  border-radius: 10px; /* Rounded corners for the category card */
+  margin-top: 15px;
 }
 
 /* Style for the category heading */
@@ -421,15 +421,14 @@ img{
   padding: 5px; /* Add padding between cards */
 }
 
-.card {
-  text-align: center;
-}
+
 
 .card img {
   border-radius: 50%; /* make the image round */
   width: 150px; /* adjust width as needed */
   height: 150px; /* adjust height as needed */
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .cat-btn {
