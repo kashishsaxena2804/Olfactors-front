@@ -348,7 +348,57 @@ img{
 .product-offer {
   font-size: 12px;
   color: #4caf50;
-  margin-bot
+  margin-bottom: 12px;
+}
+
+.product-prices {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.original-price {
+  font-size: 12px;
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 4px;
+}
+
+.discounted-price {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.add-to-cart-button {
+  padding: 6px 12px;
+  font-size: 12px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Media query for laptops */
+@media (min-width: 1024px) {
+  .product-card {
+    width: calc(25% - 20px); /* Adjust width for four products in one line */
+  }
+}
+
+/* Media query for small devices */
+@media (max-width: 767px) {
+  .product-card {
+    width: calc(50% - 20px); /* Adjust width for two products in one line */
+  }
+}
+
+/* Media query for small smartphones */
+@media (max-width: 425px) {
+  .product-card {
+    width: calc(100% - 20px); /* Adjust width for one product in one line */
+  }
+}
 
 
 
