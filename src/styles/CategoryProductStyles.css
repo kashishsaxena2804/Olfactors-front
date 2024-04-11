@@ -28,7 +28,7 @@
   .category .card-text {
     color: rgb(90, 89, 89);
   }
-  
+    
   .category .card img:hover {
     transform: scale(0.9);
   }

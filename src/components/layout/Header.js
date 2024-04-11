@@ -7,6 +7,7 @@ import useCategory from '../../hooks/useCategory';
 import { Badge } from 'antd';
 import { useCart } from '../../context/cart';
 
+
 const Header = () => {
   const [auth, setAuth] = useAuth();
   const [cart] = useCart();
