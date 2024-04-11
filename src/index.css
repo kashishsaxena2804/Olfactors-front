@@ -290,20 +290,35 @@ img{
 
 }
 
+.Product-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px; /* Add margin for spacing between sections */
+}
 
+.prod-heading {
+  flex: 1; /* Take up remaining space */
+}
+
+.view-more-button {
+  margin-left: auto; /* Push the button to the right */
+}
+
+.main-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
 .product-card {
-  display: flex;
-  flex-direction: column;
-  width: 95%;
+  width: calc(50% - 10px); /* Adjust width for two products in one line */
   max-width: 300px;
   height: auto;
   border: 1px solid #ccc;
   border-radius: 4px;
   overflow: hidden;
-  margin: 0 auto;
-  padding: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* Add margin for spacing between cards */
 }
 
 .card-img-top {
@@ -314,33 +329,12 @@ img{
 
 .product-details {
   padding: 10px;
-  display: flex;
-  flex-direction: column;
 }
 
 .product-name {
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 8px;
-}
-
-.product-offer {
-  font-size: 12px;
-  color: #4caf50;
-  margin-bottom: 12px;
-}
-
-.product-prices {
-  display: flex;
-  align-items: center;
-  margin-bottom: 12px;
-}
-
-.original-price {
-  font-size: 12px;
-  text-decoration: line-through;
-  color: #999;
-  margin-right: 4px;
 }
 
 .discounted-price {
@@ -358,40 +352,13 @@ img{
   cursor: pointer;
 }
 
-/* Media query for laptops */
-@media (min-width: 1024px) {
-  .main-card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .product-card {
-    width: calc(50% - 10px); /* Adjust width for two products in one line */
-  }
-}
-
 /* Media query for smaller devices */
 @media (max-width: 1023px) {
-  .main-card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .product-card {
-    width: calc(50% - 10px); /* Adjust width for two products in one line */
-  }
-}
-
-/* Media query for mobile devices */
-@media (max-width: 768px) {
   .product-card {
     width: 100%; /* Set width to 100% for one product per line */
-    margin-right: 0; /* Reset margin for smaller devices */
-    margin-bottom: 10px; /* Adjust margin for smaller devices */
   }
 }
+
 
 
 
