@@ -357,7 +357,7 @@ const HomePage = () => {
                     <a href={`/category/${c.slug}`}>
                       <img className="card-image" src={`${process.env.REACT_APP_BASE_URL}/api/vl/category/category-photo/${c._id}`} alt="" />
                     </a>
-                  <Link to={`/category/${c.slug}`} className="btn cat-btn">
+                  <Link to={`/category/${c.slug}`} className="cat-btn">
                     {c.name}
                   </Link>
                 </div>
