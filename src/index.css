@@ -440,6 +440,27 @@ img{
     margin-bottom: 20px; /* Adjust margin for smaller devices */
   }
 }
+/* Media query for smaller devices */
+@media only screen and (max-width: 1023px) {
+  .main-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .product-card {
+    width: calc(50% - 10px); /* Adjust width for two products in one line */
+    margin-bottom: 20px; /* Adjust margin for smaller devices */
+  }
+}
+
+/* Media query for even smaller devices */
+@media only screen and (max-width: 767px) {
+  .product-card {
+    width: 100%; /* Set width to 100% for one product per line */
+    margin-bottom: 20px; /* Adjust margin for smaller devices */
+  }
+}
 
 
 
