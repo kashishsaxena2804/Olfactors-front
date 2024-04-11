@@ -427,6 +427,19 @@ img{
     margin-bottom: 20px; /* Adjust margin for smaller devices */
   }
 }
+/* Media query for smaller devices including Android phones */
+@media (max-width: 767px) {
+  .main-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .product-card {
+    width: calc(50% - 10px); /* Adjust width for two products in one line */
+    margin-bottom: 20px; /* Adjust margin for smaller devices */
+  }
+}
 
 
 
