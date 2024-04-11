@@ -430,12 +430,14 @@ img{
 
 
 .card-image {
-  border-radius: 20px; /* make the image round */
-  max-width: 100%; /* Set image width to 100% of its container */
-  height: auto; /* Maintain aspect ratio */
+  border-radius: 20px; /* Rounded corners */
+  width: 150px; /* Set a fixed width */
+  height: 150px; /* Set a fixed height */
+  object-fit: cover; /* Maintain aspect ratio and crop as needed */
   margin-bottom: 10px;
   text-align: center;
 }
+
 
 .cat-btn {
   display: block;
