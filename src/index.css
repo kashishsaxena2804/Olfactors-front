@@ -395,12 +395,15 @@ img{
 /* categories.css */
 
 /* Set background image and style for the category card */
+/* categories.css */
+
+/* Set background image and style for the category card */
 .cat-card {
-  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/039/884/126/small/floral-pattern-with-vintage-frame-vector.jpg');
+  background-image: url('https://img.freepik.com/premium-vector/oriental-vintage-background-with-indopersian-ornament-royal-luxurious-wallpaper-bronze-caramel_619989-216.jpg');
   background-size: cover;
   background-position: center;
   padding: 20px;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 /* Style for the category heading */
@@ -424,12 +427,16 @@ img{
   padding: 5px; /* Add padding between cards */
 }
 
+.card {
+  text-align: center;
+}
+
 .card img {
   border-radius: 50%; /* make the image round */
-  width: 150px; /* adjust width as needed */
-  height: 150px; /* adjust height as needed */
+  width: 100%; /* Set image width to 100% of its container */
+  max-width: 150px; /* Limit maximum width of the image */
+  height: auto; /* Maintain aspect ratio */
   margin-bottom: 10px;
-  text-align: center;
 }
 
 .cat-btn {
@@ -450,13 +457,8 @@ img{
     flex: 1 0 100%; /* One card per row on smaller devices */
     max-width: 100%; /* One card per row on smaller devices */
   }
-  
-  /* Decrease the size of images for small devices */
-  .card img {
-    width: 100px; /* adjust width as needed */
-    height: 100px; /* adjust height as needed */
-  }
 }
+
 
 .heading-text{
   font-size: 35px;
