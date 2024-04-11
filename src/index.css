@@ -384,6 +384,26 @@ img{
   }
 }
 
+/* Media query for larger devices */
+@media (min-width: 769px) {
+  .main-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .product-card {
+    width: calc(95% / 4 - 20px); /* Adjust width to fit four cards in a row */
+    margin-right: 20px; /* Add margin between cards */
+    margin-bottom: 20px;
+  }
+  
+  .product-card:last-child {
+    margin-right: 0; /* Remove margin from the last card */
+  }
+}
+
+
 /* categories.css */
 
 .cat-card {
