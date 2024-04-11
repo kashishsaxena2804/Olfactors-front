@@ -394,7 +394,19 @@ img{
     margin-bottom: 20px;
   }
 }
-
+.main-card
+{
+  width: 95%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
 
 
