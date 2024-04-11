@@ -322,14 +322,6 @@ img{
   width: 100%;
   height: 200px;
   object-fit: cover;
-  
-}
-@media (max-width: 768px) {
-  .main-card{
-    width: 45%; /* Adjust width for smaller screens */
-    height: 100%;
-    
-  }
 }
 
 .product-details {
@@ -376,35 +368,30 @@ img{
   border-radius: 4px;
   cursor: pointer;
 }
-.main-card
-{
-  width: 95%;
-  height: auto;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  overflow: hidden;
-  margin: 0 auto;
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+
+/* Media query for smaller devices */
+@media (max-width: 768px) {
+  .main-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .product-card {
+    width: 48%; /* Adjust width to fit two cards in a row */
+    margin-bottom: 20px;
+  }
 }
+
 /* categories.css */
 
-/* Set background image and style for the category card */
-/* categories.css */
-
-/* Set background image and style for the category card */
-/* categories.css */
-
-/* Set background image and style for the category card */
 .cat-card {
   background-image: url('https://w.forfun.com/fetch/1b/1b1d77db61bdb2dc187c136b59750493.jpeg?w=1470&r=0.5625');
   background-size: cover; /* Cover the entire element with the background image */
   background-position: center;
   background-attachment: fixed; /* Fix the background image position */
-  margin-top: 15px;
-  padding: 20px;
+  margin-top: 30px;
 }
 
 /* Style for the category heading */
@@ -431,12 +418,12 @@ img{
 }
 
 .card-image {
-  border-radius: 20px; /* Rounded corners */
-  width: 160px; /* Set a fixed width */
-  height: 160px; /* Set a fixed height */
-  object-fit: cover; /* Maintain aspect ratio and crop as needed */
-  display: block; /* Ensure the image is a block element */
-  margin: 0 auto 10px; /* Center the image horizontally and add margin bottom */
+  border-radius: 20px;
+  width: 160px;
+  height: 160px; 
+  object-fit: cover; 
+  display: block; 
+  margin: 0 auto 10px;
 }
 
 

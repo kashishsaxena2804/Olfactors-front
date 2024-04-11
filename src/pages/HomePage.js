@@ -291,6 +291,7 @@ const HomePage = () => {
               
             </div>
           </div>
+          
           <div className="Product-container">
             <div className="prod-heading">
               <div>
