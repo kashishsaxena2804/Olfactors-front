@@ -389,6 +389,8 @@ img{
   flex-wrap: wrap;
   justify-content: space-between;
 }
+/* categories.css */
+
 .main-card1 {
   padding: 20px;
 }
@@ -405,55 +407,35 @@ img{
 }
 
 .card {
-  width: 100%;
   text-align: center;
   margin-bottom: 20px;
+  width: 100%;
+  max-width: 300px; /* Set maximum width for each card */
 }
 
 .card img {
-  max-width: 100%;
-  height: auto;
+  border-radius: 50%; /* make the image round */
+  width: 150px; /* adjust width as needed */
+  height: 150px; /* adjust height as needed */
+  margin: 0 auto 10px; /* center the image and add bottom margin */
 }
 
 .cat-btn {
   display: block;
   text-align: center;
-  padding: 10px 20px;
-  
-  color: #fff;
   text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  color: #333;
+  font-weight: bold;
 }
 
-
-/* Responsive styles */
-@media (min-width: 576px) {
-  .col-md-4 {
-    flex: 0 0 calc(33.333% - 20px);
-    max-width: calc(33.333% - 20px);
-    margin: 10px;
-  }
+.cat-btn:hover {
+  color: #000;
 }
 
-@media (min-width: 768px) {
-  .col-md-4 {
-    flex: 0 0 calc(50% - 20px);
-    max-width: calc(50% - 20px);
-  }
-}
-
-@media (min-width: 992px) {
-  .col-md-4 {
-    flex: 0 0 calc(33.333% - 20px);
-    max-width: calc(33.333% - 20px);
-  }
-}
-
-@media (min-width: 1200px) {
-  .col-md-4 {
-    flex: 0 0 calc(20% - 20px);
-    max-width: calc(20% - 20px);
+@media screen and (min-width: 768px) {
+  .card {
+    margin-right: 15px;
+    width: calc(33.333% - 30px); /* Adjust the width for larger screens */
   }
 }
 
