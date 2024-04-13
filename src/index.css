@@ -205,7 +205,15 @@ nav .link:hover{
 .cart-icon{
   color: #cc9900;
 }
-
+.nav-link {
+  font-weight: 1000 !important;
+  color: #cc9900;
+  background-color: #1e140a;
+  
+}
+.nav-link:hover{
+  color: #cc9900;
+}
 
 
 

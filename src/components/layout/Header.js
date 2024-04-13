@@ -176,7 +176,7 @@ const Header = () => {
     </>
   ) : (
     <>
-      <li className="nav-item">
+    
         <ul className="dropdown-menu">
           <li>
             <NavLink
@@ -192,7 +192,7 @@ const Header = () => {
             </NavLink>
           </li>
         </ul>
-      </li>
+    
     </>
   )}
 </ul>
