@@ -214,8 +214,28 @@ nav .link:hover{
 .nav-link:hover{
   color: #cc9900;
 }
+/* Custom styles for the dropdown */
+.dropdown-menu {
+  background-color: #1e140a; /* Set background color */
+  color: #cc9900; /* Set text color */
+  border-color: #fff;
+}
 
+.dropdown-menu .dropdown-item {
+  color: #cc9900; /* Set text color for dropdown items */
+}
 
+.dropdown-menu .dropdown-item:hover {
+  background-color: #1e140a; /* Change background color on hover */
+  color: white; /* Change text color on hover */
+}
+
+.dropdown-menu .dropdown-item.active,
+.dropdown-menu .dropdown-item.active:focus {
+  background-color: #1e140a; /* Set background color for active state */
+  color: #cc9900; /* Set text color for active state */
+  border-bottom: 2px solid #cc9900; /* Add bottom border for selected item */
+}
 
 
 
