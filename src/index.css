@@ -165,7 +165,7 @@ nav {
 
 nav .link {
   display: inline-block; /* Make list items display in a line */
-  margin: 0 20px; /* Add spacing between list items */ /* Adjust as needed */
+  margin: 0 50px; /* Add spacing between list items */ /* Adjust as needed */
   padding: 0; /* Remove default padding from list */
   list-style: none; /* Remove default bullet points */
   color: #cc9900;
