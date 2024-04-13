@@ -17,62 +17,7 @@
 /*font-family: 'Playfair Display', serif;*/
 
 /* navbar css */
-/*.navbar {
-  font-weight: 1500;
-  background-color: #1e140a;
-  line-height: 26px;
-  text-transform: uppercase;
-  box-shadow: 0 8px 6px -6px gray;
-  --webkit-box-shadow: 0 8px 6px -6px gray;
-  border-bottom: solid gray !important;
-}
 
-.nav-link {
-  font-weight: 1000 !important;
-  color: #000;
-  
-}
-.nav-link:hover{
-  color: #cc9900;
-}
-
-.cart{
-  font-family: myFont;
-  font-weight: 1000;
-  color: #000;
-}
-
-.nav-item1{
-  font-weight: bold;
-  color: #000;
-}
-
-.active {
-  border-bottom: 2px solid #cc9900;
-}
-
-.navbar-brand {
-  font-weight: 1000;
-  font-family: myFont;
-  letter-spacing: 3px;
-}
-
-.search-form {
-  margin-right: 10px;
-  margin-top: 4px;
-  color: #cc9900;
-}
-.search-form input {
-  border: none;
-  border-radius: 0;
-}
-.search-form button {
-  background-color: #cc9900;
-  border-radius: 0;
-  color: #000;
-}
-
-*/
 img{
   height: 85px;
   width: 200px;
@@ -315,6 +260,8 @@ nav .link:hover{
   padding-top: 25px;
   font-weight: 5000;
   color: white;
+  text-align: justify;
+  
 }
 
 .par {
@@ -615,7 +562,7 @@ nav .link:hover{
   background-position: center;
   background-attachment: fixed; /* Fix the background image position */
   margin-top: 30px;
-  width: 100%;
+  width: 101.5%;
 }
 
 
@@ -669,6 +616,12 @@ nav .link:hover{
   .col-md-4 {
     flex: 1 0 100%; /* One card per row on smaller devices */
     max-width: 100%; /* One card per row on smaller devices */
+  }
+}
+@media (max-width: 576px) {
+  .col-md-4 {
+    flex: 2 0 100%; /* One card per row on smaller devices */
+    width: 105%; /* One card per row on smaller devices */
   }
 }
 

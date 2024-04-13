@@ -229,7 +229,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <div className="row mt-3">
+      <div className="row mt-3 ">
         <div>
           <h1 className="text-center">
             Olfactors - Where fragrance becomes a Signature
