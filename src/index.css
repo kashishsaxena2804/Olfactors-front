@@ -17,7 +17,7 @@
 /*font-family: 'Playfair Display', serif;*/
 
 /* navbar css */
-.navbar {
+/*.navbar {
   font-weight: 1500;
   background-color: #1e140a;
   line-height: 26px;
@@ -72,11 +72,138 @@
   color: #000;
 }
 
+*/
 img{
   height: 85px;
   width: 200px;
   object-fit: cover;
+
 }
+
+.header-con {
+  display: flex; /* Make header elements horizontal */
+  justify-content: space-between; /* Distribute elements evenly with space between */
+  align-items: center; /* Align elements vertically in the center */
+  padding: 1rem 0; /* Add padding as needed */
+  background-color: #1e140a;
+
+}
+
+.container {
+  width: 90%; /* Adjust container width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.left-icons,
+.right-icons {
+  display: flex; /* Make icons into rows */
+  padding: 50px;
+  color: #cc9900;
+}
+
+.left-icons :hover{
+  color: #fff;
+}
+
+.right-icons :hover{
+  color: #fff;
+}
+
+.left-icons svg,
+.right-icons svg {
+  margin: 0 10px; /* Adjust spacing between icons */
+  width: 25px; /* Adjust icon size as needed */
+  height: 25px; /* Adjust icon size as needed */
+}
+.cart{
+  color: #cc9900;
+}
+.badge.cart { 
+  border-color: #cc9900;
+}
+
+.logo {
+  flex: 1; /* Make the logo take up remaining space in the center */
+  text-align: center; /* Center the logo text (if any) */
+}
+
+.logo img {
+  max-width: 100%; /* Allow image to scale within logo container */
+  height: auto; /* Maintain image aspect ratio */
+}
+
+/* Social Media Icons (replace with your actual SVG code) */
+.left-icons svg:nth-child(1) { /* Style the first social media icon */
+  fill: #3b5998; /* Replace with desired color */
+}
+
+.left-icons svg:nth-child(2) { /* Style the second social media icon */
+  fill: #e1306c; /* Replace with desired color */
+}
+
+/* Search Icon (replace with your actual SVG code) */
+.right-icons svg:nth-child(1) { /* Style the search icon */
+  fill: #333; /* Replace with desired color */
+}
+
+/* User Icon (replace with your actual SVG code) */
+.right-icons svg:nth-child(2) { /* Style the user icon */
+  fill: #333; /* Replace with desired color */
+}
+
+/* Cart Icon (replace with your actual SVG code) */
+.right-icons svg:nth-child(3) { /* Style the cart icon */
+  fill: #333; /* Replace with desired color */
+}
+
+nav {
+  display: flex; /* Make navigation elements horizontal */
+  justify-content: center; /* Center elements within the navigation */
+  background-color: #1e140a;
+}
+
+
+nav .link {
+  display: inline-block; /* Make list items display in a line */
+  margin: 0 20px; /* Add spacing between list items */ /* Adjust as needed */
+  padding: 0; /* Remove default padding from list */
+  list-style: none; /* Remove default bullet points */
+  color: #cc9900;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: medium;
+}
+
+nav .link:hover{
+  color: #fff;
+}
+.dropdown-toggle::after {
+  display: none; /* Hide the default caret */
+}
+.search-form {
+  margin-right: 10px;
+  margin-top: 4px;
+  color: #cc9900;
+}
+.search-form input {
+  border: none;
+  border-radius: 0;
+  color: #000;
+}
+.search-form button {
+  background-color: #cc9900;
+  border-radius: 0;
+  color: #000;
+}
+.search-form input[type="search"] {
+  color: #cc9900;
+}
+
+
+
+
+
+
 
 /*Footer*/
 .footer {
