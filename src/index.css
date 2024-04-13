@@ -18,6 +18,18 @@
 
 /* navbar css */
 
+/* Make carousel images responsive */
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+/* Set max height for the carousel */
+.carousel {
+  max-height: 90vh;
+}
+
+
 img{
   height: 85px;
   width: 200px;
@@ -157,6 +169,9 @@ nav .link:hover{
   
 }
 .nav-link:hover{
+  color: #cc9900;
+}
+.media{
   color: #cc9900;
 }
 /* Custom styles for the dropdown */
