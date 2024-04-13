@@ -240,7 +240,7 @@ const HomePage = () => {
           <div className="Product-container">
               <div className="prod-heading">
                 <div>
-                  <h2>New Arrivals</h2>
+                  <h2  className="p-head">New Arrivals</h2>
                 </div>
                 <div>
                   <button
@@ -290,7 +290,7 @@ const HomePage = () => {
           <div className="Product-container">
             <div className="prod-heading">
               <div>
-                <h2>Best Sellers</h2>
+                <h2 className="p-head">Best Sellers</h2>
               </div>
               <div>
                 <button
@@ -364,7 +364,7 @@ const HomePage = () => {
           <div className="Product-container">
             <div className="prod-heading">
               <div>
-                <h3>Feature Products</h3>
+                <h2 className="p-head">Feature Products</h2>
               </div>
               <div>
                 <button
@@ -422,7 +422,7 @@ const HomePage = () => {
           <div className="Product-container">
             <div className="prod-heading">
               <div>
-                <h2>Gift Hampers</h2>
+                <h2 className="p-head">Gift Hampers</h2>
               </div>
               <div>
                 <button

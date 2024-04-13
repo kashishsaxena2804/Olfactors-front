@@ -468,6 +468,10 @@ nav .link:hover{
   position: relative;
   margin-left: 30px;
 }
+.p-head{
+  font-style: bold;
+  font-weight: 600;
+}
 
 
 
