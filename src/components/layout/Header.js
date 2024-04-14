@@ -128,8 +128,8 @@ const Header = () => {
       <nav>
           <Link className='link' to="/category/perfumes">Perfumes</Link>
           <Link className='link' to="/category/attars">Attars</Link>
-          <Link className='link' to="/category/diffusion oils">Diffusion Oils</Link>
-          <Link className='link' to="/category/air freshners">Air Freshners</Link>
+          <Link className='link' to="/category/diffusion-oils">Diffusion Oils</Link>
+          <Link className='link' to="/category/air-freshners">Air Freshners</Link>
           <Link className='link' to={"/category/gift-hampers"}>Gift Hampers</Link>
       </nav>
     </header>

@@ -38,13 +38,13 @@ const Footer = () => {
               <Link to="/category/attars" className="footer-link">Attars</Link>
             </li>
             <li className="footer-item">
-              <Link to="/category/diffuseroils" className="footer-link">Diffuser Oils</Link>
+              <Link to="/category/diffuser-oils" className="footer-link">Diffuser Oils</Link>
             </li>
             <li className="footer-item">
-              <Link to="/category/gifthampers" className="footer-link">Gift Hampers</Link>
+              <Link to="/category/gift-hampers" className="footer-link">Gift Hampers</Link>
             </li>
             <li className="footer-item">
-              <Link to="/category/airfresheners" className="footer-link">Air Fresheners</Link>
+              <Link to="/category/air-fresheners" className="footer-link">Air Fresheners</Link>
             </li>
           </ul>
         </div>
