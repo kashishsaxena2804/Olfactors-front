@@ -32,19 +32,19 @@ const Footer = () => {
           <h3 className="footer-heading">Category</h3>
           <ul className="footer-list">
             <li className="footer-item">
-              <Link to="/perfumes" className="footer-link">Perfumes</Link>
+              <Link to="/category/perfumes" className="footer-link">Perfumes</Link>
             </li>
             <li className="footer-item">
-              <Link to="/attars" className="footer-link">Attars</Link>
+              <Link to="/category/attars" className="footer-link">Attars</Link>
             </li>
             <li className="footer-item">
-              <Link to="/diffuseroils" className="footer-link">Diffuser Oils</Link>
+              <Link to="/category/diffuseroils" className="footer-link">Diffuser Oils</Link>
             </li>
             <li className="footer-item">
-              <Link to="/gifthampers" className="footer-link">Gift Hampers</Link>
+              <Link to="/category/gifthampers" className="footer-link">Gift Hampers</Link>
             </li>
             <li className="footer-item">
-              <Link to="/airfresheners" className="footer-link">Air Fresheners</Link>
+              <Link to="/category/airfresheners" className="footer-link">Air Fresheners</Link>
             </li>
           </ul>
         </div>
