@@ -163,7 +163,7 @@ const HomePage = () => {
   }, []);
 
   return (
-    <Layout title={"All Products"}>
+    <Layout title={"Olfactors"}>
       <div>
         <Carousel>
           <Carousel.Item>
