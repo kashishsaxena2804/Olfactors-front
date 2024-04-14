@@ -259,7 +259,16 @@ nav .link:hover{
   color: white;
   margin: 0 auto;
 }
+.flex-container {
+  display: flex;
+  align-items: center; /* Align items vertically center */
+  margin-right: 30px; 
+  margin-bottom: -10px;
 
+}
+.footer-heading1 {
+  margin-left: 10px;
+}
 .footer-section {
   width: 15%; 
   padding: 5px;
