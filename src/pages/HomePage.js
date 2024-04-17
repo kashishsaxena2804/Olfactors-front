@@ -164,7 +164,7 @@ const HomePage = () => {
 
   return (
     <Layout title={"Olfactors"}>
-      <div>
+      <div className="slider-content">
         <Carousel>
           <Carousel.Item>
             <img
@@ -202,12 +202,16 @@ const HomePage = () => {
             />
           </Carousel.Item>
           <Carousel.Item>
-            <img
-              style={{ height: "90vh" }}
-              className="d-block w-100"
-              src={"./images/slider5.jpg"}
-              alt="Third slide"
-            />
+          <video
+            style={{ height: "90vh" }}
+            className="d-block w-100"
+            autoPlay
+            loop
+            muted
+          >
+          <source src="./images/slider5.mp4" type="video/mp4" />
+        </video>
+
           </Carousel.Item>
         </Carousel>
       </div>

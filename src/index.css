@@ -37,106 +37,122 @@ img{
 
 }
 
-.header-con {
-  display: flex; /* Make header elements horizontal */
-  justify-content: space-between; /* Distribute elements evenly with space between */
-  align-items: center; /* Align elements vertically in the center */
-  padding: 1rem 0; /* Add padding as needed */
-  background-color: #1e140a;
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: height 0.3s;
+}
 
+.header.scrolled {
+  height: 70px; /* Set the height of the header when scrolled */
+}
+
+.header-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  background-color: #1e140a;
 }
 
 .container {
-  width: 90%; /* Adjust container width as needed */
-  margin: 0 auto; /* Center the container horizontally */
+  width: 90%;
+  margin: 0 auto;
 }
 
 .left-icons,
 .right-icons {
-  display: flex; /* Make icons into rows */
-  padding: 50px;
+  display: flex;
+  padding: 1rem;
   color: #cc9900;
 }
 
-.left-icons :hover{
+.left-icons :hover {
   color: #fff;
 }
 
-.right-icons :hover{
+.right-icons :hover {
   color: #fff;
 }
 
 .left-icons svg,
 .right-icons svg {
-  margin: 0 10px; /* Adjust spacing between icons */
-  width: 25px; /* Adjust icon size as needed */
-  height: 25px; /* Adjust icon size as needed */
+  margin: 0 10px;
+  width: 25px;
+  height: 25px;
+  fill: #cc9900; /* Set initial color */
+  transition: fill 0.3s;
 }
-.cart{
+.left-icons:hover svg,
+.right-icons:hover svg {
+  fill: #fff; /* Change color on hover */
+}
+.cart {
   color: #cc9900;
 }
-.badge.cart { 
+
+.badge.cart {
   border-color: #cc9900;
 }
 
 .logo {
-  flex: 1; /* Make the logo take up remaining space in the center */
-  text-align: center; /* Center the logo text (if any) */
+  flex: 1;
+  text-align: center;
 }
 
 .logo img {
-  max-width: 100%; /* Allow image to scale within logo container */
-  height: auto; /* Maintain image aspect ratio */
+  max-width: 100%;
+  height: auto;
 }
 
-/* Social Media Icons (replace with your actual SVG code) */
-.left-icons svg:nth-child(1) { /* Style the first social media icon */
-  fill: #3b5998; /* Replace with desired color */
+.left-icons svg:nth-child(1) {
+  fill: #3b5998;
 }
 
-.left-icons svg:nth-child(2) { /* Style the second social media icon */
-  fill: #e1306c; /* Replace with desired color */
+.left-icons svg:nth-child(2) {
+  fill: #e1306c;
 }
 
-/* Search Icon (replace with your actual SVG code) */
-.right-icons svg:nth-child(1) { /* Style the search icon */
-  fill: #333; /* Replace with desired color */
+.right-icons svg:nth-child(1) {
+  fill: #333;
 }
 
-/* User Icon (replace with your actual SVG code) */
-.right-icons svg:nth-child(2) { /* Style the user icon */
-  fill: #333; /* Replace with desired color */
+.right-icons svg:nth-child(2) {
+  fill: #333;
 }
 
-/* Cart Icon (replace with your actual SVG code) */
-.right-icons svg:nth-child(3) { /* Style the cart icon */
-  fill: #333; /* Replace with desired color */
+.right-icons svg:nth-child(3) {
+  fill: #333;
 }
 
 nav {
-  display: flex; /* Make navigation elements horizontal */
-  justify-content: center; /* Center elements within the navigation */
+  display: flex;
+  justify-content: center;
   background-color: #1e140a;
 }
 
-
 nav .link {
-  display: inline-block; /* Make list items display in a line */
-  margin: 0 50px; /* Add spacing between list items */ /* Adjust as needed */
-  padding: 0; /* Remove default padding from list */
-  list-style: none; /* Remove default bullet points */
+  display: inline-block;
+  margin: 0 50px;
+  padding: 0;
+  list-style: none;
   color: #cc9900;
   text-decoration: none;
   margin-bottom: 10px;
   font-size: medium;
 }
 
-nav .link:hover{
+nav .link:hover {
   color: #fff;
 }
+
 .dropdown-toggle::after {
-  display: none; /* Hide the default caret */
+  display: none;
 }
+
 .search-form {
   margin-right: 5px;
   margin-left: 10px;
@@ -144,98 +160,159 @@ nav .link:hover{
   margin-bottom: 4px;
   color: #000;
 }
+
 .search-form input {
   border: none;
   border-radius: 0;
   color: #000;
 }
+
 .search-form button {
   background-color: #000;
   border-radius: 0;
   color: #000;
 }
+
 .search-form input[type="search"] {
   color: #000;
   font-style: bold;
   font-weight: 400;
 }
-.cart-icon{
+
+.cart-icon {
   color: #cc9900;
 }
+
 .nav-link {
   font-weight: 1000 !important;
   color: #cc9900;
   background-color: #1e140a;
-  
 }
-.nav-link:hover{
+
+.nav-link:hover {
   color: #cc9900;
 }
-.media{
+
+.media {
   color: #cc9900;
 }
-/* Custom styles for the dropdown */
+
 .dropdown-menu {
-  background-color: #1e140a; /* Set background color */
-  color: #cc9900; /* Set text color */
+  background-color: #1e140a;
+  color: #cc9900;
   border-color: #fff;
 }
 
 .dropdown-menu .dropdown-item {
-  color: #cc9900; /* Set text color for dropdown items */
+  color: #cc9900;
 }
 
 .dropdown-menu .dropdown-item:hover {
-  background-color: #1e140a; /* Change background color on hover */
-  color: white; /* Change text color on hover */
+  background-color: #1e140a;
+  color: white;
 }
 
 .dropdown-menu .dropdown-item.active,
 .dropdown-menu .dropdown-item.active:focus {
-  background-color: #1e140a; /* Set background color for active state */
-  color: #cc9900; /* Set text color for active state */
-  border-bottom: 2px solid #cc9900; /* Add bottom border for selected item */
+  background-color: #1e140a;
+  color: #cc9900;
+  border-bottom: 2px solid #cc9900;
 }
 
 @media (max-width: 768px) {
-  /* Styles for screens smaller than 768px */
-  
   .left-icons,
   .right-icons {
-    padding: 1rem; /* Adjust padding for smaller screens */
+    padding: 1rem;
   }
-  
+
   .left-icons svg,
   .right-icons svg {
-    width: 25px; /* Adjust icon size for smaller screens */
-    height: 25px; /* Adjust icon size for smaller screens */
+    width: 25px;
+    height: 25px;
   }
-  
-  .link{
+
+  .link {
     margin: 10px;
   }
 }
 
 @media (max-width: 576px) {
-  /* Styles for screens smaller than 576px */
-  
   .left-icons,
   .right-icons {
-    padding: 1.1rem; /* Adjust padding for even smaller screens */
-  }
-  
-  .left-icons svg,
-  .right-icons svg {
-    width: 20px; /* Adjust icon size for even smaller screens */
-    height: 20px; /* Adjust icon size for even smaller screens */
+    padding: 1.1rem;
   }
 
-  nav .link{
-    margin: 8px;
-    font-size:small;
+  .left-icons svg,
+  .right-icons svg {
+    width: 20px;
+    height: 20px;
   }
-  
+
+  nav .link {
+    margin: 8px;
+    font-size: small;
+  }
 }
+
+
+
+/*slider css*/
+
+.slider-content {
+  padding-top: 167px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slider-content img,
+.slider-content video {
+  
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-item {
+  text-align: center;
+  height: 100%;
+}
+
+.carousel-item video {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.carousel-indicators {
+  bottom: 10px;
+}
+
+.carousel-indicators button {
+  width: 10px;
+  height: 10px;
+}
+
+.carousel-indicators .active {
+  background-color: #1e140a;
+}
+
+@media (max-width: 768px) {
+  .slider-content {
+    padding-top: 140px;
+  }
+
+  .slider-content img,
+  .slider-content video {
+    max-height: 400px;
+  }
+  .slider-content video{
+    max-width:500px;
+  }
+}
+
+
 
 
 

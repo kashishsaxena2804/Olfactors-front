@@ -97,18 +97,15 @@ const ProductDetails = () => {
                   </span>
                 </div>
                 <button
-                  className="button add-to-cart-button"
-                  onClick={() => {
-                    setCart([...cart, p]);
-                    localStorage.setItem(
-                      "cart",
-                      JSON.stringify([...cart, p])
-                    );
-                    toast.success("Item Added to cart");
-                  }}
-                >
-                  Add To Cart
-                </button>
+                        className="button add-to-cart-button"
+                        onClick={() => {
+                          setCart([...cart, p]);
+                          localStorage.setItem("cart", JSON.stringify([...cart, p]));
+                          toast.success("Item Added to cart");
+                        }}
+                      >
+                        Add To Cart
+                      </button>
               </div>
             
             </div>
