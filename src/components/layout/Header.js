@@ -70,14 +70,52 @@ const Header = () => {
               <SearchInput data-bs-stopPropagation />
             </li>
           </ul>
-          <NavLink className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 20 20">
+
+
+          <NavLink className="nav-link dropdown-toggle"
+          href="#"
+          role="button"
+          data-bs-toggle="dropdown">
+  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 20 20">
     <path fill="currentColor" d="M9.993 10.573a4.5 4.5 0 1 0 0-9a4.5 4.5 0 0 0 0 9ZM10 0a6 6 0 0 1 3.04 11.174c3.688 1.11 6.458 4.218 6.955 8.078c.047.367-.226.7-.61.745c-.383.045-.733-.215-.78-.582c-.54-4.19-4.169-7.345-8.57-7.345c-4.425 0-8.101 3.161-8.64 7.345c-.047.367-.397.627-.78.582c-.384-.045-.657-.378-.61-.745c.496-3.844 3.281-6.948 6.975-8.068A6 6 0 0 1 10 0Z"/>
   </svg>
-          </NavLink>
-          <ul className="dropdown-menu">
-            {/* Dropdown Menu Items */}
-          </ul>
+</NavLink>
+<ul className="dropdown-menu">
+  {!auth.user ? (
+    <>
+      <li className="nav-item1">
+        <NavLink to="/register" className="dropdown-item">
+          Register
+        </NavLink>
+      </li>
+      <li className="nav-item1">
+        <NavLink to="/login" className="dropdown-item">
+          Login
+        </NavLink>
+      </li>
+    </>
+  ) : (
+    <>
+              <li>
+            <NavLink
+              to={`/dashboard/${auth?.user?.role === 1 ? 'admin' : 'user'}`}
+              className="dropdown-item"
+            >
+              Profile
+            </NavLink>
+          </li>
+          <li>
+            <NavLink onClick={handleLogout} to="/login" className="dropdown-item">
+              Logout
+            </NavLink>
+          </li>
+      
+    
+    </>
+  )}
+</ul>
+
+
           <Badge
             className="cart"
             count={cart?.length}
