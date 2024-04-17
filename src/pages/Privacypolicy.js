@@ -11,10 +11,10 @@ const Privacypolicy= () => {
       <div className='tccontainer'>
         <div className='tccontent'>
       <h1 className='heading'>Privacy Policy</h1>
-      <p><strong>Effective Date: 30th December 2023</strong></p>
+      <p><strong>Effective Date: 04th September 2020</strong></p>
 
-      <p>Olfactors Pvt. Ltd. is the owner of certain trademarks, service marks, trade names, and logos (collectively, the ‘Olfactors’). We are committed to protecting the privacy and security of the personal information of our website visitors and customers. This Privacy Policy outlines how we collect, use, disclose, and protect the information we collect through our website  <a className='email-link' href="#" onClick={handleLinkClick}>Olfactors.in</a> (“hereafter referred to as Website”). By accessing or using our website, you agree to the terms of this Privacy Policy.</p>
-      <p>By using the <a className='email-link' href="#" onClick={handleLinkClick}>Olfactors.in</a> and/or registering yourself on our website, you authorize Olfactors Pvt. Ltd. (including its authorized representatives and its business partners) to contact you via email or phone call, or SMS and offer you our services for the product you have opted for, imparting product knowledge, offer promotional offers running on the Website (to the extent permissible), for which reasons your information may be collected in the manner as detailed under this Policy.</p>
+      <p>Olfactors is the owner of certain trademarks, service marks, trade names, and logos (collectively, the ‘Olfactors’). We are committed to protecting the privacy and security of the personal information of our website visitors and customers. This Privacy Policy outlines how we collect, use, disclose, and protect the information we collect through our website  <a className='email-link' href="#" onClick={handleLinkClick}>Olfactors.in</a> (“hereafter referred to as Website”). By accessing or using our website, you agree to the terms of this Privacy Policy.</p>
+      <p>By using the <a className='email-link' href="#" onClick={handleLinkClick}>Olfactors.in</a> and/or registering yourself on our website, you authorize Olfactors (including its authorized representatives and its business partners) to contact you via email or phone call, or SMS and offer you our services for the product you have opted for, imparting product knowledge, offer promotional offers running on the Website (to the extent permissible), for which reasons your information may be collected in the manner as detailed under this Policy.</p>
 
 
       <h2>Information We Collect:</h2>

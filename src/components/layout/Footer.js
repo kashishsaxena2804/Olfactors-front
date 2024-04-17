@@ -2,6 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../../context/auth';
 
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+};
+
 const Footer = () => {
   const { user } = useAuth();
 
@@ -19,6 +26,9 @@ const Footer = () => {
           <ul className="footer-list">
             <li className="footer-item">
               <Link to="/login" className="footer-link">Sign In</Link>
+            </li>
+            <li className="footer-item">
+              <Link to="/register" className="footer-link">Register</Link>
             </li>
             <li className="footer-item">
               <Link to={`/dashboard/${user?.role === 1 ? "admin" : "user"}`} className="footer-link">Account</Link>
@@ -44,7 +54,7 @@ const Footer = () => {
               <Link to="/category/gift-hampers" className="footer-link">Gift Hampers</Link>
             </li>
             <li className="footer-item">
-              <Link to="/category/air-fresheners" className="footer-link">Air Fresheners</Link>
+              <Link to="/category/air-freshners" className="footer-link">Air Fresheners</Link>
             </li>
           </ul>
         </div>
@@ -52,25 +62,26 @@ const Footer = () => {
           <h3 className="footer-heading">Quick Links</h3>
           <ul className="footer-list">
             <li className="footer-item">
-              <Link to="/terms&conditions" className="footer-link">Terms & Conditions</Link>
+              <Link to="/terms&conditions" className="footer-link" onClick={scrollToTop}>Terms & Conditions</Link>
             </li>
             <li className="footer-item">
-              <Link to="/privacypolicy" className="footer-link">Privacy Policy</Link>
+              <Link to="/privacypolicy" className="footer-link" onClick={scrollToTop}>Privacy Policy</Link>
             </li>
             <li className="footer-item">
-              <Link to="/shippingpolicy" className="footer-link">Shipping Policy</Link>
+              <Link to="/shippingpolicy" className="footer-link" onClick={scrollToTop}>Shipping Policy</Link>
             </li>
             <li className="footer-item">
-              <Link to="/refundreturnpolicy" className="footer-link">Refund & Returns Policy</Link>
+              <Link to="/refundreturnpolicy" className="footer-link" onClick={scrollToTop}>Refund & Returns Policy</Link>
             </li>
             <li className="footer-item">
-              <Link to="/satisfactionguarantee" className="footer-link">Satisfaction Guarantee</Link>
+              <Link to="/satisfactionguarantee" className="footer-link" onClick={scrollToTop}>Satisfaction Guarantee</Link>
             </li>
             <li className="footer-item">
-              <Link to="/disclaimer" className="footer-link">Disclaimer</Link>
+              <Link to="/disclaimer" className="footer-link" onClick={scrollToTop}>Disclaimer</Link>
             </li>
           </ul>
         </div>
+
         <div className="footer-section">
     <div class="flex-container">
     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 14 14">
@@ -83,7 +94,7 @@ const Footer = () => {
         <h4 className="footer-heading1">Have Doubts?</h4>
     </div>
     <p className="footer-content">
-        <a href="mailto:connect@aranyamperfumes.com" className="footer-link">theolfactors@gmail.com</a>
+        <a href="mailto:theolfactors@gmail.com" className="footer-link">theolfactors@gmail.com</a>
     </p>
 
     <div class="flex-container">
@@ -95,8 +106,17 @@ const Footer = () => {
         </svg>
         <h4 className="footer-heading1">Find Us At</h4>
     </div>
-    <p className="footer-content">Lucknow, Uttar Pradesh, India.</p>
-
+    <p className="footer-content">2/111 sector 2 Janakpuram Extension, Lucknow, Uttar Pradesh, India, 226021.</p>
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.089301278011!2d80.93728899999999!3d26.932383299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3999575fa48a0225%3A0x464d97c71bbbfb87!2sOlfactors!5e0!3m2!1sen!2sin!4v1713388578103!5m2!1sen!2sin" 
+        width="200" 
+        height="200" 
+        style={{ border: 0 }} 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Google Maps"
+      />
 </div>
 
 

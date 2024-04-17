@@ -1,6 +1,6 @@
-import Layout from 'antd/es/layout/layout'
 import React from 'react'
-
+import Layout from '../components/layout/Layout'
+import  "../styles/Terms&conditions.css";
 function Disclaimer() {
   return (
     <Layout>

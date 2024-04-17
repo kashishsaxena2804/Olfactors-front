@@ -333,7 +333,7 @@ nav .link:hover {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 80%;
-  color: white;
+  color: #cc9900;
   margin: 0 auto;
 }
 .flex-container {
@@ -360,8 +360,9 @@ nav .link:hover {
 .footer-content{
   padding-top: 25px;
   font-weight: 5000;
-  color: white;
+  color: #cc9900;
   text-align: justify;
+  width: 200px;
   
 }
 
@@ -372,7 +373,7 @@ nav .link:hover {
 }
 
 .footer-heading {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -381,16 +382,17 @@ nav .link:hover {
   list-style: none;
   padding: 0;
   margin: 0;
-  color: white;
+  color: #cc9900;
 }
 
 .footer-item {
   margin-bottom: 5px;
+  
 
 }
 
 .footer-link {
-  color: white;
+  color: #cc9900;
   text-decoration: none;
   transition: all 0.3s ease;
   font-weight: 5000;
@@ -398,20 +400,21 @@ nav .link:hover {
 }
 .copyright{
   font-weight: 450;
+  color: #cc9900;
 }
 .kas{
   padding-left: 5px;
-  color: #fff;
+  color: #cc9900;
   text-decoration: none;
   transition: all 0.3s ease;
   font-weight: 600;
 }
 .kas:hover{
-  color: #cc9900;
+  color: #fff;
   font-weight: 5000;
 }
 .footer-link:hover {
-  color: #cc9900;
+  color: #fff;
 }
 
 .footer-copyright {
@@ -423,7 +426,7 @@ nav .link:hover {
 
 .footer-text {
   font-size: 14px;
-  color: #a9a9a9;
+  color: #cc9900;
   margin: 0;
 }
 /* Responsive Styles */
