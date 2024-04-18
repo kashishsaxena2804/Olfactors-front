@@ -1,11 +1,12 @@
 import React from "react";
 import AdminMenu from "../../components/layout/AdminMenu";
 import Layout from "./../../components/layout/Layout";
+import "../styles/AdminStyles.css";
 
 const Users = () => {
   return (
     <Layout title={"Dashboard - All Users"}>
-      <div className="container-fluid m-3 p-3">
+      <div className="dashboard container-fluid m-3 p-3">
         <div className="row">
           <div className="col-md-3">
             <AdminMenu />
