@@ -19,6 +19,8 @@
   height: auto;
   align-self: center; /* Center the image within its container */
   margin-bottom: 20px; /* Add some bottom margin for spacing */
+  margin-top: 20px;
+  margin-left: 250px;
 }
 
 
