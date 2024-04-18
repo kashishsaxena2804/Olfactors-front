@@ -89,7 +89,7 @@ const CreateProduct = () => {
                     {c.name}
                   </Option>
                 ))}
-              </Select>+
+              </Select>
 
               <div className="mb-3">
                 <label className="button btn btn-outline-secondary col-md-12">
