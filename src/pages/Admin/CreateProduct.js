@@ -66,7 +66,7 @@ const CreateProduct = () => {
 
   return (
     <Layout title={"Dashboard - Create Product"}>
-      <div className="dashboard container-fluid m-3 p-3">
+      <div className="dashboard">
         <div className="row">
           <div className="col-md-3">
             <AdminMenu />
