@@ -767,7 +767,7 @@ nav .link:hover {
 .card-image {
   border-radius: 20px;
   width: 250px;
-  height: 200px; 
+  height: 210px; 
   object-fit: cover; 
   display: block; 
   margin: 0 auto 10px;
@@ -780,6 +780,7 @@ nav .link:hover {
   text-decoration: none;
   color: #fff;
   font-weight: bolder;
+  font-size: large;
 }
 
 .cat-btn:hover {
