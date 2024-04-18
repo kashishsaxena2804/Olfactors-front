@@ -670,7 +670,7 @@ nav .link:hover {
 
 /* Media query for small smartphones */
 /* Media query for small smartphones */
-@media (max-width: 425px) {
+@media (max-width: 450px) {
   .product-card {
     width: calc(50% - 20px); /* Adjust width for two products in one line */
     margin: 10px; /* Add space between products */
