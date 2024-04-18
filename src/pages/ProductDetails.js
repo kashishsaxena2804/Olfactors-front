@@ -49,7 +49,8 @@ const ProductDetails = () => {
       className="product-image"
       alt={product.name}
       height="300"
-      width={"350px"}
+      width={"550px"}
+      align-items= "center"
     />
   </div>
   <div className="col-md-6 product-details-info">
