@@ -669,8 +669,13 @@ nav .link:hover {
 }
 
 /* Media query for small smartphones */
-@media (max-width: 450px) {
+/* Media query for small smartphones */
+@media (max-width: 425px) {
   .product-card {
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack image and details vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
     width: calc(50% - 20px); /* Adjust width for two products in one line */
     max-width: calc(50% - 20px); /* Adjust maximum width */
     margin: 10px; /* Add space between products */
@@ -680,12 +685,14 @@ nav .link:hover {
   .card-img-top {
     width: 80%; /* Decrease image width to fit the container */
     height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Add space below image */
   }
   
   .product-details {
     padding: 5px; /* Adjust padding for better spacing */
   }
 }
+
 
 
 
