@@ -11,6 +11,8 @@
   font-family: myFont;
   font-weight: 1000;
   font-style: bold;
+ 
+  
 }
 
 /* font-family: "Poppins", sans-serif;*/
@@ -326,6 +328,7 @@ nav .link:hover {
   flex-direction: column;
   align-items: center;
   color: white;
+  
 }
 
 .footer-container {
@@ -335,6 +338,7 @@ nav .link:hover {
   width: 80%;
   color: #cc9900;
   margin: 0 auto;
+  
 }
 .flex-container {
   display: flex;
@@ -374,7 +378,7 @@ nav .link:hover {
 
 .footer-heading {
   font-size: 25px;
-  font-weight: bold;
+  font-weight: bolder;
   margin-bottom: 10px;
 }
 
@@ -435,6 +439,7 @@ nav .link:hover {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    margin-left: 30px;
   }
 
   .footer-section {
