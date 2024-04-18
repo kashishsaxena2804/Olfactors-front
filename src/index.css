@@ -39,6 +39,7 @@ img{
 
 }
 
+/* Header styles */
 .header {
   position: fixed;
   top: 0;
@@ -46,11 +47,11 @@ img{
   width: 100%;
   z-index: 1000;
   transition: height 0.3s;
-  padding:0;
+  padding: 0;
 }
 
 .header.scrolled {
-  height: 70px; /* Set the height of the header when scrolled */
+  height: 100px; /* Set the height of the header when scrolled */
 }
 
 .header-con {
@@ -61,6 +62,7 @@ img{
   background-color: #1e140a;
 }
 
+/* Container styles */
 .container {
   width: 100%; /* Set the width to span the entire viewport */
   display: flex;
@@ -69,6 +71,7 @@ img{
   padding: 0;
 }
 
+/* Left and Right icon styles */
 .left-icons,
 .right-icons {
   display: flex;
@@ -92,10 +95,13 @@ img{
   fill: #cc9900; /* Set initial color */
   transition: fill 0.3s;
 }
+
 .left-icons:hover svg,
 .right-icons:hover svg {
   fill: #fff; /* Change color on hover */
 }
+
+/* Cart icon styles */
 .cart {
   color: #cc9900;
 }
@@ -104,6 +110,7 @@ img{
   border-color: #cc9900;
 }
 
+/* Logo styles */
 .logo {
   flex: 1;
   text-align: center;
@@ -114,6 +121,7 @@ img{
   height: auto;
 }
 
+/* Social media icon colors */
 .left-icons svg:nth-child(1) {
   fill: #3b5998;
 }
@@ -122,18 +130,13 @@ img{
   fill: #e1306c;
 }
 
-.right-icons svg:nth-child(1) {
-  fill: #333;
-}
-
-.right-icons svg:nth-child(2) {
-  fill: #333;
-}
-
+.right-icons svg:nth-child(1),
+.right-icons svg:nth-child(2),
 .right-icons svg:nth-child(3) {
   fill: #333;
 }
 
+/* Navigation styles */
 nav {
   display: flex;
   justify-content: center;
@@ -155,10 +158,12 @@ nav .link:hover {
   color: #fff;
 }
 
+/* Hide default Bootstrap dropdown indicator */
 .dropdown-toggle::after {
   display: none;
 }
 
+/* Search form styles */
 .search-form {
   margin-right: 5px;
   margin-left: 10px;
@@ -185,10 +190,12 @@ nav .link:hover {
   font-weight: 400;
 }
 
+/* Cart icon styles */
 .cart-icon {
   color: #cc9900;
 }
 
+/* Navigation link styles */
 .nav-link {
   font-weight: 1000 !important;
   color: #cc9900;
@@ -198,16 +205,26 @@ nav .link:hover {
 .nav-link:hover {
   color: #cc9900;
 }
-
+/* Hide default Bootstrap dropdown indicator */
+.dropdown-toggle::after {
+  display: none;
+}
+/* Media styles */
 .media {
   color: #cc9900;
 }
 
+/* Dropdown menu styles */
 .dropdown-menu {
   background-color: #1e140a;
   color: #cc9900;
   border-color: #fff;
+  position: fixed; /* Change to fixed positioning */
+  top: 70px; /* Adjust as needed based on your header height */
+  left: 0; /* Align with the left edge of the viewport */
+  z-index: 9999; /* Set a high z-index value */
 }
+
 
 .dropdown-menu .dropdown-item {
   color: #cc9900;
@@ -225,6 +242,7 @@ nav .link:hover {
   border-bottom: 2px solid #cc9900;
 }
 
+/* Media queries */
 @media (max-width: 768px) {
   .left-icons,
   .right-icons {
@@ -259,6 +277,17 @@ nav .link:hover {
     font-size: small;
   }
 }
+
+@media (max-width: 450px) {
+  .header {
+    width: 105vw;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+}
+
+
 
 
 
@@ -782,12 +811,13 @@ nav .link:hover {
 
   /* Set the width to span the entire viewport width and remove padding and margin for the container */
   .container,
-  .header,
   .footer,
   .slider-content,
   .image-container,
   .text-center,
   .cat-card,
+  .header,
+  .nav,
   .main-container,
   .body {
     width: 105vw;
@@ -843,8 +873,8 @@ nav .link:hover {
     padding: 10px; /* Remove any padding */
     overflow-x: hidden; /* Hide horizontal overflow */
   }
-  .header {
-    height: 120vm; /* Adjust the height as needed */
+  .header{
+    height: 150px;
   }
 
 }
