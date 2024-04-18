@@ -684,8 +684,9 @@ nav .link:hover {
   
   .card-img-top {
     width: 80%; /* Decrease image width to fit the container */
-    max-height: 100px; /* Maintain aspect ratio */
+    max-height: 150px; /* Maintain aspect ratio */
     margin-bottom: 10px; /* Add space below image */
+    margin-top: 10px;
   }
   
   .product-details {
