@@ -671,9 +671,9 @@ nav .link:hover {
 /* Media query for small smartphones */
 @media (max-width: 425px) {
   .product-card {
-    width: calc(100% - 20px); /* Adjust width for one product per line */
-    margin-left: 0; /* Remove left margin */
-    margin-right: 0; /* Remove right margin */
+    width: calc(50% - 20px); /* Adjust width for two products in one line */
+    margin-left: 10px; /* Add space between products */
+    margin-right: 10px; /* Add space between products */
   }
 }
 
