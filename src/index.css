@@ -684,7 +684,7 @@ nav .link:hover {
   
   .card-img-top {
     width: 80%; /* Decrease image width to fit the container */
-    height: auto; /* Maintain aspect ratio */
+    height: 150px; /* Maintain aspect ratio */
     margin-bottom: 10px; /* Add space below image */
   }
   
