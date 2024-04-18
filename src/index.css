@@ -766,8 +766,8 @@ nav .link:hover {
 
 .card-image {
   border-radius: 20px;
-  width: 160px;
-  height: 160px; 
+  width: 200px;
+  height: 200px; 
   object-fit: cover; 
   display: block; 
   margin: 0 auto 10px;
@@ -779,12 +779,39 @@ nav .link:hover {
   text-align: center;
   text-decoration: none;
   color: #fff;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .cat-btn:hover {
   color: #cc9900;
 }
+@media (max-width: 450px) {
+  .cat-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Individual category card */
+  .col-md-4 {
+    flex: 0 0 calc(33.33% - 20px); /* Adjust width for medium devices */
+    max-width: calc(33.33% - 20px); /* Adjust maximum width for medium devices */
+    margin: 0 10px 20px; /* Add spacing between columns */
+  }
+  
+  .card-image {
+    border-radius: 20px;
+    width: 160px;
+    height: 160px; 
+    object-fit: cover; 
+    display: block; 
+    margin: 0 auto 10px;
+  }
+}
+
+
+
+
 
 /* Media query for smaller devices */
 @media (max-width: 767px) {
