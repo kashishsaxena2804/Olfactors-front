@@ -604,7 +604,7 @@ nav .link:hover {
 
 .card-img-top {
   width: 100%;
-  height: auto; /* Adjust height to maintain aspect ratio */
+  height: 200px; /* Adjust height to maintain aspect ratio */
   object-fit: cover;
 }
 
@@ -659,35 +659,23 @@ nav .link:hover {
   .product-card {
     width: calc(25% - 20px); /* Adjust width for four products in one line */
   }
-  .homepage{
-    width: 105%;
-  }
 }
 
 /* Media query for small devices */
 @media (max-width: 767px) {
   .product-card {
-    width: calc(100% - 20px); /* Adjust width for two products in one line */
-  }
-  .homepage{
-    width: 110%;
+    width: calc(50% - 20px); /* Adjust width for two products in one line */
   }
 }
 
 /* Media query for small smartphones */
 @media (max-width: 425px) {
   .product-card {
-    margin-left: -20px;
-    width: 100%;
-  }
-  .main-card{
-    width: calc(100%-20px);
-  }
-  .homepage{
-    width: 110%;
+    width: calc(100% - 20px); /* Adjust width for one product per line */
+    margin-left: 0; /* Remove left margin */
+    margin-right: 0; /* Remove right margin */
   }
 }
-
 
 
 
