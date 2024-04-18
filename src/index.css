@@ -669,13 +669,24 @@ nav .link:hover {
 }
 
 /* Media query for small smartphones */
+/* Media query for small smartphones */
 @media (max-width: 425px) {
   .product-card {
     width: calc(50% - 20px); /* Adjust width for two products in one line */
-    margin-left: 10px; /* Add space between products */
-    margin-right: 10px; /* Add space between products */
+    margin: 10px; /* Add space between products */
+    padding: 5px; /* Adjust padding for better spacing */
+  }
+  
+  .card-img-top {
+    width: 100%; /* Adjust image width to fit the container */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .product-details {
+    padding: 5px; /* Adjust padding for better spacing */
   }
 }
+
 
 
 
