@@ -4,15 +4,15 @@
   src: url(CaviarDreams.ttf);
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: myFont;
   font-weight: 1000;
-  font-style: bold;
- 
-  
+}
+body{
+  margin: 0;
 }
 
 /* font-family: "Poppins", sans-serif;*/
@@ -46,6 +46,7 @@ img{
   width: 100%;
   z-index: 1000;
   transition: height 0.3s;
+  padding:0;
 }
 
 .header.scrolled {
@@ -61,8 +62,11 @@ img{
 }
 
 .container {
-  width: 90%;
-  margin: 0 auto;
+  width: 100%; /* Set the width to span the entire viewport */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
 }
 
 .left-icons,
@@ -317,7 +321,9 @@ nav .link:hover {
 
 
 
-
+.container, .header, .footer {
+  width: 100vw;
+}
 
 
 /*Footer*/
@@ -328,6 +334,7 @@ nav .link:hover {
   flex-direction: column;
   align-items: center;
   color: white;
+  padding: 0;
   
 }
 
@@ -497,6 +504,9 @@ nav .link:hover {
 }
 
 /* ==================== */
+.homepage{
+  width: 110%;
+}
 .product-link {
   text-decoration: none !important;
   color: black !important;
@@ -549,6 +559,7 @@ nav .link:hover {
   font-style: bold;
 
 }
+
 .prod-heading{
   display: flex;
   flex-wrap: wrap;
@@ -568,16 +579,17 @@ nav .link:hover {
 }
 
 
-
-
-
+/* Styles for the main card */
 .main-card {
-  width: 100%;
+  width: calc(100% - 20px); /* Adjust the width to compensate for the left margin */
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
+  border: 1px solid #ccc;
   justify-content: space-between;
+  margin-left: 20px; /* Adjust the left margin as needed */
 }
+
 
 .product-card {
   width: calc(50% - 20px); /* Adjust width for two products in one line */
@@ -647,19 +659,32 @@ nav .link:hover {
   .product-card {
     width: calc(25% - 20px); /* Adjust width for four products in one line */
   }
+  .homepage{
+    width: 105%;
+  }
 }
 
 /* Media query for small devices */
 @media (max-width: 767px) {
   .product-card {
-    width: calc(50% - 20px); /* Adjust width for two products in one line */
+    width: calc(100% - 20px); /* Adjust width for two products in one line */
+  }
+  .homepage{
+    width: 110%;
   }
 }
 
 /* Media query for small smartphones */
 @media (max-width: 425px) {
   .product-card {
-    width: calc(100% - 20px); /* Adjust width for one product in one line */
+    margin-left: -20px;
+    width: 100%;
+  }
+  .main-card{
+    width: calc(100%-20px);
+  }
+  .homepage{
+    width: 110%;
   }
 }
 
@@ -697,9 +722,9 @@ nav .link:hover {
 
 /* Individual category card */
 .col-md-4 {
-  flex: 1 0 50%; /* Two cards per row on smaller devices */
-  max-width: 50%; /* Two cards per row on smaller devices */
-  padding: 5px; /* Add padding between cards */
+  flex: 0 0 calc(33.33% - 20px); /* Adjust width for medium devices */
+  max-width: calc(33.33% - 20px); /* Adjust maximum width for medium devices */
+  margin: 0 10px 20px; /* Add spacing between columns */
 }
 
 .card-image {
@@ -725,24 +750,105 @@ nav .link:hover {
 }
 
 /* Media query for smaller devices */
-@media screen and (max-width: 768px) {
+@media (max-width: 767px) {
   .col-md-4 {
-    flex: 1 0 100%; /* One card per row on smaller devices */
-    max-width: 100%; /* One card per row on smaller devices */
+    flex: 0 0 calc(50% - 20px); /* Adjust width for smaller devices */
+    max-width: calc(50% - 20px); /* Adjust maximum width for smaller devices */
   }
-}
+  .container {
+    padding: 0 10px; /* Add padding to the container */
+  }
+} 
 @media (max-width: 576px) {
   .col-md-4 {
     flex: 2 0 100%; /* One card per row on smaller devices */
     width: 105%; /* One card per row on smaller devices */
   }
 }
+/* Adjustments for small smartphones */
+@media (max-width: 450px) {
+  /* Hide horizontal overflow for the entire page */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Set the width to span the entire viewport width and remove padding and margin for the container */
+  .container,
+  .header,
+  .footer,
+  .slider-content,
+  .image-container,
+  .text-center,
+  .cat-card,
+  .main-container,
+  .body {
+    width: 105vw;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  /* Adjust the width for smaller screens */
+  .main-container {
+    width: 105vw; /* Adjusted width for better spacing */
+  }
+
+  /* Adjust the width for the header when scrolled */
+  .header.scrolled {
+    height: 70px;
+  }
+
+  /* Adjust the width for the logo */
+  .logo img {
+    max-width: 90%; /* Adjusted width for better responsiveness */
+  }
+
+  /* Adjust width for individual category cards */
+  .col-md-4 {
+    flex: 0 0 100%; /* One card per row on smaller devices */
+    max-width: 100%; /* One card per row on smaller devices */
+  }
+
+  /* Adjust width for the main c1ard */
+  .product-container{
+    width: 100%;
+  }
+  .main-card {
+    width: 100%; /* Adjust the width to compensate for the left margin */
+    margin-left: 20px; /* Remove the left margin */
+    margin-bottom: 20px;
+  }
+
+  /* Adjust width for product cards */
+  .product-card {
+    margin-left: 0; /* Remove the left margin */
+    width: 100%; /* Adjust width for one product per row on smaller devices */
+  }
+
+  /* Adjust width for the slider content */
+  .slider-content {
+    padding-top: 140px; /* Adjust padding for better spacing */
+  }
+  .content1 {
+    width: 105vw; /* Adjusted width for better spacing */
+    margin: 20px; /* Remove any margin */
+    padding: 10px; /* Remove any padding */
+    overflow-x: hidden; /* Hide horizontal overflow */
+  }
+  .header {
+    height: 120vm; /* Adjust the height as needed */
+  }
+
+}
+
+
+
 
 
 .heading-text{
   font-size: 35px;
   font-weight: 1000;
-  font-style: bold;
+  font-style: bolder;
   text-align: center;
   margin: auto;
   margin-bottom: 20px;
@@ -802,18 +908,16 @@ nav .link:hover {
 }
 
 
-.content {
+.content1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width:101.5%;
-  
   background-color: #1e140a;
-  
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-
   margin-top: 25px;
   margin-bottom: 50px;
+  width: 102%;
+  overflow-x: hidden; /* Hide horizontal overflow */
 }
 
 .stat {

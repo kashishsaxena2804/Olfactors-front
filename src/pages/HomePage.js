@@ -163,7 +163,7 @@ const HomePage = () => {
   }, []);
 
   return (
-    <Layout title={"Olfactors"}>
+    <Layout className="homepage" title={"Olfactors"}>
       <div className="slider-content">
         <Carousel>
           <Carousel.Item>
@@ -481,7 +481,7 @@ const HomePage = () => {
             </div>
           </div>
 
-          <div className="content">
+          <div className="content1">
             <div className="stat">
               <h4 className="section__stat-number">60+</h4>
               <h3>Premium Fragrances</h3>
