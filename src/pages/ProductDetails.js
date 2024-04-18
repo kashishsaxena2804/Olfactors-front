@@ -43,13 +43,13 @@ const ProductDetails = () => {
   return (
     <Layout>
       <div className="row product-details-container ">
-  <div className=" col-md-6">
+  <div className="product-img col-md-6">
     <img
       src={`${process.env.REACT_APP_BASE_URL}/api/vl/product/product-photo/${product._id}`}
       className="product-image"
       alt={product.name}
-      height="400"
-      width={"600px"}
+      height="450"
+      width={"650px"}
       align-items= "center"
     />
   </div>

@@ -12,14 +12,19 @@
 }
 
 /* Styles for product image */
-
+.product-img{
+  max-width: 90%;
+  padding: auto;
+  height: 50vh;
+  align-self: center; 
+}
 
 .product-image {
   max-width: 100%;
   height: auto;
   align-self: center; /* Center the image within its container */
-  margin-bottom: 20px; /* Add some bottom margin for spacing */
-  margin-top: 20px;
+  margin-bottom: 10px; /* Add some bottom margin for spacing */
+  margin-top: 30px;
   margin-left: 250px;
 }
 
