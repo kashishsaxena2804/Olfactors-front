@@ -759,14 +759,14 @@ nav .link:hover {
 
 /* Individual category card */
 .col-md-4 {
-  flex: 0 0 calc(33.33% - 20px); /* Adjust width for medium devices */
-  max-width: calc(33.33% - 20px); /* Adjust maximum width for medium devices */
+  flex: 0 0 calc(40% - 20px); /* Adjust width for medium devices */
+  max-width: calc(40% - 20px); /* Adjust maximum width for medium devices */
   margin: 0 10px 20px; /* Add spacing between columns */
 }
 
 .card-image {
   border-radius: 20px;
-  width: 200px;
+  width: 250px;
   height: 200px; 
   object-fit: cover; 
   display: block; 
