@@ -16,7 +16,9 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-section">
-          <img className="foot-logo" src="/images/Olfactors.png" alt="Olfactors Logo" />
+        <Link to="/" className="navbar-brand">
+            <img className="foot-logo" src="/images/Olfactors.png" alt="Logo" />
+          </Link>
           <p className="footer-content">
             Crafted with exquisite ingredients and an alchemist's touch, Olfactors invites you to paint your own olfactory masterpiece. Explore endless possibilities, one captivating scent at a time.
           </p>
@@ -25,16 +27,16 @@ const Footer = () => {
           <h3 className="footer-heading">Account</h3>
           <ul className="footer-list">
             <li className="footer-item">
-              <Link to="/login" className="footer-link">Sign In</Link>
+              <Link to="/login" className="footer-link" onClick={scrollToTop}>Sign In</Link>
             </li>
             <li className="footer-item">
-              <Link to="/register" className="footer-link">Register</Link>
+              <Link to="/register" className="footer-link" onClick={scrollToTop}>Register</Link>
             </li>
             <li className="footer-item">
-              <Link to={`/dashboard/${user?.role === 1 ? "admin" : "user"}`} className="footer-link">Account</Link>
+              <Link to={`/dashboard/${user?.role === 1 ? "admin" : "user"}`} className="footer-link" onClick={scrollToTop}>Account</Link>
             </li>
             <li className="footer-item">
-              <Link to="/cart" className="footer-link">Cart</Link>
+              <Link to="/cart" className="footer-link" onClick={scrollToTop}>Cart</Link>
             </li>
           </ul>
         </div>
@@ -42,19 +44,19 @@ const Footer = () => {
           <h3 className="footer-heading">Category</h3>
           <ul className="footer-list">
             <li className="footer-item">
-              <Link to="/category/perfumes" className="footer-link">Perfumes</Link>
+              <Link to="/category/perfumes" className="footer-link" onClick={scrollToTop}>Perfumes</Link>
             </li>
             <li className="footer-item">
-              <Link to="/category/attars" className="footer-link">Attars</Link>
+              <Link to="/category/attars" className="footer-link" onClick={scrollToTop}>Attars</Link>
             </li>
             <li className="footer-item">
-              <Link to="/category/diffuser-oils" className="footer-link">Diffuser Oils</Link>
+              <Link to="/category/diffuser-oils" className="footer-link" onClick={scrollToTop}>Diffuser Oils</Link>
             </li>
             <li className="footer-item">
-              <Link to="/category/gift-hampers" className="footer-link">Gift Hampers</Link>
+              <Link to="/category/gift-hampers" className="footer-link" onClick={scrollToTop}>Gift Hampers</Link>
             </li>
             <li className="footer-item">
-              <Link to="/category/air-freshners" className="footer-link">Air Fresheners</Link>
+              <Link to="/category/air-freshners" className="footer-link" onClick={scrollToTop}>Air Fresheners</Link>
             </li>
           </ul>
         </div>

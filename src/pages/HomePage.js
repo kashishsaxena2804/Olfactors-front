@@ -500,14 +500,19 @@ const HomePage = () => {
             </div>
           </div>
           <div class="main-container">
-            <div class="main-card2">
-              <div class="prod-heading">
-                <h2>Our Products</h2>
-              </div>
+            
               <div class="vdo-container">
-                <ReactPlayer url="https://youtu.be/WhKJl9W_1Fw?si=3KwlBLx581JzwlZ4" />
+              <video
+            style={{ height: "90vh" }}
+            className="d-block w-100"
+            autoPlay
+            loop
+            muted
+          >
+          <source src="./images/ad-vdo.mp4" type="video/mp4" />
+        </video>
               </div>
-            </div>
+            
             {/*<div class='main-card3'>
             <div class='vdo-heading'><h2>Reviews</h2></div>
             

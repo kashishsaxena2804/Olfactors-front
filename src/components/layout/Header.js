@@ -7,6 +7,13 @@ import useCategory from '../../hooks/useCategory';
 import { Badge } from 'antd';
 import { useCart } from '../../context/cart';
 
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+};
+
 const Header = () => {
   const [auth, setAuth] = useAuth();
   const [cart] = useCart();
@@ -84,12 +91,12 @@ const Header = () => {
   {!auth.user ? (
     <>
       <li className="nav-item1">
-        <NavLink to="/register" className="dropdown-item">
+        <NavLink to="/register" className="dropdown-item" onClick={scrollToTop}>
           Register
         </NavLink>
       </li>
       <li className="nav-item1">
-        <NavLink to="/login" className="dropdown-item">
+        <NavLink to="/login" className="dropdown-item" onClick={scrollToTop}>
           Login
         </NavLink>
       </li>
@@ -99,13 +106,13 @@ const Header = () => {
               <li>
             <NavLink
               to={`/dashboard/${auth?.user?.role === 1 ? 'admin' : 'user'}`}
-              className="dropdown-item"
+              className="dropdown-item" onClick={scrollToTop}
             >
               Profile
             </NavLink>
           </li>
           <li>
-            <NavLink onClick={handleLogout} to="/login" className="dropdown-item">
+            <NavLink onClick={handleLogout} to="/login" className="dropdown-item" onClick={scrollToTop}>
               Logout
             </NavLink>
           </li>
@@ -122,7 +129,7 @@ const Header = () => {
             showZero
             offset={[-5, -4]}
             style={{ background: '#1e140a', color: '#cc9900'}}
-          >
+           onClick={scrollToTop}>
             <Link className='cart-icon' to="/cart">
             <svg to="/cart" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 14 14">
               <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M12.88 12.39a1 1 0 0 1-1 1.11H2.12a1 1 0 0 1-1-1.11L2 4.5h10zM4.5 4.5V3a2.5 2.5 0 1 1 5 0v1.5"/>
@@ -132,11 +139,11 @@ const Header = () => {
         </div>
       </div>
       <nav>
-        <Link className='link' to="/category/perfumes">Perfumes</Link>
-        <Link className='link' to="/category/attars">Attars</Link>
-        <Link className='link' to="/category/diffusion-oils">Diffusion Oils</Link>
-        <Link className='link' to="/category/air-freshners">Air Freshners</Link>
-        <Link className='link' to="/category/gift-hampers">Gift Hampers</Link>
+        <Link className='link' to="/category/perfumes" onClick={scrollToTop}>Perfumes</Link>
+        <Link className='link' to="/category/attars" onClick={scrollToTop}>Attars</Link>
+        <Link className='link' to="/category/diffusion-oils" onClick={scrollToTop}>Diffusion Oils</Link>
+        <Link className='link' to="/category/air-freshners" onClick={scrollToTop}>Air Freshners</Link>
+        <Link className='link' to="/category/gift-hampers" onClick={scrollToTop}>Gift Hampers</Link>
       </nav>
     </header>
   );

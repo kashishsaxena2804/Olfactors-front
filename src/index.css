@@ -76,6 +76,7 @@ img{
 .right-icons {
   display: flex;
   padding: 1rem;
+  margin: 0 50px;
   color: #cc9900;
 }
 
