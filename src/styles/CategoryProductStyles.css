@@ -29,16 +29,17 @@
 
   .filters {
     flex: 0 0 100%; /* Full width for filters on smaller screens */
-    order: 1; /* Move filters above products on smaller screens */
+    order: -1; /* Move filters above products on smaller screens */
     margin-bottom: 20px; /* Add some space between filters and products */
   }
 
   .products {
     flex: 0 0 100%; /* Full width for products on smaller screens */
-    order: 2; /* Move products below filters on smaller screens */
+    order: 1; /* Move products below filters on smaller screens */
   }
 
   .product-card {
     flex-basis: calc(50% - 20px); /* 2 products per row with 20px spacing on smaller screens */
   }
 }
+
