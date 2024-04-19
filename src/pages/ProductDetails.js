@@ -46,10 +46,10 @@ const ProductDetails = () => {
   <div className="product-img col-md-6">
     <img
       src={`${process.env.REACT_APP_BASE_URL}/api/vl/product/product-photo/${product._id}`}
-      className="product-image"
+      className="product-img1"
       alt={product.name}
-      height="300"
-      width={"350px"}
+      height="450"
+      width={"500px"}
       align-items= "center"
     />
   </div>
