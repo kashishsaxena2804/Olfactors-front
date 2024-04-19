@@ -1,6 +1,6 @@
 /* Styles for product details container */
 .product-details-container {
- margin-top: 200px;
+  margin-top: 200px;
   position: relative;
   width: 100%;
   height: 100%;
@@ -8,31 +8,20 @@
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  
 }
 
 /* Styles for product image */
-.product-img{
-  max-width: 90%;
-  padding: auto;
-  height: 50vh;
-  align-self: center; 
-}
-
-.product-image {
+.product-img {
   max-width: 100%;
   height: auto;
-  align-self: center; /* Center the image within its container */
-  margin-bottom: 10px; /* Add some bottom margin for spacing */
-  margin-top: 30px;
-  margin-left: 250px;
+  margin-bottom: 20px;
 }
-
 
 /* Styles for product details */
 .product-details {
-  text-align: left;
-  margin-top: 20px;
+  width: 100%;
+  max-width: 400px; /* Adjust max-width as needed */
+  padding: 0 20px; /* Add padding to the sides */
 }
 
 /* Styles for similar products container */
@@ -54,9 +43,14 @@
     align-items: flex-start;
   }
 
-  .product-details-info {
-    width: calc(50% - 20px); /* Adjust for margins */
-    padding: 0 20px; /* Add padding to the sides */
+  .product-img {
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  .product-details {
+    width: 45%;
+    margin-left: 5%; /* Add a bit of space between image and details */
   }
 
   .similar-products {
