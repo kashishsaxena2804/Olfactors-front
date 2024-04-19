@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 200px; /* Adjust top padding as needed */
+  padding-top: 160px; /* Adjust top padding as needed */
 }
 
 /* Styles for .cart-heading */
@@ -35,7 +35,8 @@
 
 .product-card {
   width: calc(50% - 10px); /* Adjust width to leave space between cards */
-  margin-bottom: 20px; /* Add spacing between cards */
+  margin-bottom: 20px; 
+  /* Add spacing between cards */
 }
 
 /* Styles for the right half (cart summary) */
@@ -50,4 +51,21 @@
   .row {
     align-items: flex-start;
   }
+  .cart-summary{
+    margin-left: 30px;
+  }
+
+}
+@media (min-width: 450px) {
+  /* Adjust alignment for larger screens */
+  .row {
+    align-items: flex-start;
+  }
+  .cart-summary{
+    margin-left: 50px;
+  }
+  .col-md-7{
+    margin-left: 50px;
+  }
+
 }
