@@ -12,7 +12,7 @@
 
 /* Styles for product image */
 .product-img {
-  max-width: 100%;
+  width: 100%;
   height: auto; /* Adjust height to maintain aspect ratio */
   margin-bottom: 20px;
 }
@@ -27,6 +27,7 @@
 /* Styles for similar products container */
 .similar-products {
   margin-top: 50px;
+  margin-left: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; /* Align similar products in a row */
