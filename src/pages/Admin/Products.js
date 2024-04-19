@@ -61,7 +61,7 @@ const Products = () => {
                 to={`/dashboard/admin/product/${p.slug}`}
                 className="product-link"
               >
-                <div className="card m-2" style={{ width: "10rem" }}>
+                <div className="card m-2" style={{ width: "10rem", margin:"10px"}}>
                   <img
                     src={`${process.env.REACT_APP_BASE_URL}/api/vl/product/product-photo/${p._id}`}
                     className="card-img-top"
