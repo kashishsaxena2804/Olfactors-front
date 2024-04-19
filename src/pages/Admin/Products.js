@@ -73,8 +73,7 @@ const Products = () => {
                 </div>
               </Link>
             ))}
-          </div>
-          <div className="m-2 p-3">
+            <div className="m-2 p-3">
             {products && products.length < total && (
               <button
                 className="btn loadmore"
@@ -94,6 +93,8 @@ const Products = () => {
               </button>
             )}
           </div>
+          </div>
+          
         </div>
       </div>
     </Layout>
