@@ -48,8 +48,8 @@ const ProductDetails = () => {
       src={`${process.env.REACT_APP_BASE_URL}/api/vl/product/product-photo/${product._id}`}
       className="product-image"
       alt={product.name}
-      height="500px"
-      width={"100%"}
+      height="300"
+      width={"350px"}
       align-items= "center"
     />
   </div>
@@ -86,7 +86,7 @@ const ProductDetails = () => {
   )}
   <div className="d-flex flex-wrap">
     {relatedProducts?.map((p) => (
-      <div className="product-card" key={p._id}>
+      <div className="product-card m-2"  key={p._id}>
         <img
           src={`${process.env.REACT_APP_BASE_URL}/api/vl/product/product-photo/${p._id}`}
           className="product-image"
