@@ -48,8 +48,8 @@ const ProductDetails = () => {
       src={`${process.env.REACT_APP_BASE_URL}/api/vl/product/product-photo/${product._id}`}
       className="product-image"
       alt={product.name}
-      height="450"
-      width={"650px"}
+      height="500px"
+      width={"100%"}
       align-items= "center"
     />
   </div>
