@@ -76,7 +76,7 @@ img{
 .right-icons {
   display: flex;
   padding: 1rem;
-  margin: 0 50px;
+  margin: 0 10px;
   color: #cc9900;
 }
 
@@ -112,35 +112,15 @@ img{
 }
 
 /* Logo styles */
-/* Logo styles */
 .logo {
   flex: 1;
   text-align: center;
 }
 
 .logo img {
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
 }
-
-/* Media queries */
-@media (max-width: 768px) {
-  .logo img {
-    max-width: 80%; /* Adjust the maximum width of the logo */
-  }
-}
-
-@media (max-width: 576px) {
-  .logo img {
-    max-width: 60%; /* Adjust the maximum width of the logo */
-  }
-}
-
-/* Header styles */
-.header.scrolled nav {
-  display: none; /* Hide only the nav on scrolling */
-}
-
 
 /* Social media icon colors */
 .left-icons svg:nth-child(1) {
@@ -282,6 +262,15 @@ nav .link:hover {
     position: relative; /* Change back to default positioning */
     top: auto; /* Reset top positioning */
     z-index: 9999;
+  }
+}
+@media (max-width: 576px) {
+  .logo {
+    flex: 0 0 80%; /* Make the logo take full width on smaller devices */
+  }
+
+  .logo img {
+    max-width: 80%; /* Adjust the max-width of the logo for better responsiveness */
   }
 }
 
