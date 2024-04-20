@@ -671,15 +671,17 @@ nav .link:hover {
   padding: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 100%;
+  align-items: center; /* Center content horizontally */
+  text-align: center; /* Center text */
 }
+
 
 .product-name {
   font-size: 16px;
   font-weight: bolder;
   margin-bottom: 8px;
   margin-top: 2px;
+  text-align: center; /* Center text */
 }
 
 .product-offer {
@@ -691,6 +693,7 @@ nav .link:hover {
 .product-prices {
   display: flex;
   align-items: center;
+  justify-content: center; /* Center content horizontally */
   margin-bottom: 12px;
 }
 
@@ -714,7 +717,10 @@ nav .link:hover {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  width: 100%;
+  width: 80%; /* Set width to match image width */
+  background-color: #007bff; /* Example background color */
+  margin-top: auto; /* Align button to the bottom of the card */
+  margin-bottom: 10px; /* Add some space between button and prices */
 }
 
 /* Media query for laptops */
@@ -1143,22 +1149,22 @@ nav .link:hover {
   }
 } 
 
-.button{
+.button {
   border: 1px solid black;
-  border-radius: 0;
+  border-radius: 2px; /* Adjust border radius */
   background-color: #1e140a;
   color: #cc9900;
-  border-radius: 2px;
-  font-weight: 550;
-  font-style: bold;
-  font-weight: bold;
+  font-weight: bold; /* Only one declaration of font-weight needed */
+  font-style: bold; /* Remove duplicate declaration */
+  padding: 8px 16px; /* Adjust padding for better appearance */
 }
 
 .button:hover {
-  border: 1px solid #FFD400;
+  border: 1px solid #ffd400; /* Adjust border color on hover */
   color: #fff;
-  background: #cc9900; 
-  }
+  background: #cc9900;
+}
+
   
 
 .home-page{
