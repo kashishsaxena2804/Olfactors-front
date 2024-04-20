@@ -745,7 +745,7 @@ nav .link:hover {
     flex-direction: column; /* Stack image and details vertically */
     justify-content: center; /* Center content vertically */
     align-items: center; /* Center content horizontally */
-    width: calc(50% - 20px); /* Adjust width for two products in one line */
+    width: 100%; /* Adjust width for two products in one line */
     max-width: calc(50% - 20px); /* Adjust maximum width */
     margin: 10px; /* Add space between products */
     padding: 5px; /* Adjust padding for better spacing */
@@ -762,6 +762,73 @@ nav .link:hover {
     padding: 5px; /* Adjust padding for better spacing */
   }
 }
+/* Media query for laptops */
+@media (min-width: 1024px) {
+  .product-card {
+    width: 100%; /* Adjust width for four products in one line */
+    max-width: calc(25% - 20px); /* Adjust maximum width */
+    margin: 10px; /* Add space between products */
+    padding: 20px; /* Adjust padding for better spacing */
+  }
+
+  .card-img-top {
+    width: 100%; /* Adjust image width to fill the container */
+    max-height: 200px; /* Limit image height */
+    object-fit: cover; /* Maintain aspect ratio and cover container */
+    margin-bottom: 15px; /* Add space below image */
+  }
+
+  .product-details {
+    padding: 10px; /* Adjust padding for better spacing */
+    text-align: center; /* Center align text */
+  }
+
+  .product-name {
+    font-size: 16px; /* Adjust font size */
+    font-weight: bold; /* Add bold font weight */
+    margin-bottom: 8px; /* Add space below product name */
+  }
+
+  .product-offer {
+    font-size: 14px; /* Adjust font size */
+    color: #4caf50;
+    margin-bottom: 12px; /* Add space below product offer */
+  }
+
+  .product-prices {
+    font-size: 14px; /* Adjust font size */
+    margin-bottom: 12px; /* Add space below product prices */
+  }
+
+  .original-price {
+    font-size: 14px; /* Adjust font size */
+    margin-right: 4px; /* Add space between original price and discounted price */
+  }
+
+  .discounted-price {
+    font-size: 16px; /* Adjust font size */
+    font-weight: bold; /* Add bold font weight */
+    color: #000000;
+  }
+
+  .add-to-cart-button {
+    width: 100%; /* Make button width same as container */
+    padding: 10px; /* Adjust padding for better appearance */
+    font-size: 14px; /* Adjust font size */
+    color: #fff;
+    background-color: #1e140a;
+    border: 1px solid #1e140a;
+    border-radius: 4px; /* Add border radius */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Add smooth transition */
+  }
+
+  .add-to-cart-button:hover {
+    background-color: #000000; /* Change background color on hover */
+    border: 1px solid #000000; /* Change border color on hover */
+  }
+}
+
 
 
 
