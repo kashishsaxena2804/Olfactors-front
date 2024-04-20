@@ -15,8 +15,9 @@
 .product-img1 {
   width: 100%; /* Adjust to cover the entire width */
   height: auto; /* Maintain aspect ratio */
-  max-height: 450px; /* Limit the maximum height */
+  max-height: 400px; /* Limit the maximum height */
   margin-bottom: 20px;
+  margin-top: 20px;
   
 }
 .product-name1{
