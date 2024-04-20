@@ -24,6 +24,12 @@ const HomePage = () => {
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(false);
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
   //get all cat
   const getAllCategory = async () => {
     try {
@@ -254,11 +260,14 @@ const HomePage = () => {
                 {newarrival?.map((p) => (
                   <div className="product-card">
                     <img
-                      src={`${process.env.REACT_APP_BASE_URL}/api/vl/product/product-photo/${p._id}`}
-                      className="card-img-top"
-                      onClick={() => navigate(`/product/${p.slug}`)}
-                      alt={p.name}
-                    />
+                  src={`${process.env.REACT_APP_BASE_URL}/api/vl/product/product-photo/${p._id}`}
+                  className="card-img-top"
+                  onClick={() => {
+                    navigate(`/product/${p.slug}`);
+                    scrollToTop(); // Assuming scrollToTop is a function defined elsewhere
+                  }}
+                  alt={p.name}
+                />
                     <div className="product-details">
                       <h3 className="product-name">{p.name}</h3>
                       <div className="product-prices">
@@ -305,12 +314,15 @@ const HomePage = () => {
                 {bestseller?.map((p) => (
                   <div className="product-card">
                   
-                    <img
-                      src={`${process.env.REACT_APP_BASE_URL}/api/vl/product/product-photo/${p._id}`}
-                      className="card-img-top"
-                      onClick={() => navigate(`/product/${p.slug}`)}
-                      alt={p.name}
-                    />
+                  <img
+                  src={`${process.env.REACT_APP_BASE_URL}/api/vl/product/product-photo/${p._id}`}
+                  className="card-img-top"
+                  onClick={() => {
+                    navigate(`/product/${p.slug}`);
+                    scrollToTop(); // Assuming scrollToTop is a function defined elsewhere
+                  }}
+                  alt={p.name}
+                />
                     <div className="product-details">
                       <h3 className="product-name">{p.name}</h3>
                       {/*<p className="product-offer">{p.offer}</p>*/}
@@ -379,12 +391,15 @@ const HomePage = () => {
                 {featured?.map((p) => (
                   <div className="product-card">
                   
-                    <img
-                      src={`${process.env.REACT_APP_BASE_URL}/api/vl/product/product-photo/${p._id}`}
-                      className="card-img-top"
-                      onClick={() => navigate(`/product/${p.slug}`)}
-                      alt={p.name}
-                    />
+                  <img
+                  src={`${process.env.REACT_APP_BASE_URL}/api/vl/product/product-photo/${p._id}`}
+                  className="card-img-top"
+                  onClick={() => {
+                    navigate(`/product/${p.slug}`);
+                    scrollToTop(); // Assuming scrollToTop is a function defined elsewhere
+                  }}
+                  alt={p.name}
+                />
                     <div className="product-details">
                       <h3 className="product-name">{p.name}</h3>
                       {/*<p className="product-offer">{p.offer}</p>*/}
@@ -437,12 +452,15 @@ const HomePage = () => {
                 {gifthamper?.map((p) => (
                   <div className="product-card">
                   
-                    <img
-                      src={`${process.env.REACT_APP_BASE_URL}/api/vl/product/product-photo/${p._id}`}
-                      className="card-img-top"
-                      onClick={() => navigate(`/product/${p.slug}`)}
-                      alt={p.name}
-                    />
+                  <img
+                  src={`${process.env.REACT_APP_BASE_URL}/api/vl/product/product-photo/${p._id}`}
+                  className="card-img-top"
+                  onClick={() => {
+                    navigate(`/product/${p.slug}`);
+                    scrollToTop(); // Assuming scrollToTop is a function defined elsewhere
+                  }}
+                  alt={p.name}
+                />
                     <div className="product-details">
                       <h3 className="product-name">{p.name}</h3>
                       {/*<p className="product-offer">{p.offer}</p>*/}

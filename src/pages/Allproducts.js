@@ -31,6 +31,12 @@ const HomePage = () => {
       console.log(error);
     }
   };
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
 
   useEffect(() => {
     getAllCategory();
@@ -147,10 +153,16 @@ const HomePage = () => {
           <div className="d-flex flex-wrap">
             {products?.map((p) => (
               <div className="product-card" >
-                <img src={`${process.env.REACT_APP_BASE_URL}/api/vl/product/product-photo/${p._id}`}
+                <img
+                  src={`${process.env.REACT_APP_BASE_URL}/api/vl/product/product-photo/${p._id}`}
                   className="card-img-top"
-                  onClick={() => navigate(`/product/${p.slug}`)}
-                  alt={p.name}/>
+                  onClick={() => {
+                    navigate(`/product/${p.slug}`);
+                    scrollToTop(); // Assuming scrollToTop is a function defined elsewhere
+                  }}
+                  alt={p.name}
+                />
+
               <div className="product-details">
                 <h3 className="product-name">{p.name}</h3>
                 {/*<p className="product-offer">{p.offer}</p>*/}
