@@ -56,7 +56,7 @@ const ProductDetails = () => {
         <div className="col-md-6 product-details-info">
           <h1 className="text-center">Product Details</h1>
           <hr />
-          <h4 className="product-name1">Name{product.name}</h4>
+          <h4 className="product-name1">{product.name}</h4>
           <h5>Description : {product.description}</h5>
           <h5>
             

@@ -23,14 +23,6 @@
   font-weight: 800;
 }
 
-
-/* Styles for product details */
-.product-details {
-  width: 100%;
-  max-width: 400px; /* Adjust max-width as needed */
-  padding: 0 20px; /* Add padding to the sides */
-}
-
 /* Styles for similar products container */
 .similar-products {
   margin-top: 50px;
@@ -54,13 +46,5 @@
     align-items: flex-start;
   }
 
-  .product-img {
-    width: 45%; /* Adjust width to desired size */
-    margin-bottom: 0;
-  }
-
-  .product-details {
-    width: 50%; /* Adjust width to desired size */
-    margin-left: 5%; /* Add a bit of space between image and details */
-  }
+  
 }

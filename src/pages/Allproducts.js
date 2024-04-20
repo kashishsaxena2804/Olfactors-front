@@ -113,7 +113,7 @@ const HomePage = () => {
     }
   };
   return (
-    <Layout title={"ALl Products - Best offers "}>
+    <Layout title={"ALl Products"}>
       
       <div className="container-fluid row mt-3 home-page">
         <div className="col-md-3 filters">
