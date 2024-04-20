@@ -48,6 +48,10 @@
   margin-bottom: 20px; /* Add spacing between rows */
 }
 
+.cart-summary{
+  height: auto;
+}
+
 /* Media query for small devices */
 @media (min-width: 768px) {
   /* Adjust alignment for larger screens */

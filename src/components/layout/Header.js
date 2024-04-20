@@ -123,19 +123,20 @@ const Header = () => {
 </ul>
 
 
-          <Badge
-            className="cart"
-            count={cart?.length}
-            showZero
-            offset={[-5, -4]}
-            style={{ background: '#1e140a', color: '#cc9900'}}
-           onClick={scrollToTop}>
-            <Link className='cart-icon' to="/cart">
-            <svg to="/cart" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 14 14">
-              <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M12.88 12.39a1 1 0 0 1-1 1.11H2.12a1 1 0 0 1-1-1.11L2 4.5h10zM4.5 4.5V3a2.5 2.5 0 1 1 5 0v1.5"/>
-          </svg>
-            </Link>
-          </Badge>
+<Badge
+  className="cart"
+  count={cart?.length}
+  showZero
+  offset={[-5, -4]}
+  style={{ background: '#1e140a', color: '#cc9900'}}
+  onClick={scrollToTop}
+>
+  <Link className='cart-icon' to="/cart">
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 14 14">
+      <path fill="none" stroke="#cc9900" stroke-linecap="round" stroke-linejoin="round" d="M12.88 12.39a1 1 0 0 1-1 1.11H2.12a1 1 0 0 1-1-1.11L2 4.5h10zM4.5 4.5V3a2.5 2.5 0 1 1 5 0v1.5"/>
+    </svg>
+  </Link>
+</Badge>
         </div>
       </div>
       <nav>
