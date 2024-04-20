@@ -312,7 +312,23 @@ nav .link:hover {
   }
 }
 
+@media (max-width: 450px) {
+  .left-icons,
+  .right-icons {
+    padding: 1px;
+  }
 
+  .left-icons svg,
+  .right-icons svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  nav .link {
+    margin: 8px;
+    font-size: small;
+  }
+}
 
 
 
@@ -916,6 +932,9 @@ nav .link:hover {
     overflow-x: hidden;
   }
 
+  
+
+
   /* Adjust the width for smaller screens */
   .main-container {
     width: 106vw; /* Adjusted width for better spacing */
@@ -923,7 +942,7 @@ nav .link:hover {
 
   /* Adjust the width for the header when scrolled */
   .header.scrolled {
-    height: 90px;
+    height: 180px;
   }
 
 
@@ -951,7 +970,7 @@ nav .link:hover {
 
   /* Adjust width for the slider content */
   .slider-content {
-    padding-top: 140px; /* Adjust padding for better spacing */
+    padding-top: 120px; /* Adjust padding for better spacing */
   }
   .content1 {
     width: 105vw; /* Adjusted width for better spacing */
@@ -963,7 +982,149 @@ nav .link:hover {
 
 }
 
+@media (max-width: 768px) {
+  /* Hide horizontal overflow for the entire page */
+  body {
+    overflow-x: hidden;
+  }
 
+  /* Set the width to span the entire viewport width and remove padding and margin for the container */
+  .container,
+  .footer,
+  .slider-content,
+  .image-container,
+  .text-center,
+  .cat-card,
+  .header,
+  .nav,
+  .main-container,
+  .body {
+    width: 106vw;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  /* Adjust the width for smaller screens */
+  .main-container {
+    width: 106vw; /* Adjusted width for better spacing */
+  }
+
+  /* Adjust the width for the header when scrolled */
+  .header.scrolled {
+    height: 180px;
+  }
+
+
+  /* Adjust width for individual category cards */
+  .col-md-4 {
+    flex: 0 0 100%; /* One card per row on smaller devices */
+    max-width: 100%; /* One card per row on smaller devices */
+  }
+
+  /* Adjust width for the main c1ard */
+  .product-container{
+    width: 100%;
+  }
+  .main-card {
+    width: 100%; /* Adjust the width to compensate for the left margin */
+    margin-left: 20px; /* Remove the left margin */
+    margin-bottom: 20px;
+  }
+
+  /* Adjust width for product cards */
+  .product-card {
+    margin:9px; /* Remove the left margin */
+    width: 100%; /* Adjust width for one product per row on smaller devices */
+  }
+
+  /* Adjust width for the slider content */
+  .slider-content {
+    padding-top: 120px; /* Adjust padding for better spacing */
+  }
+  .content1 {
+    width: 105vw; /* Adjusted width for better spacing */
+    margin: 9px; /* Remove any margin */
+    padding: 10px; /* Remove any padding */
+    overflow-x: hidden; /* Hide horizontal overflow */
+  }
+  
+
+}
+@media (max-width: 1440px) {
+  /* Hide horizontal overflow for the entire page */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Set the width to span the entire viewport width and remove padding and margin for the container */
+  .container,
+  .footer,
+  .slider-content,
+  .image-container,
+  .text-center,
+  .cat-card,
+  .header,
+  .nav,
+  .main-container,
+  .body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  .slider-content video{
+    max-width:100%;
+    height:auto;
+  }
+  /* Adjust the width for smaller screens */
+  .main-container {
+    width: 100%; /* Adjusted width for better spacing */
+  }
+
+  /* Adjust the width for the header when scrolled */
+  .header.scrolled {
+    height: 180px;
+  }
+
+
+  /* Adjust width for individual category cards */
+  .col-md-4 {
+    flex: 0 0 100%; /* One card per row on smaller devices */
+    max-width: 100%; /* One card per row on smaller devices */
+  }
+
+  /* Adjust width for the main c1ard */
+  .product-container{
+    width: 100%;
+  }
+  .main-card {
+    width: 99%;
+    margin-bottom: 20px;
+  }
+  .row{
+    width: 100%;
+  }
+
+  /* Adjust width for product cards */
+  .product-card {
+    margin:9px; /* Remove the left margin */
+    width: 100%; /* Adjust width for one product per row on smaller devices */
+  }
+
+  /* Adjust width for the slider content */
+  .slider-content {
+    padding-top: 120px; /* Adjust padding for better spacing */
+    height: auto;
+  }
+  .content1 {
+    width:95%; /* Remove any margin */
+    padding: 10px; /* Remove any padding */
+    overflow-x: hidden; }
+  
+
+}
 
 
 
