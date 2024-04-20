@@ -775,12 +775,13 @@ nav .link:hover {
     width: 100%; /* Adjust image width to fill the container */
     max-height: 200px; /* Limit image height */
     object-fit: cover; /* Maintain aspect ratio and cover container */
-    margin-bottom: 15px; /* Add space below image */
+    margin-bottom: 15px;
   }
 
   .product-details {
     padding: 10px; /* Adjust padding for better spacing */
     text-align: center; /* Center align text */
+    width: 100%;
   }
 
   .product-name {
