@@ -90,7 +90,7 @@ const ProductDetails = () => {
             <div className="product-card m-2" key={p._id}>
               <img
                 src={`${process.env.REACT_APP_BASE_URL}/api/vl/product/product-photo/${p._id}`}
-                className="product-image"
+                className="product-image1"
                 alt={p.name}
                 onClick={() => navigate(`/product/${p.slug}`)}
               />

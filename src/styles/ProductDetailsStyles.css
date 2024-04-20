@@ -11,7 +11,7 @@
 }
 
 /* Styles for product image */
-.product-img {
+.product-img1 {
   width: 100%; /* Adjust to cover the entire width */
   height: auto; /* Maintain aspect ratio */
   max-height: 450px; /* Limit the maximum height */
