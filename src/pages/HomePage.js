@@ -168,8 +168,7 @@ const HomePage = () => {
         <Carousel>
           <Carousel.Item>
             <img
-              style={{ height: "90vh" }}
-              className="d-block w-100"
+              className="d-block"
               src={"./images/slider.jpg"}
               alt="First slide"
             />
@@ -177,8 +176,7 @@ const HomePage = () => {
           </Carousel.Item>
           <Carousel.Item>
             <img
-              style={{ height: "90vh" }}
-              className="d-block w-100"
+              className="d-block"
               src={"./images/slider2.jpg"}
               alt="Second slide"
             />
@@ -187,24 +185,21 @@ const HomePage = () => {
           </Carousel.Item>
           <Carousel.Item>
             <img
-              style={{ height: "90vh" }}
-              className="d-block w-100"
-              src={"./images/slider3.jpg"}
+              className="d-block"
+              src={"./images/slider3.png"}
               alt="Third slide"
             />
           </Carousel.Item>
           <Carousel.Item>
             <img
-              style={{ height: "90vh" }}
-              className="d-block w-100"
+              className="d-block"
               src={"./images/slider4.jpg"}
               alt="Third slide"
             />
           </Carousel.Item>
           <Carousel.Item>
           <video
-            style={{ height: "90vh" }}
-            className="d-block w-100"
+            className="d-block"
             autoPlay
             loop
             muted
@@ -499,12 +494,12 @@ const HomePage = () => {
               <h3>Retail Stores</h3>
             </div>
           </div>
-          <div class="main-container">
+          
             
-              <div class="vdo-container">
+              <div class="vdo-container-bottom">
               <video
-            style={{ height: "90vh" }}
-            className="d-block w-100"
+            
+            className="d-block "
             autoPlay
             loop
             muted
@@ -512,12 +507,7 @@ const HomePage = () => {
           <source src="./images/ad-vdo.mp4" type="video/mp4" />
         </video>
               </div>
-            
-            {/*<div class='main-card3'>
-            <div class='vdo-heading'><h2>Reviews</h2></div>
-            
-                    </div>*/}
-          </div>
+           
         </div>
       </div>
     </Layout>

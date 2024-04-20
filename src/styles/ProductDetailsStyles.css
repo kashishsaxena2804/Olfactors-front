@@ -12,8 +12,9 @@
 
 /* Styles for product image */
 .product-img {
-  width: 350px;
-  height: 300px; /* Adjust height to maintain aspect ratio */
+  width: 100%; /* Adjust to cover the entire width */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 450px; /* Limit the maximum height */
   margin-bottom: 20px;
 }
 

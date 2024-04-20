@@ -318,13 +318,13 @@ nav .link:hover {
 
 
 
-/*slider css*/
+/*npm startslider css*/
 
 .slider-content {
-  padding-top: 167px;
+  padding-top: 160px;
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 1000px;
   overflow: hidden;
 }
 
@@ -344,7 +344,9 @@ nav .link:hover {
 .carousel-item video {
   display: block;
   margin: 0 auto;
-  width: 100%;
+  width: auto; /* Set width to auto to maintain aspect ratio */
+  max-height: 100%; 
+  background-color: #1e140a;/* Ensure the video fits within the container */
 }
 
 .carousel-indicators {
@@ -362,15 +364,16 @@ nav .link:hover {
 
 @media (max-width: 768px) {
   .slider-content {
-    padding-top: 140px;
+    padding-top: 140px; /* Adjust padding as needed */
+    height: 600px; /* Adjust height for smaller screens */
   }
 
   .slider-content img,
   .slider-content video {
-    max-height: 400px;
+    height: 100%; /* Ensure proper scaling on smaller screens */
   }
   .slider-content video{
-    max-width:500px;
+    max-width:100%;
   }
 }
 
@@ -637,13 +640,13 @@ nav .link:hover {
 
 /* Styles for the main card */
 .main-card {
-  width: calc(100% - 20px); /* Adjust the width to compensate for the left margin */
+  width: 95%; /* Adjust the width to compensate for the left margin */
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
   border: 1px solid #ccc;
   justify-content: space-between;
-  margin-left: 20px; /* Adjust the left margin as needed */
+  margin-left: 10px; /* Adjust the left margin as needed */
 }
 
 
@@ -668,12 +671,15 @@ nav .link:hover {
   padding: 10px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .product-name {
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: bolder;
   margin-bottom: 8px;
+  margin-top: 2px;
 }
 
 .product-offer {
@@ -708,6 +714,7 @@ nav .link:hover {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  width: 100%;
 }
 
 /* Media query for laptops */
@@ -764,7 +771,7 @@ nav .link:hover {
   background-position: center;
   background-attachment: fixed; /* Fix the background image position */
   margin-top: 30px;
-  width: 101.5%;
+  width: 100%;
 }
 
 
@@ -962,10 +969,44 @@ nav .link:hover {
 
 /* Styles for .vdo-container */
 .vdo-container {
-  width: 100%;
+  width: 80%;
   display: flex;
   justify-content: center; /* Center video horizontally */
   margin-top: 20px; /* Add space between heading and video */
+}
+.vdo-container video {
+  max-width: 100%; /* Make the video responsive */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 300px;
+}
+
+.vdo-container-bottom {
+  display: flex;
+  justify-content: center; /* Center the video horizontally */
+  align-items: center; /* Center the video vertically */
+  width: 80%; /* Full width */
+  margin-bottom: 20px;
+  margin-left: 100px;
+}
+.vdo-container-bottom video {
+  max-width: 80%; /* Make the video responsive */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 300px; /* Limit the maximum height if needed */
+}
+@media (max-width:450px) {
+  .vdo-container-bottom {
+    display: flex;
+    justify-content: center; /* Center the video horizontally */
+    align-items: center; /* Center the video vertically */
+    width: 95%; /* Full width */
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+  .vdo-container-bottom video {
+    max-width: 100%; /* Make the video responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 300px; /* Limit the maximum height if needed */
+  }
 }
 
 /* Media query for smaller devices */
@@ -1003,7 +1044,7 @@ nav .link:hover {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   margin-top: 25px;
   margin-bottom: 50px;
-  width: 102%;
+  width: 100%;
   overflow-x: hidden; /* Hide horizontal overflow */
 }
 

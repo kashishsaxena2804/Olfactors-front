@@ -165,7 +165,6 @@ const CategoryProduct = () => {
                 <div
                   className="product-card"
                   key={p._id}
-                  onClick={() => navigate(`/product/${p.slug}`)}
                 >
                   <img
                     src={`${process.env.REACT_APP_BASE_URL}/api/vl/product/product-photo/${p._id}`}
