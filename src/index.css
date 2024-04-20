@@ -1354,3 +1354,29 @@ nav .link:hover {
 .home-page{
   padding-top: 200px;
 }
+
+/*.auto-slider{
+  height: 250px;
+  margin: auto;
+  position: relative;
+  width: 90%;
+  display: grid;
+  place-items: center;
+}
+
+.slide-track{
+  display: flex;
+  width: calc(250px*10);
+}
+
+.slide{
+  height: 200px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.img{
+  width: 100%;
+}*/

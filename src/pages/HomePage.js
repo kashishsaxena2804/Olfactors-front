@@ -512,8 +512,72 @@ const HomePage = () => {
               <h3>Retail Stores</h3>
             </div>
           </div>
-          
-            
+
+          {/*<div className="auto-slider">
+            <div className="slide-track">
+              <div className="slide-img">
+                <img
+                src={"./images/products/slide1.jpg"}
+                alt=""
+              />
+              </div>
+              <div className="slide-img">
+                <img
+                src={"./images/products/slide2.jpg"}
+                alt=""
+              />
+              </div>
+              <div className="slide-img">
+                <img
+                src={"./images/products/slide3.jpg"}
+                alt=""
+              />
+              </div>
+              <div className="slide-img">
+                <img
+                src={"./images/products/slide4.jpg"}
+                alt=""
+              />
+              </div>
+              <div className="slide-img">
+                <img
+                src={"./images/products/slide5.jpg"}
+                alt=""
+              />
+              </div>
+              <div className="slide-img">
+                <img
+                src={"./images/products/slide6.jpg"}
+                alt=""
+              />
+              </div>
+              <div className="slide-img">
+                <img
+                src={"./images/products/slide7.jpg"}
+                alt=""
+              />
+              </div>
+              <div className="slide-img">
+                <img
+                src={"./images/products/slide8.jpg"}
+                alt=""
+              />
+              </div>
+              <div className="slide-img">
+                <img
+                src={"./images/products/slide9.jpg"}
+                alt=""
+              />
+              </div>
+              <div className="slide-img">
+                <img
+                src={"./images/products/slide10.jpg"}
+                alt=""
+              />
+              </div>              
+            </div>
+                      </div>*/}
+
               <div class="vdo-container-bottom">
               <video
             
