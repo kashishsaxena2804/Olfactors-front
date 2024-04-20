@@ -29,6 +29,12 @@ const ProductDetails = () => {
       setError(error.message);
     }
   };
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
 
   const getSimilarProduct = async (pid, cid) => {
     try {
@@ -87,38 +93,38 @@ const ProductDetails = () => {
         )}
         <div className="d-flex flex-wrap">
           {relatedProducts?.map((p) => (
-            <div className="product-card m-2" key={p._id}>
-              <img
-                src={`${process.env.REACT_APP_BASE_URL}/api/vl/product/product-photo/${p._id}`}
-                className="product-image1"
-                alt={p.name}
-                onClick={() => navigate(`/product/${p.slug}`)}
-              />
-              <div className="product-details">
-                <h3 className="product-name">{p.name}</h3>
-                <div className="product-prices">
-                  <span className="discounted-price">
-                    {p.price.toLocaleString("en-IN", {
-                      style: "currency",
-                      currency: "INR",
-                    })}
-                  </span>
-                </div>
-                <button
-                  className="button add-to-cart-button"
-                  onClick={() => {
+            <div className="product-card" >
+            <img
+              src={`${process.env.REACT_APP_BASE_URL}/api/vl/product/product-photo/${p._id}`}
+              className="card-img-top"
+              onClick={() => {
+                navigate(`/product/${p.slug}`);
+                scrollToTop(); // Assuming scrollToTop is a function defined elsewhere
+              }}
+              alt={p.name}
+            />
+
+          <div className="product-details">
+            <h3 className="product-name">{p.name}</h3>
+            {/*<p className="product-offer">{p.offer}</p>*/}
+            <div className="product-prices">
+              {/*<span className="original-price">500</span>*/}
+              <span className="discounted-price">{p.price.toLocaleString("en-IN", {
+                    style: "currency",
+                    currency: "INR",
+                  })}</span>
+            </div>
+            <button className="button add-to-cart-button" onClick={() => {
                     setCart([...cart, p]);
                     localStorage.setItem(
                       "cart",
                       JSON.stringify([...cart, p])
                     );
                     toast.success("Item Added to cart");
-                  }}
-                >
-                  Add To Cart
-                </button>
-              </div>
-            </div>
+                  }}>Add To Cart</button>
+            
+          </div>
+        </div>
           ))}
         </div>
       </div>
