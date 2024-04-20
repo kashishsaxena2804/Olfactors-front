@@ -159,8 +159,8 @@ const CategoryProduct = () => {
           </div>
         </div>
         
-        <div className="row">
-          <div className="col-md-9 offset-1">
+        
+          <div className="col-md-9">
             <div className="d-flex flex-wrap">
               {products?.map((p) => (
                 <div
@@ -221,7 +221,7 @@ const CategoryProduct = () => {
               )}
             </div>
           </div>
-        </div>
+        
       </div>
     </Layout>
   );
