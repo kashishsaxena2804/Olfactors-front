@@ -639,6 +639,7 @@ nav .link:hover {
 
 
 /* Styles for the main card */
+/* Base styles */
 .main-card {
   width: 95%; /* Adjust the width to compensate for the left margin */
   padding: 20px;
@@ -648,7 +649,6 @@ nav .link:hover {
   justify-content: space-between;
   margin-left: 10px; /* Adjust the left margin as needed */
 }
-
 
 .product-card {
   width: calc(50% - 20px); /* Adjust width for two products in one line */
@@ -673,8 +673,8 @@ nav .link:hover {
   flex-direction: column;
   align-items: center; /* Center content horizontally */
   text-align: center; /* Center text */
+  width: 100%; /* Occupy entire width of card */
 }
-
 
 .product-name {
   font-size: 16px;
@@ -728,6 +728,14 @@ nav .link:hover {
   .product-card {
     width: calc(25% - 20px); /* Adjust width for four products in one line */
   }
+
+  .product-details {
+    text-align: left; /* Align text to left on larger screens */
+  }
+
+  .add-to-cart-button {
+    width: 100%; /* Make button width same as container */
+  }
 }
 
 /* Media query for small devices */
@@ -737,7 +745,6 @@ nav .link:hover {
   }
 }
 
-/* Media query for small smartphones */
 /* Media query for small smartphones */
 @media (max-width: 425px) {
   .product-card {
@@ -762,75 +769,6 @@ nav .link:hover {
     padding: 5px; /* Adjust padding for better spacing */
   }
 }
-/* Media query for laptops */
-@media (min-width: 1024px) {
-  .product-card {
-    width: 100%; /* Adjust width for four products in one line */
-    max-width: calc(25% - 20px); /* Adjust maximum width */
-    margin: 10px; /* Add space between products */
-    padding: 20px; /* Adjust padding for better spacing */
-  }
-
-  .card-img-top {
-    width: 100%; /* Adjust image width to fill the container */
-    max-height: 200px; /* Limit image height */
-    object-fit: cover; /* Maintain aspect ratio and cover container */
-    margin-bottom: 15px;
-  }
-
-  .product-details {
-    padding: 10px; /* Adjust padding for better spacing */
-    text-align: center; /* Center align text */
-    width: 100%;
-    margin-left: 20px;
-  }
-
-  .product-name {
-    font-size: 16px; /* Adjust font size */
-    font-weight: bold; /* Add bold font weight */
-    margin-bottom: 8px; /* Add space below product name */
-  }
-
-  .product-offer {
-    font-size: 14px; /* Adjust font size */
-    color: #4caf50;
-    margin-bottom: 12px; /* Add space below product offer */
-  }
-
-  .product-prices {
-    font-size: 14px; /* Adjust font size */
-    margin-bottom: 12px; /* Add space below product prices */
-  }
-
-  .original-price {
-    font-size: 14px; /* Adjust font size */
-    margin-right: 4px; /* Add space between original price and discounted price */
-  }
-
-  .discounted-price {
-    font-size: 16px; /* Adjust font size */
-    font-weight: bold; /* Add bold font weight */
-    color: #000000;
-  }
-
-  .add-to-cart-button {
-    width: 100%; /* Make button width same as container */
-    padding: 10px; /* Adjust padding for better appearance */
-    font-size: 14px; /* Adjust font size */
-    color: #fff;
-    background-color: #1e140a;
-    border: 1px solid #1e140a;
-    border-radius: 4px; /* Add border radius */
-    cursor: pointer;
-    transition: all 0.3s ease; /* Add smooth transition */
-  }
-
-  .add-to-cart-button:hover {
-    background-color: #000000; /* Change background color on hover */
-    border: 1px solid #000000; /* Change border color on hover */
-  }
-}
-
 
 
 
@@ -1220,6 +1158,7 @@ nav .link:hover {
 
 .button {
   border: 1px solid black;
+  max-width: 300px;
   border-radius: 2px; /* Adjust border radius */
   background-color: #1e140a;
   color: #cc9900;
