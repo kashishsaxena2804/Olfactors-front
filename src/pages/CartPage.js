@@ -87,9 +87,6 @@ const CartPage = () => {
           <div className="row">
             <div className="col-md-12">
               <h1 className="text-center bg-light p-2 mb-1">
-                {!auth?.user
-                  ? "Hello Guest"
-                  : `Hello ${auth?.user?.name}!`}
                 <p className="text-center">
                   {cart?.length 
                     ? `You Have ${cart.length} items in your cart ${
@@ -103,44 +100,87 @@ const CartPage = () => {
         </div>
         <div className="container">
           <div className="row">
-            <div className="col-md-7">
-              {cart?.map((p) => (
-                <div className="product-card" key={p._id}>
-                  <img
-                    src={`${process.env.REACT_APP_BASE_URL}/api/vl/product/product-photo/${p._id}`}
-                    className="card-img-top"
-                    onClick={() => navigate(`/product/${p.slug}`)}
-                    alt={p.name}
-                  />
-                  <div className="product-details">
-                    <h3 className="product-name">{p.name}</h3>
-                    <div className="product-prices">
-                      <span className="discounted-price">
-                        {p.price?.toLocaleString("en-IN", {
-                          style: "currency",
-                          currency: "INR",
-                        })}
-                      </span>
-                    </div>
-                    <div className="cart-remove-btn">
-                      <button
-                        className="button btn btn-danger"
-                        onClick={() => removeCartItem(p._id)}
-                      >
-                        Remove
-                      </button>
+            <div className="col-md-9">
+              <div className="product-container">
+                {cart?.map((p) => (
+                  <div className="product-card" key={p._id}>
+                    <img
+                      src={`${process.env.REACT_APP_BASE_URL}/api/vl/product/product-photo/${p._id}`}
+                      className="card-img-top"
+                      onClick={() => navigate(`/product/${p.slug}`)}
+                      alt={p.name}
+                    />
+                    <div className="product-details">
+                      <h3 className="product-name">{p.name}</h3>
+                      <div className="product-prices">
+                        <span className="discounted-price">
+                          {p.price?.toLocaleString("en-IN", {
+                            style: "currency",
+                            currency: "INR",
+                          })}
+                        </span>
+                      </div>
+                      <div className="cart-remove-btn">
+                        <button
+                          className="button btn btn-danger"
+                          onClick={() => removeCartItem(p._id)}
+                        >
+                          Remove
+                        </button>
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
-            </div> 
-            <div className="col-md-5 cart-summary">
+                ))}
+              </div>
+            </div>
+
+
+            
+            <div className="col-md-5 cart-summary ">
               <h2>Cart Summary</h2>
               <p>Total | Checkout | Payment</p>
               <hr />
               <h4>Total : {totalPrice()} </h4>
+              {auth?.user?.address ? (
+                <>
+                  <div className="mb-3">
+                    <h4>Current Address</h4>
+                    <h5>{auth?.user?.address}</h5>
+                    <button
+                      className="btn btn-outline-warning"
+                      onClick={() => navigate("/dashboard/user/profile")}
+                    >
+                      Update Address
+                    </button>
+                  </div>
+                </>
+              ) : (
+                <div className="mb-3">
+                  {auth?.token ? (
+                    <button
+                      className="btn btn-outline-warning"
+                      onClick={() => navigate("/dashboard/user/profile")}
+                    >
+                      Update Address
+                    </button>
+                  ) : (
+                    <button
+                      className="btn btn-outline-warning"
+                      onClick={() =>
+                        navigate("/login", {
+                          state: "/cart",
+                        })
+                      }
+                    >
+                      Plase Login to checkout
+                    </button>
+                  )}
+                </div>
+              )}
               <div className="mt-2">
-                {clientToken && auth?.token && cart?.length && (
+                {!clientToken || !auth?.token || !cart?.length ? (
+                  ""
+                ) : (
                   <>
                     <DropIn
                       options={{
@@ -151,6 +191,7 @@ const CartPage = () => {
                       }}
                       onInstance={(instance) => setInstance(instance)}
                     />
+
                     <button
                       className="btn btn-primary"
                       onClick={handlePayment}
@@ -162,6 +203,7 @@ const CartPage = () => {
                 )}
               </div>
             </div>
+            
           </div>
         </div>
       </div>
@@ -170,3 +212,4 @@ const CartPage = () => {
 };
 
 export default CartPage;
+
