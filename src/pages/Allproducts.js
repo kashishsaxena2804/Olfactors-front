@@ -146,9 +146,10 @@ const HomePage = () => {
           <h1 className="text-center">Explore More</h1>
           <div className="d-flex flex-wrap">
             {products?.map((p) => (
-              <div className="product-card" onClick={() => navigate(`/product/${p.slug}`)}>
+              <div className="product-card" >
                 <img src={`${process.env.REACT_APP_BASE_URL}/api/vl/product/product-photo/${p._id}`}
                   className="card-img-top"
+                  onClick={() => navigate(`/product/${p.slug}`)}
                   alt={p.name}/>
               <div className="product-details">
                 <h3 className="product-name">{p.name}</h3>
