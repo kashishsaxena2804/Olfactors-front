@@ -782,6 +782,7 @@ nav .link:hover {
     padding: 10px; /* Adjust padding for better spacing */
     text-align: center; /* Center align text */
     width: 100%;
+    margin-left: 20px;
   }
 
   .product-name {
