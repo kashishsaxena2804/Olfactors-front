@@ -678,7 +678,8 @@ nav .link:hover {
 
 .product-name {
   font-size: 16px;
-  font-weight: bolder;
+  font-style: bolder;
+  font-weight: 500;
   margin-bottom: 8px;
   margin-top: 2px;
   text-align: center; /* Center text */
