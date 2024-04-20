@@ -6,7 +6,7 @@ import axios from "axios";
 import toast from "react-hot-toast";
 import { useCart } from "../context/cart";
 import { AiOutlineReload } from "react-icons/ai";
-import "../styles/CategoryProductStyles.css";
+
 import {Checkbox, Radio} from 'antd';
 
 const CategoryProduct = () => {
@@ -124,7 +124,9 @@ const CategoryProduct = () => {
 
   return (
     <Layout>
-      <div className="container mt-3 category">
+      <div className="container-fluid row mt-3 home-page">
+      <h2 className="text-center">Category - {category?.name}</h2>
+        <h5 className="text-center">{products?.length} results found</h5>
         <div className="col-md-3 filters">
           <h4 className="text-center">Filter By Category</h4>
           <div className="d-flex flex-column">
@@ -156,8 +158,7 @@ const CategoryProduct = () => {
             </button>
           </div>
         </div>
-        <h2 className="text-center">Category - {category?.name}</h2>
-        <h5 className="text-center">{products?.length} results found</h5>
+        
         <div className="row">
           <div className="col-md-9 offset-1">
             <div className="d-flex flex-wrap">
