@@ -16,7 +16,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-section">
-        <Link to="/" className="navbar-brand">
+        <Link to="/" onClick={scrollToTop} className="navbar-brand">
             <img className="foot-logo" src="/images/Olfactors.png" alt="Logo" />
           </Link>
           <p className="footer-content">

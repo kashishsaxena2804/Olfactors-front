@@ -62,7 +62,7 @@ const Header = () => {
           </a>
         </div>
         <div className="logo">
-          <Link to="/" className="navbar-brand">
+          <Link to="/" onClick={scrollToTop} className="navbar-brand">
             <img className="nav_logo" src="/images/Olfactors.png" alt="Logo" />
           </Link>
         </div>

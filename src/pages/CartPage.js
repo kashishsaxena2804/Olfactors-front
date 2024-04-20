@@ -84,7 +84,7 @@ const CartPage = () => {
     <Layout>
       <div className="cart-page">
         <div className="cart-heading">
-          
+          <div className="row">
             <div className="col-md-12">
               <h1 className="text-center bg-light p-2 mb-1">
                 {!auth?.user
@@ -163,7 +163,7 @@ const CartPage = () => {
               </div>
             </div>
           </div>
-        
+        </div>
       </div>
     </Layout>
   );
