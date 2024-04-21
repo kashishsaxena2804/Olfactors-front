@@ -160,9 +160,10 @@ const CategoryProduct = () => {
         
         
           <div className="col-md-9">
-            <div className="d-flex flex-wrap">
-            <h2 className="Main-heading">Category - {category?.name}</h2>
+          <h2 className="Main-heading">Category - {category?.name}</h2>
         <h5 className="text-center">{products?.length} results found</h5>
+            <div className="d-flex flex-wrap">
+            
               {products?.map((p) => (
                 <div
                   className="product-card"
