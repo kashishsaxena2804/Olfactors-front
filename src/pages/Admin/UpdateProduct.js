@@ -108,7 +108,7 @@ const UpdateProduct = () => {
   
   return (
     <Layout title={"Dashboard - Update Product"}>
-      <div className=" dashboard container-fluid m-3 p-3">
+      <div className="dashboard container-fluid m-3 p-167 dashboard">
         <div className="row">
           <div className="col-md-3">
             <AdminMenu />
@@ -220,12 +220,12 @@ const UpdateProduct = () => {
                 </Select>
               </div>
               <div className="mb-3">
-                <button className="btn btn-primary" onClick={handleUpdate}>
+                <button className="button btn btn-primary" onClick={handleUpdate}>
                   UPDATE PRODUCT
                 </button>
               </div>
               <div className="mb-3">
-                <button className="btn btn-danger" onClick={handleDelete}>
+                <button className="button btn btn-danger" onClick={handleDelete}>
                   DELETE PRODUCT
                 </button>
               </div>
