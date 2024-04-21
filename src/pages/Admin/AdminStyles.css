@@ -1,3 +1,13 @@
-.dashboard{
+.dashboard {
+    display: flex; /* Use flexbox */
     padding-top: 200px;
-}
+  }
+  
+  .col-md-3 {
+    flex: 0 0 auto; /* Make the admin menu column fixed width */
+  }
+  
+  .col-md-9 {
+    flex: 1; /* Allow the content column to grow and take up remaining space */
+  }
+  
