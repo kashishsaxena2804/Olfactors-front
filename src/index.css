@@ -315,7 +315,7 @@ nav .link:hover {
 @media (max-width: 450px) {
   .left-icons,
   .right-icons {
-    padding: 1px;
+    padding: 0px;
   }
 
   .left-icons svg,
@@ -329,7 +329,23 @@ nav .link:hover {
     font-size: small;
   }
 }
+@media (max-width:380px) {
+  .left-icons,
+  .right-icons {
+    padding: -1px;
+  }
 
+  .left-icons svg,
+  .right-icons svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  nav .link {
+    margin: 8px;
+    font-size: small;
+  }
+}
 
 
 
@@ -818,6 +834,7 @@ nav .link:hover {
   background-attachment: fixed; /* Fix the background image position */
   margin-top: 30px;
   width: 100%;
+  
 }
 
 
@@ -872,6 +889,15 @@ nav .link:hover {
     flex-wrap: wrap;
     justify-content: center;
   }
+  .cat-card{
+    background-image: url('https://w.forfun.com/fetch/1b/1b1d77db61bdb2dc187c136b59750493.jpeg?w=1470&r=0.5625');
+  background-size: 100% auto; /* Set width to cover the entire element and maintain aspect ratio */
+  background-position: center;
+  background-attachment: fixed; /* Fix the background image position */
+  margin-top: 30px;
+  width: 105%;
+
+  }
   
   /* Individual category card */
   .col-md-4 {
@@ -889,7 +915,38 @@ nav .link:hover {
     margin: 0 auto 10px;
   }
 }
+@media (max-width: 380px) {
+  .cat-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .cat-card{
+    background-image: url('https://w.forfun.com/fetch/1b/1b1d77db61bdb2dc187c136b59750493.jpeg?w=1470&r=0.5625');
+  background-size: 100% auto; /* Set width to cover the entire element and maintain aspect ratio */
+  background-position: center;
+  background-attachment: fixed; /* Fix the background image position */
+  margin-top: 30px;
+  width: 105%;
 
+  }
+  
+  /* Individual category card */
+  .col-md-4 {
+    flex: 0 0 calc(33.33% - 20px); /* Adjust width for medium devices */
+    max-width: calc(33.33% - 20px); /* Adjust maximum width for medium devices */
+    margin: 0 10px 20px; /* Add spacing between columns */
+  }
+  
+  .card-image {
+    border-radius: 20px;
+    width: 160px;
+    height: 160px; 
+    object-fit: cover; 
+    display: block; 
+    margin: 0 auto 10px;
+  }
+}
 
 
 
@@ -923,7 +980,6 @@ nav .link:hover {
   .slider-content,
   .image-container,
   .text-center,
-  .cat-card,
   .header,
   .nav,
   .main-container,
@@ -1000,7 +1056,6 @@ nav .link:hover {
   .slider-content,
   .image-container,
   .text-center,
-  .cat-card,
   .header,
   .nav,
   .Main-heading,
@@ -1071,7 +1126,6 @@ nav .link:hover {
   .slider-content,
   .image-container,
   .text-center,
-  .cat-card,
   .header,
   .nav,
   .main-container,
