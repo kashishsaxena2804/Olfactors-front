@@ -161,7 +161,7 @@ const CategoryProduct = () => {
         
           <div className="col-md-9">
           <h2 className="Main-heading">Category - {category?.name}</h2>
-        <h5 className="text-center">{products?.length} results found</h5>
+        <h5 className="Main-heading">{products?.length} results found</h5>
             <div className="d-flex flex-wrap">
             
               {products?.map((p) => (
