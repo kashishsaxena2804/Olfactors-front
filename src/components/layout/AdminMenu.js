@@ -5,7 +5,7 @@ const AdminMenu = () => {
   return (
     <Layout>
     <>
-      <div className="text-center">
+      <div className="Main-heading2">
         <div className="list-group dashboard-menu">
           <h4>Admin Panel</h4>
           <NavLink
