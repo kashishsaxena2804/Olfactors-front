@@ -642,7 +642,9 @@ nav .link:hover {
 }
 .text-center{
   font-weight: 1000;
-  font-style: bold;
+  font-style: bolder;
+  text-align: center;
+  width: 100%;
 
 }
 
@@ -982,6 +984,10 @@ nav .link:hover {
 
 }
 
+.Main-heading{
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   /* Hide horizontal overflow for the entire page */
   body {
@@ -997,6 +1003,7 @@ nav .link:hover {
   .cat-card,
   .header,
   .nav,
+  .Main-heading,
   .main-container,
   .body {
     width: 106vw;
@@ -1060,6 +1067,7 @@ nav .link:hover {
   /* Set the width to span the entire viewport width and remove padding and margin for the container */
   .container,
   .footer,
+  .Main-heading,
   .slider-content,
   .image-container,
   .text-center,

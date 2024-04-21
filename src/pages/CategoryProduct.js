@@ -125,8 +125,7 @@ const CategoryProduct = () => {
   return (
     <Layout>
       <div className="container-fluid row mt-3 home-page">
-      <h2 className="text-center">Category - {category?.name}</h2>
-        <h5 className="text-center">{products?.length} results found</h5>
+      
         <div className="col-md-3 filters">
           <h4 className="text-center">Filter By Category</h4>
           <div className="d-flex flex-column">
@@ -162,6 +161,8 @@ const CategoryProduct = () => {
         
           <div className="col-md-9">
             <div className="d-flex flex-wrap">
+            <h2 className="text-center">Category - {category?.name}</h2>
+        <h5 className="text-center">{products?.length} results found</h5>
               {products?.map((p) => (
                 <div
                   className="product-card"
