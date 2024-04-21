@@ -239,7 +239,7 @@ const HomePage = () => {
 
       <div className="row mt-3 ">
         <div>
-          <h1 className="text-center Main-heading">
+          <h1 className=" Main-heading">
             Olfactors - Where fragrance becomes a Signature
           </h1>
           <div className="Product-container">

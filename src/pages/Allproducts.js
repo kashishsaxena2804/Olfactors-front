@@ -117,7 +117,7 @@ const HomePage = () => {
       
       <div className="container-fluid row mt-3 home-page">
         <div className="col-md-3 filters">
-          <h4 className="text-center">Filter By Category</h4>
+          <h4 className="Main-heading2">Filter By Category</h4>
           <div className="d-flex flex-column">
             {categories?.map((c) => (
               <Checkbox
@@ -129,7 +129,7 @@ const HomePage = () => {
             ))}
           </div>
           {/* price filter */}
-          <h4 className="text-center mt-4">Filter By Price</h4>
+          <h4 className="Main-heading2">Filter By Price</h4>
           <div className="d-flex flex-column">
             <Radio.Group onChange={(e) => setRadio(e.target.value)}>
               {Prices?.map((p) => (
@@ -149,7 +149,7 @@ const HomePage = () => {
           </div>
         </div>
         <div className="col-md-9 ">
-          <h1 className="text-center">Explore More</h1>
+          <h1 className="Main-heading">Explore More</h1>
           <div className="d-flex flex-wrap">
             {products?.map((p) => (
               <div className="product-card" >
