@@ -3,16 +3,14 @@ import AdminMenu from "../../components/layout/AdminMenu";
 import Layout from "./../../components/layout/Layout";
 import { useAuth } from "../../context/auth";
 import "./AdminStyles.css";
-
 const AdminDashboard = () => {
   const [auth] = useAuth();
-
   return (
     <Layout>
-      <div className="dashboard container-fluid m-3 p-167">
+      <div className="dashboard container-fluid m-3 p-167 dashboard">
         <div className="row">
           <div className="col-md-3">
-            <AdminMenu />
+            <AdminMenu/>
           </div>
           <div className="col-md-9">
             <div className="card w-75 p-3">

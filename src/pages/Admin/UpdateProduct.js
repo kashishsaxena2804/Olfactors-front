@@ -108,13 +108,13 @@ const UpdateProduct = () => {
   
   return (
     <Layout title={"Dashboard - Create Product"}>
-      <div className="dashboard container-fluid m-3 p-3">
+      <div className=" dashboard container-fluid m-3 p-3">
         <div className="row">
           <div className="col-md-3">
             <AdminMenu />
           </div>
           <div className="col-md-9">
-            <h1 className="text">Update Product</h1>
+            <h1>Update Product</h1>
             <div className="m-1 w-75">
               <Select
                 bordered={false}
@@ -134,7 +134,7 @@ const UpdateProduct = () => {
                 ))}
               </Select>
               <div className="mb-3">
-                <label className="button btn btn-outline-secondary col-md-12">
+                <label className="btn btn-outline-secondary col-md-12">
                   {photo ? photo.name : "Upload Photo"}
                   <input
                     type="file"
@@ -152,14 +152,13 @@ const UpdateProduct = () => {
                       src={URL.createObjectURL(photo)}
                       alt="product_photo"
                       height={"200px"}
-                    
                       className="img img-responsive"
                     />
                   </div>
                 ) : (
                   <div className="text-center">
                     <img
-                      src={`${process.env.REACT_APP_BASE_URL}/api/vl/product/product-photo/${id}`}
+                      src={`/api/v1/product/product-photo/${id}`}
                       alt="product_photo"
                       height={"200px"}
                       className="img img-responsive"
@@ -221,12 +220,12 @@ const UpdateProduct = () => {
                 </Select>
               </div>
               <div className="mb-3">
-                <button className="button btn btn-primary" onClick={handleUpdate}>
+                <button className="btn btn-primary" onClick={handleUpdate}>
                   UPDATE PRODUCT
                 </button>
               </div>
               <div className="mb-3">
-                <button className="button btn btn-danger" onClick={handleDelete}>
+                <button className="btn btn-danger" onClick={handleDelete}>
                   DELETE PRODUCT
                 </button>
               </div>
