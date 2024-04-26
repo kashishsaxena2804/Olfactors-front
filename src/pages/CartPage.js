@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 import DropIn from "braintree-web-drop-in-react";
 import axios from "axios";
 import toast from "react-hot-toast";
+import useRazorpay from "react-razorpay";
 
 const CartPage = () => {
   const [auth, setAuth] = useAuth();
@@ -15,6 +16,7 @@ const CartPage = () => {
   const [instance, setInstance] = useState("");
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
+  const [Razorpay, isLoaded] = useRazorpay();
 
   // Total price calculation
   const totalPrice = () => {
@@ -32,7 +34,7 @@ const CartPage = () => {
       return "Error calculating total price";
     }
   };
-  
+
   // Remove item from cart
   const removeCartItem = (pid) => {
     try {
@@ -55,7 +57,7 @@ const CartPage = () => {
       console.log(error);
     }
   };
-  
+
   useEffect(() => {
     getToken();
   }, [auth?.token]);
@@ -79,7 +81,7 @@ const CartPage = () => {
       setLoading(false);
     }
   };
-  
+
   return (
     <Layout>
       <div className="cart-page">
@@ -88,7 +90,7 @@ const CartPage = () => {
             <div className="col-md-12">
               <h1 className="text-center bg-light p-2 mb-1">
                 <p className="text-center">
-                  {cart?.length 
+                  {cart?.length
                     ? `You Have ${cart.length} items in your cart ${
                         auth?.token ? "" : "please login to checkout !"
                       }`
@@ -134,8 +136,6 @@ const CartPage = () => {
               </div>
             </div>
 
-
-            
             <div className="col-md-5 cart-summary ">
               <h2>Cart Summary</h2>
               <p>Total | Checkout | Payment</p>
@@ -151,6 +151,72 @@ const CartPage = () => {
                       onClick={() => navigate("/dashboard/user/profile")}
                     >
                       Update Address
+                    </button>
+                    <br />
+                    <br />
+                    <button
+                      className="btn btn-primary"
+                      onClick={() => {
+                        if (!cart?.length) {
+                          toast.error("Cart is empty");
+                          return;
+                        }
+                        var products = cart.reduce((acc, current) => {
+                          const existingProduct = acc.find(
+                            (item) => item.productId === current._id
+                          );
+                          if (!existingProduct) {
+                            acc.push({ productId: current._id, quantity: 1 });
+                          } else {
+                            existingProduct.quantity++;
+                          }
+                          return acc;
+                        }, []);
+                        var request_body = {
+                          userId: auth.user._id,
+                          products: products,
+                        };
+                        axios
+                          .post("/api/vl/order/create", request_body)
+                          .then((response) => {
+                            if (response.status === 200) {
+                              localStorage.removeItem("cart");
+                              setCart([]);
+
+                              var options = {
+                                key: process.env.REACT_APP_RAZORPAY_KEY_ID,
+                                amount: response.data.amount,
+                                currency: response.data.currency,
+                                name: "Olfactors",
+                                description: "Olfactors Payment Page",
+                                order_id: response.data.order_id,
+                                handler: function (res) {
+                                  console.log(res);
+                                },
+                                prefill: {
+                                  name: auth.user.name,
+                                  email: auth.user.email,
+                                  contact: auth.user.phone,
+                                },
+                              };
+                              var rzp1 = new Razorpay(options);
+                              rzp1.on("payment.failed", function (response) {
+                                alert(response.error.code);
+                                alert(response.error.description);
+                                alert(response.error.source);
+                                alert(response.error.step);
+                                alert(response.error.reason);
+                                alert(response.error.metadata.order_id);
+                                alert(response.error.metadata.payment_id);
+                              });
+                              rzp1.open();
+                            } else {
+                              toast.error("Something went wrong");
+                            }
+                          });
+                      }}
+                    >
+                      Make Payment
                     </button>
                   </div>
                 </>
@@ -203,7 +269,6 @@ const CartPage = () => {
                 )}
               </div>
             </div>
-            
           </div>
         </div>
       </div>
@@ -212,4 +277,3 @@ const CartPage = () => {
 };
 
 export default CartPage;
-
