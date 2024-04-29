@@ -88,8 +88,8 @@ const CartPage = () => {
         <div className="cart-heading">
           <div className="row">
             <div className="col-md-12">
-              <h1 className="text-center bg-light p-2 mb-1">
-                <p className="text-center">
+              <h1 className="Main-heading bg-light p-2 mb-1">
+                <p className="Main-heading">
                   {cart?.length
                     ? `You Have ${cart.length} items in your cart ${
                         auth?.token ? "" : "please login to checkout !"
@@ -147,7 +147,7 @@ const CartPage = () => {
                     <h4>Current Address</h4>
                     <h5>{auth?.user?.address}</h5>
                     <button
-                      className="btn btn-outline-warning"
+                      className="button btn-outline-warning"
                       onClick={() => navigate("/dashboard/user/profile")}
                     >
                       Update Address
@@ -155,7 +155,7 @@ const CartPage = () => {
                     <br />
                     <br />
                     <button
-                      className="btn btn-primary"
+                      className="button btn-primary"
                       onClick={() => {
                         if (!cart?.length) {
                           toast.error("Cart is empty");
@@ -224,14 +224,14 @@ const CartPage = () => {
                 <div className="mb-3">
                   {auth?.token ? (
                     <button
-                      className="btn btn-outline-warning"
+                      className="button btn-outline-warning"
                       onClick={() => navigate("/dashboard/user/profile")}
                     >
                       Update Address
                     </button>
                   ) : (
                     <button
-                      className="btn btn-outline-warning"
+                      className="button btn-outline-warning"
                       onClick={() =>
                         navigate("/login", {
                           state: "/cart",
