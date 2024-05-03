@@ -1,0 +1,26 @@
+.tccontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 30px;
+    text-align: justify;
+    margin-top: 200px;
+  }
+  
+  .heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .email-link {
+    color: #cc9900; /* Change to your preferred color */
+    text-decoration: none;
+  }
+  
+  .email-link:hover {
+    text-decoration: underline;
+  }
+  

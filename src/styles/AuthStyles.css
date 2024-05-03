@@ -1,0 +1,73 @@
+.register {
+  margin-top: 165px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Change to 100vh to cover the entire viewport height */
+  flex-direction: column;
+  background-image: url('/public/images/bg5.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+  background-size: cover; /* Ensure the background image covers the entire container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+}
+  
+.register form {
+  box-shadow: rgba(0, 0, 0, 0.60) 0px 5px 15px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+  border-radius: 8px;
+  max-width: 400px; /* Limit the form width for better readability */
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .register {
+    background-size: contain;
+    margin-top: 20px;
+    margin-bottom: -150px;
+  }
+}
+  
+  
+  .register form .title {
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+ 
+  }
+  
+  .register form input {
+    border: none;
+    border-bottom: 1px solid #000;
+    border-radius: 0;
+  }
+  
+  .register form button {
+    border: 1px solid black;
+    border-radius: 0;
+    background-color: #1e140a;
+    color: #cc9900;
+    font-weight: 650;
+    width: 360px;
+    border-radius: 2px;
+  }
+  
+  .register form button:hover {
+    border: 1px solid #fff;
+    background: #cc9900; 
+    }
+  
+  .forgot-btn {
+    border: 1px solid black;
+    border-radius: 0;
+    background-color: #000;
+    color: white;
+    width: 250px;
+    border-radius: 2px;
+    
+  }
+  
+  .forgot-btn:hover {
+    border: 1px solid #fff;
+    background: #cc9900; 
+  }
+  

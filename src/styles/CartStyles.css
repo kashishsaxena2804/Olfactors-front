@@ -1,0 +1,94 @@
+/* Styles for .cart-page */
+.cart-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 160px; /* Adjust top padding as needed */
+}
+
+/* Styles for .cart-heading */
+.cart-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.text-center{
+  margin-top: 10px;
+  width: 550px;
+}
+/* Styles for the container */
+.container {
+  width: 100%;
+  max-width: 800px; /* Adjust max-width as needed */
+}
+
+/* Styles for the row */
+.row {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to next line */
+}
+
+/* Styles for the left half (product details) */
+.col-md-7 {
+  width: 110%; /* Adjust width to leave space between columns */
+  margin-bottom: 20px; /* Add spacing between rows */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-card {
+  width: calc(50% - 10px); /* Adjust width to leave space between cards */
+  margin-bottom: 20px; 
+  /* Add spacing between cards */
+}
+
+/* Styles for the right half (cart summary) */
+.col-md-5 {
+  width: 100%; /* Adjust width to leave space between columns */
+  margin-bottom: 20px; /* Add spacing between rows */
+}
+
+.cart-summary{
+  height: auto;
+}
+
+/* Media query for small devices */
+@media (min-width: 768px) {
+  /* Adjust alignment for larger screens */
+  .row {
+    align-items: flex-start;
+  }
+  .cart-summary{
+    margin-left: 30px;
+  }
+
+}
+@media (min-width: 450px) {
+  /* Adjust alignment for larger screens */
+  .row {
+    align-items: flex-start;
+  }
+  .cart-summary{
+    margin-left: 50px;
+  }
+  .col-md-7{
+    margin-left: 50px;
+  }
+
+}
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Gap between product cards */
+}
+
+.product-card {
+  flex: 1 1 calc(33.33% - 20px); /* 3 products per row with 20px gap */
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    flex-basis: calc(50% - 10px); /* 2 products per row with 10px gap */
+  }
+}

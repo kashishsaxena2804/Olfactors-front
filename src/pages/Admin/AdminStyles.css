@@ -1,0 +1,6 @@
+.dashboard {
+    display: flex; /* Use flexbox */
+    padding-top: 200px;
+    align-items: center;
+  }
+  

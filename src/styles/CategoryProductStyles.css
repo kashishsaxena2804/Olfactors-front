@@ -1,0 +1,46 @@
+.category {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 120px;
+  margin-top: 80px !important;
+}
+
+.filters {
+  flex: 0 0 calc(25% - 20px); /* 25% width for filters on larger screens */
+  margin-left: 20px; /* Margin left for the filters */
+}
+
+.products {
+  flex: 0 0 calc(75% - 20px); /* 75% width for products on larger screens */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-card {
+  flex-basis: calc(25% - 20px); /* 4 products per row with 20px spacing */
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .category {
+    padding-top: 110px;
+    margin-top: 40px !important;
+  }
+
+  .filters {
+    flex: 0 0 100%; /* Full width for filters on smaller screens */
+    order: 1; /* Move filters above products on smaller screens */
+    margin-left: 0; /* Remove margin left for filters on smaller screens */
+    margin-bottom: 20px; /* Add some space between filters and products */
+  }
+
+  .products {
+    flex: 0 0 100%; /* Full width for products on smaller screens */
+    order: 2; /* Move products below filters on smaller screens */
+  }
+
+  .product-card {
+    flex-basis: calc(50% - 20px); /* 2 products per row with 20px spacing on smaller screens */
+  }
+}
