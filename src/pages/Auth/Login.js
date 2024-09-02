@@ -72,7 +72,11 @@ const Login = () => {
             <div className="mb-3">
                 <button
                     type="button"
+<<<<<<< HEAD
                     className="btn btn-primary"
+=======
+                    className="button btn forgot-btn"
+>>>>>>> c4ee27945a58533f22b283c2b15d2362ccc51457
                     onClick={() => {
                         navigate("/forgot-password");
                     }}

@@ -124,7 +124,11 @@ const CartPage = () => {
                       </div>
                       <div className="cart-remove-btn">
                         <button
+<<<<<<< HEAD
                           className="button btn "
+=======
+                          className="button btn btn-danger"
+>>>>>>> c4ee27945a58533f22b283c2b15d2362ccc51457
                           onClick={() => removeCartItem(p._id)}
                         >
                           Remove
@@ -224,14 +228,22 @@ const CartPage = () => {
                 <div className="mb-3">
                   {auth?.token ? (
                     <button
+<<<<<<< HEAD
                       className="button "
+=======
+                      className="button btn-outline-warning"
+>>>>>>> c4ee27945a58533f22b283c2b15d2362ccc51457
                       onClick={() => navigate("/dashboard/user/profile")}
                     >
                       Update Address
                     </button>
                   ) : (
                     <button
+<<<<<<< HEAD
                       className="button"
+=======
+                      className="button btn-outline-warning"
+>>>>>>> c4ee27945a58533f22b283c2b15d2362ccc51457
                       onClick={() =>
                         navigate("/login", {
                           state: "/cart",

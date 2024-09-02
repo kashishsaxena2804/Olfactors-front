@@ -97,7 +97,11 @@ const Register = () => {
               required
             />
           </div>
+<<<<<<< HEAD
           <button type="submit" className="btn btn-primary">
+=======
+          <button type="submit" className="button btn btn-primary">
+>>>>>>> c4ee27945a58533f22b283c2b15d2362ccc51457
             REGISTER
           </button>
         </form>
