@@ -44,13 +44,10 @@
   .register form button {
     border: 1px solid black;
     border-radius: 0;
-<<<<<<< HEAD
     background-color: #1e140a;
     color: #cc9900;
-=======
     background-color: #000;
     color: #fff;
->>>>>>> c4ee27945a58533f22b283c2b15d2362ccc51457
     font-weight: 650;
     width: 360px;
     border-radius: 2px;
